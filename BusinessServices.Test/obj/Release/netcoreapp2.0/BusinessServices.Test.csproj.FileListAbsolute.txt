@@ -1,0 +1,13 @@
+E:\PIBM\WebAPI\BusinessServices.Test\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\PIBM\WebAPI\BusinessServices.Test\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\PIBM\WebAPI\BusinessServices.Test\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\PIBM\WebAPI\BusinessServices.Test\bin\Release\netcoreapp2.0\BusinessServices.Test.deps.json
+E:\PIBM\WebAPI\BusinessServices.Test\bin\Release\netcoreapp2.0\BusinessServices.Test.runtimeconfig.json
+E:\PIBM\WebAPI\BusinessServices.Test\bin\Release\netcoreapp2.0\BusinessServices.Test.runtimeconfig.dev.json
+E:\PIBM\WebAPI\BusinessServices.Test\bin\Release\netcoreapp2.0\BusinessServices.Test.dll
+E:\PIBM\WebAPI\BusinessServices.Test\bin\Release\netcoreapp2.0\BusinessServices.Test.pdb
+E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.csproj.CoreCompileInputs.cache
+E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.AssemblyInfoInputs.cache
+E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.AssemblyInfo.cs
+E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.dll
+E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.pdb

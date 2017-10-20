@@ -1,0 +1,11 @@
+E:\PIBM\WebAPI\IBusinessServices\bin\Debug\netcoreapp2.0\IBusinessServices.deps.json
+E:\PIBM\WebAPI\IBusinessServices\bin\Debug\netcoreapp2.0\IBusinessServices.dll
+E:\PIBM\WebAPI\IBusinessServices\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
+E:\PIBM\WebAPI\IBusinessServices\bin\Debug\netcoreapp2.0\BusinessEntities.dll
+E:\PIBM\WebAPI\IBusinessServices\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
+E:\PIBM\WebAPI\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.csprojResolveAssemblyReference.cache
+E:\PIBM\WebAPI\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.csproj.CoreCompileInputs.cache
+E:\PIBM\WebAPI\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.AssemblyInfoInputs.cache
+E:\PIBM\WebAPI\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.AssemblyInfo.cs
+E:\PIBM\WebAPI\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.dll
+E:\PIBM\WebAPI\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.pdb

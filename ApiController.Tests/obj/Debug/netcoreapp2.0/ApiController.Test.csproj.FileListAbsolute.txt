@@ -1,0 +1,13 @@
+E:\PIBM\WebAPI\ApiController.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\PIBM\WebAPI\ApiController.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\PIBM\WebAPI\ApiController.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\PIBM\WebAPI\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.deps.json
+E:\PIBM\WebAPI\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.runtimeconfig.json
+E:\PIBM\WebAPI\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.runtimeconfig.dev.json
+E:\PIBM\WebAPI\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.dll
+E:\PIBM\WebAPI\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.pdb
+E:\PIBM\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.csproj.CoreCompileInputs.cache
+E:\PIBM\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.AssemblyInfoInputs.cache
+E:\PIBM\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.AssemblyInfo.cs
+E:\PIBM\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.dll
+E:\PIBM\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.pdb

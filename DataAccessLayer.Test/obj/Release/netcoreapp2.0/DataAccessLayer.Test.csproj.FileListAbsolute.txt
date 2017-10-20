@@ -1,0 +1,13 @@
+E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Test.deps.json
+E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Test.runtimeconfig.json
+E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Test.runtimeconfig.dev.json
+E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Test.dll
+E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Test.pdb
+E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.csproj.CoreCompileInputs.cache
+E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfoInputs.cache
+E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfo.cs
+E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.dll
+E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.pdb

@@ -1,0 +1,8 @@
+E:\PIBM\WebAPI\Resolver\bin\Debug\netcoreapp2.0\Resolver.deps.json
+E:\PIBM\WebAPI\Resolver\bin\Debug\netcoreapp2.0\Resolver.dll
+E:\PIBM\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.csproj.CoreCompileInputs.cache
+E:\PIBM\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.AssemblyInfoInputs.cache
+E:\PIBM\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.AssemblyInfo.cs
+E:\PIBM\WebAPI\Resolver\bin\Debug\netcoreapp2.0\Resolver.pdb
+E:\PIBM\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.dll
+E:\PIBM\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.pdb

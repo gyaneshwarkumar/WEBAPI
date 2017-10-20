@@ -1,0 +1,8 @@
+E:\PIBM\WebAPI\BusinessEntities\bin\Release\netcoreapp2.0\BusinessEntities.deps.json
+E:\PIBM\WebAPI\BusinessEntities\bin\Release\netcoreapp2.0\BusinessEntities.dll
+E:\PIBM\WebAPI\BusinessEntities\bin\Release\netcoreapp2.0\BusinessEntities.pdb
+E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.csproj.CoreCompileInputs.cache
+E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.AssemblyInfoInputs.cache
+E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.AssemblyInfo.cs
+E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.dll
+E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.pdb

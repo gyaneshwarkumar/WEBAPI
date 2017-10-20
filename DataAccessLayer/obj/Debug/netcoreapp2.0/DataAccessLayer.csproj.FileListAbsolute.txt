@@ -1,0 +1,16 @@
+E:\PIBM\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\PIBM\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfoInputs.cache
+E:\PIBM\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.deps.json
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
+E:\PIBM\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\PIBM\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.Relational.xml
+E:\PIBM\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.SqlServer.xml
