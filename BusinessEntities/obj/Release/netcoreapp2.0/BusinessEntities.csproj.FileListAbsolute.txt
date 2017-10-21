@@ -6,3 +6,4 @@ E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.Assem
 E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.AssemblyInfo.cs
 E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.dll
 E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.pdb
+E:\PIBM\WebAPI\BusinessEntities\obj\Release\netcoreapp2.0\BusinessEntities.csprojResolveAssemblyReference.cache

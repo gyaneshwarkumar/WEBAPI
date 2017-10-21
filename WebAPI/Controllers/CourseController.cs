@@ -59,7 +59,7 @@ namespace WebAPI.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]CourseEntity course)
         {
-           _courseServices.CreateCourse(course);
+            _courseServices.CreateCourse(course);
             return Ok();
         }
 
