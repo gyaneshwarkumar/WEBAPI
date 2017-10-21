@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
+using System.Collections.Generic;
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class DataAccessLayerDbEntities : Migration
+    public partial class MyFirstMigrationq1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

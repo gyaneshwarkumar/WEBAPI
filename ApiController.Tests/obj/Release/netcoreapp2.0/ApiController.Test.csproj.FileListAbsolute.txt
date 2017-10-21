@@ -11,3 +11,4 @@ E:\PIBM\WebAPI\ApiController.Tests\obj\Release\netcoreapp2.0\ApiController.Test.
 E:\PIBM\WebAPI\ApiController.Tests\obj\Release\netcoreapp2.0\ApiController.Test.AssemblyInfo.cs
 E:\PIBM\WebAPI\ApiController.Tests\obj\Release\netcoreapp2.0\ApiController.Test.dll
 E:\PIBM\WebAPI\ApiController.Tests\obj\Release\netcoreapp2.0\ApiController.Test.pdb
+E:\PIBM\WebAPI\ApiController.Tests\obj\Release\netcoreapp2.0\ApiController.Test.csprojResolveAssemblyReference.cache

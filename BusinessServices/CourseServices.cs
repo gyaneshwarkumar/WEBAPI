@@ -29,9 +29,9 @@ namespace BusinessServices
       public  CourseEntity GetCourseById(int courseId)
         {
 
-            var config = new MapperConfiguration(cfg => {
-                cfg.CreateMap<Course, CourseEntity>();
-            });
+            //var config = new MapperConfiguration(cfg => {
+            //    cfg.CreateMap<Course, CourseEntity>();
+            //});
 
             var courses = _unitOfWork.CourseRepository.GetByID(courseId);
             if (courses != null)
@@ -50,9 +50,9 @@ namespace BusinessServices
             {
 
 
-                var config = new MapperConfiguration(cfg => {
-                    cfg.CreateMap<Course, CourseEntity>();
-                });
+                //var config = new MapperConfiguration(cfg => {
+                //    cfg.CreateMap<Course, CourseEntity>();
+                //});
 
              //   IMapper mapper = config.CreateMapper();
                 // var source = new Source();
@@ -72,15 +72,15 @@ namespace BusinessServices
             //});
 
             //IMapper mapper = config.CreateMapper();
-            var model =  new Course()
-            {
-                Course_Name = courseEntity.Course_Name,
-                App_Status = courseEntity.App_Status,
-                Description = courseEntity.Description,
-                Del_Status = courseEntity.Del_Status
-            };
+            //var model =  new Course()
+            //{
+            //    Course_Name = courseEntity.Course_Name,
+            //    App_Status = courseEntity.App_Status,
+            //    Description = courseEntity.Description,
+            //    Del_Status = courseEntity.Del_Status
+            //};
 
-            //_mapper.Map<CourseEntity, Course>(courseEntity);
+          var model=  _mapper.Map<CourseEntity, Course>(courseEntity);
 
             //Mapper.Initialize(cfg => {
             //    cfg.CreateMap<CourseEntity, Course>(courseEntity);

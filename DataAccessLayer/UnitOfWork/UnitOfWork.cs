@@ -1,5 +1,6 @@
 ﻿#region Using Namespaces...
 
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 
@@ -19,6 +20,9 @@ namespace DataAccessLayer.UnitOfWork
         #region Private member variables...
 
         private readonly DbEntities _context = null;
+      //  private readonly DbContextOptions _DbContextOptions = null;
+
+        
         private GenericRepository<User> _userRepository;
         private GenericRepository<Course> _courseRepository;
         private GenericRepository<Batch> _batchRepository;

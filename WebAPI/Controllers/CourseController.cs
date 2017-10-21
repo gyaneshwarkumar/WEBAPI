@@ -28,6 +28,16 @@ namespace WebAPI.Controllers
         [HttpGet]
         public IEnumerable<CourseEntity> Get()
         {
+            var course = new CourseEntity()
+            {
+                Course_Name = "yyyy",
+                // App_Status = "1",
+                Description = "yyy"
+                //  Del_Status = "1"
+            };
+            _courseServices.UpdateCourse(2, course);
+
+
             var courses = _courseServices.GetAllCourses();
 
             //var course =new CourseEntity()
@@ -41,7 +51,7 @@ namespace WebAPI.Controllers
 
             //  var courseEntities = courses as List<CourseEntity> ?? courses.ToList();
 
-            if (courses.Any())
+            if (courses!=null && courses.Any())
                 return courses.ToList();
             return Enumerable.Empty<CourseEntity>();
         }

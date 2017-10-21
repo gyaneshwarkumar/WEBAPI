@@ -11,8 +11,8 @@ using System;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(DbEntities))]
-    [Migration("20170929101101_DataAccessLayer.DbEntities")]
-    partial class DataAccessLayerDbEntities
+    [Migration("20171021072621_MyFirstMigrationq1")]
+    partial class MyFirstMigrationq1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

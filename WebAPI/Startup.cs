@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Http;
 using AutoMapper;
+using System.IO;
 
 namespace WebAPI
 {
@@ -20,70 +21,47 @@ namespace WebAPI
     {
 
         public IConfigurationRoot Configuration { get; }
-        private IHostingEnvironment _env;
+       // private IHostingEnvironment _env;
+
+        //public Startup(IHostingEnvironment env)
+        //{
+        //    var builder = new ConfigurationBuilder()
+        //        .SetBasePath(env.ContentRootPath)
+        //        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        //        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+        //        .AddEnvironmentVariables();
+        //    Configuration = builder.Build();
+        //}
 
         public void ConfigureServices(
             IServiceCollection services)
         {
-         //   DataAccessLayer.UnitOfWork.UnitOfWork
-             //services.AddTransient(ICourseServices, CourseServices);
-            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //        .AddJwtBearer(options => {
-            //            options.TokenValidationParameters = new TokenValidationParameters
-            //            {
-            //                ValidateIssuer = true,
-            //                ValidateAudience = true,
-            //                ValidateLifetime = true,
-            //                ValidateIssuerSigningKey = true,
 
-            //                ValidIssuer = "Fiver.Security.Bearer",
-            //                ValidAudience = "Fiver.Security.Bearer",
-            //                IssuerSigningKey = JwtSecurityKey.Create("fiver-secret-key")
-            //            };
 
-            //            options.Events = new JwtBearerEvents
-            //            {
-            //                OnAuthenticationFailed = context =>
-            //                {
-            //                    Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
-            //                    return Task.CompletedTask;
-            //                },
-            //                OnTokenValidated = context =>
-            //                {
-            //                    Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
-            //                    return Task.CompletedTask;
-            //                }
-            //            };
-            //        });
+           // services.AddDbContext<DbEntities>(options =>
+           //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
 
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("Member",
-            //        policy => policy.RequireClaim("MembershipId"));
-            //});
-           services.AddTransient<IUnitOfWork,UnitOfWork>();
-            services.AddTransient<ICourseServices, CourseServices>();
-            
+            services.AddTransient<IUnitOfWork,UnitOfWork>();
+            services.AddTransient<ICourseServices, CourseServices>();          
            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddAutoMapper();
-            // services.AddSingleton(typeof(IDataAccess<Course, int>), typeof(DataAccessRepository));
             services.AddMvc();
         }
 
 
 
-        public virtual void SetUpDataBase(IServiceCollection services)
-        {
+        //public virtual void SetUpDataBase(IServiceCollection services)
+        //{
 
-            //services.AddDbContext<DbEntities>(options =>
-            //options.UseSqlServer(Configuration.GetConnectionString("SecurityConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
-        }
+        //    //services.AddDbContext<DbEntities>(options =>
+        //    //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+        //}
 
-        public virtual void EnsureDatabaseCreated(DbEntities dbContext)
-        {
-            // run Migrations
-            dbContext.Database.Migrate();
-        }
+        //public virtual void EnsureDatabaseCreated(DbEntities dbContext)
+        //{
+        //    // run Migrations
+        //    dbContext.Database.Migrate();
+        //}
 
         public void Configure(
             IApplicationBuilder app, 
