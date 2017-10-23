@@ -4114,6 +4114,18 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Authentication.Server/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "runtime": {
+          "Authentication.Server.dll": {}
+        },
+        "compile": {
+          "Authentication.Server.dll": {}
+        }
+      },
       "BusinessEntities/1.0.0": {
         "runtime": {
           "BusinessEntities.dll": {}
@@ -4138,6 +4150,7 @@
       },
       "DataAccessLayer/1.0.0": {
         "dependencies": {
+          "Authentication.Server": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.0.1",
           "Autofac": "4.6.1"
         },
@@ -6491,6 +6504,11 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "Authentication.Server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "BusinessEntities/1.0.0": {
       "type": "project",

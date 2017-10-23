@@ -1,4 +1,9 @@
+E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\appsettings.json
+E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.deps.json
+E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.runtimeconfig.json
+E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
 E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.dll
+E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.pdb
 E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\BusinessEntities.dll
 E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\BusinessServices.dll
 E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\DataAccessLayer.dll
@@ -13,8 +18,5 @@ E:\PIBM\WebAPI\WebAPI\obj\Release\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
 E:\PIBM\WebAPI\WebAPI\obj\Release\netcoreapp2.0\WebAPI.AssemblyInfo.cs
 E:\PIBM\WebAPI\WebAPI\obj\Release\netcoreapp2.0\WebAPI.dll
 E:\PIBM\WebAPI\WebAPI\obj\Release\netcoreapp2.0\WebAPI.pdb
-E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.deps.json
-E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.runtimeconfig.json
-E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
-E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\WebAPI.pdb
-E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\appsettings.json
+E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\Authentication.Server.dll
+E:\PIBM\WebAPI\WebAPI\bin\Release\netcoreapp2.0\Authentication.Server.pdb

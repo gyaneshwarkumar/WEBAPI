@@ -87,7 +87,7 @@ namespace Authentication.Server
                 //    }
                 //};
             }).AddEntityFrameworkStores<DataContext>();
-          //  .AddDefaultTokenProviders();
+            //  .AddDefaultTokenProviders();
 
             //   services.AddTransient<ProductRepository, ProductRepository>();
 
@@ -96,7 +96,7 @@ namespace Authentication.Server
                 cfg.AddPolicy("AnyGET", bldr =>
                 {
                     bldr.AllowAnyHeader()
-                        .WithMethods("GET")
+                        .WithMethods("GET", "PUT", "POST", "DELETE")
                         .AllowAnyOrigin();
                 });
 

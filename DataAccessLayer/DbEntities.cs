@@ -1,7 +1,10 @@
-﻿using AutoMapper.Configuration;
+﻿using Authentication.Server;
+using AutoMapper.Configuration;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Data.Common;
 
 namespace DataAccessLayer
 
@@ -9,7 +12,7 @@ namespace DataAccessLayer
 
     public class DbEntities : DbContext
     {
-        public DbEntities()
+        public DbEntities() 
         {
         }
         public DbEntities(DbContextOptions<DbEntities> dbco) :
@@ -27,14 +30,15 @@ namespace DataAccessLayer
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-             builder.UseSqlServer("Server=DESKTOP-TNSM1B0\\MSSQLSERVER2012;Database=ERP20;Trusted_Connection=True;");
-         // builder.UseSqlServer(ConfigurationManager.ConnectionStrings["BloggingDatabase"].ConnectionString);
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+          .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+          .AddJsonFile("appsettings.json")
+          .Build();
+            builder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 
-            // builder.UseSqlServer(@"Server=.\;Database=EFTutorial;Trusted_Connection=True;").SuppressAmbientTransactionWarning();
-            //base.OnConfiguring(optionsBuilder);
-
-          base.OnConfiguring(builder);
+            base.OnConfiguring(builder);
         }
+
     }
 
 

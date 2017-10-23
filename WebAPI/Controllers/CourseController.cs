@@ -9,10 +9,12 @@ using IBusinessServices;
 using BusinessEntities;
 using System.Net.Http;
 using System.Net;
+using Microsoft.AspNetCore.Cors;
 
 namespace WebAPI.Controllers
 {
      [Route("api/[controller]")]
+    [EnableCors("AngularClient")]
     [Authorize]
     public class CourseController : Controller
     {
@@ -26,12 +28,11 @@ namespace WebAPI.Controllers
 
 
         [HttpGet]
-        public IEnumerable<CourseEntity> Get()
+        public  IEnumerable<CourseEntity> Get()
         {
 
-
             var courses = _courseServices.GetAllCourses();
-            if (courses!=null && courses.Any())
+            if (courses != null && courses.Any())
                 return courses.ToList();
             return Enumerable.Empty<CourseEntity>();
         }

@@ -79,14 +79,30 @@ namespace WebAPI
 
 
 
-            services.AddDbContext<DbEntities>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+           // services.AddDbContext<DbEntities>(options =>
+           //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
 
             services.AddTransient<IUnitOfWork,UnitOfWork>();
             services.AddTransient<ICourseServices, CourseServices>();          
            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddAutoMapper();
             services.AddMvc();
+            services.AddCors(cfg =>
+            {
+                cfg.AddPolicy("AnyGET", bldr =>
+                {
+                    bldr.AllowAnyHeader()
+                        .WithMethods("GET", "PUT", "POST", "DELETE")
+                        .AllowAnyOrigin();
+                });
+
+                cfg.AddPolicy("AngularClient", bldr =>
+                {
+                    bldr.AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .WithOrigins("http://localhost:3276");
+                });
+            });
         }
 
 
@@ -94,13 +110,13 @@ namespace WebAPI
         public virtual void SetUpDataBase(IServiceCollection services)
         {
 
-            services.AddDbContext<DbEntities>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+            //services.AddDbContext<DbEntities>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
         }
 
         public virtual void EnsureDatabaseCreated(DbEntities dbContext)
         {
-            dbContext.Database.Migrate();
+           // dbContext.Database.Migrate();
         }
 
         public void Configure(

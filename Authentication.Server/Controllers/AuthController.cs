@@ -17,8 +17,8 @@ using Token.WebApiCore.Server.Models;
 
 namespace Authentication.Server.Controllers
 {
-   // [EnableCors("AngularClient")]
     [Route("api/auth")]
+    [EnableCors("AngularClient")]
     public class AuthController : Controller
     {
         private readonly UserManager<MyUser> _userManager;

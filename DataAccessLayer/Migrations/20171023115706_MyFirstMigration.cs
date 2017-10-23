@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class MyFirstMigrationq1 : Migration
+    public partial class MyFirstMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

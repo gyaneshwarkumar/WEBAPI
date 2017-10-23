@@ -11,7 +11,7 @@ using System;
 namespace Authentication.Server.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20171023101825_MyFirstMigration")]
+    [Migration("20171023120118_MyFirstMigration")]
     partial class MyFirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
