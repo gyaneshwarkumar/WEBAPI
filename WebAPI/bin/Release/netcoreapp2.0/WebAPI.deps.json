@@ -4465,7 +4465,7 @@
     "Microsoft.AspNetCore.Authentication.JwtBearer/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-67ae/cGmfB5q61HfkwHD+gZvdpcsWA743wEZo2hAcgX/TQwo3U7nhtpnyLaSR8FfzOgPMpHUAp3O0sCFgkS90g==",
+      "sha512": "sha512-HyGfrCec/ojNu1X+EkAgqwhgKGu3TjBmNTiAVX137Al99JitOKhVYy6i2LtTlF2KaUKzFzP+PJk830Eg4emXTA==",
       "path": "microsoft.aspnetcore.authentication.jwtbearer/2.0.0",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.2.0.0.nupkg.sha512"
     },
@@ -6243,7 +6243,7 @@
     "System.Runtime.Serialization.Formatters/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
+      "sha512": "sha512-+3aDKG7DIJ2HUE0TarLLM/i+BV1K0ixxBfQC0nCujNKOhKDJcI9ltEu4nUQKEQDovJ+QKP+iwzTK4ComxtK9Ow==",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "hashPath": "system.runtime.serialization.formatters.4.3.0.nupkg.sha512"
     },

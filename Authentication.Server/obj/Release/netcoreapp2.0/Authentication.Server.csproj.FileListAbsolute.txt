@@ -1,0 +1,11 @@
+E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.csproj.CoreCompileInputs.cache
+E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.AssemblyInfoInputs.cache
+E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.AssemblyInfo.cs
+E:\PIBM\WebAPI\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.deps.json
+E:\PIBM\WebAPI\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.runtimeconfig.json
+E:\PIBM\WebAPI\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.runtimeconfig.dev.json
+E:\PIBM\WebAPI\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.dll
+E:\PIBM\WebAPI\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.pdb
+E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.csprojResolveAssemblyReference.cache
+E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.dll
+E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.pdb

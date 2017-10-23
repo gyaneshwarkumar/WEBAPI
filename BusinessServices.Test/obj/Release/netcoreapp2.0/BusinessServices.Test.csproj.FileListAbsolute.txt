@@ -11,3 +11,4 @@ E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.
 E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.AssemblyInfo.cs
 E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.dll
 E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.pdb
+E:\PIBM\WebAPI\BusinessServices.Test\obj\Release\netcoreapp2.0\BusinessServices.Test.csprojResolveAssemblyReference.cache
