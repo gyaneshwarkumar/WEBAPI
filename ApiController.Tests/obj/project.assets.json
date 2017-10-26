@@ -5630,11 +5630,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\PIBM\\WebAPI\\ApiController.Tests\\ApiController.Test.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI\\ApiController.Tests\\ApiController.Test.csproj",
       "projectName": "ApiController.Test",
-      "projectPath": "E:\\PIBM\\WebAPI\\ApiController.Tests\\ApiController.Test.csproj",
+      "projectPath": "C:\\POC\\WebAPI\\ApiController.Tests\\ApiController.Test.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "E:\\PIBM\\WebAPI\\ApiController.Tests\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI\\ApiController.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

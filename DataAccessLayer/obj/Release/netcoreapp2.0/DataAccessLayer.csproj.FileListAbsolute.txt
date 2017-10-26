@@ -1,11 +1,11 @@
 E:\PIBM\WebAPI\DataAccessLayer\bin\Release\netcoreapp2.0\DataAccessLayer.deps.json
 E:\PIBM\WebAPI\DataAccessLayer\bin\Release\netcoreapp2.0\DataAccessLayer.dll
 E:\PIBM\WebAPI\DataAccessLayer\bin\Release\netcoreapp2.0\DataAccessLayer.pdb
+E:\PIBM\WebAPI\DataAccessLayer\bin\Release\netcoreapp2.0\Authentication.Server.dll
+E:\PIBM\WebAPI\DataAccessLayer\bin\Release\netcoreapp2.0\Authentication.Server.pdb
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.csprojResolveAssemblyReference.cache
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.AssemblyInfoInputs.cache
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.dll
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.pdb
-E:\PIBM\WebAPI\DataAccessLayer\bin\Release\netcoreapp2.0\Authentication.Server.dll
-E:\PIBM\WebAPI\DataAccessLayer\bin\Release\netcoreapp2.0\Authentication.Server.pdb

@@ -5630,11 +5630,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\PIBM\\WebAPI\\DataAccessLayer.Test\\DataAccessLayer.Test.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI\\DataAccessLayer.Test\\DataAccessLayer.Test.csproj",
       "projectName": "DataAccessLayer.Test",
-      "projectPath": "E:\\PIBM\\WebAPI\\DataAccessLayer.Test\\DataAccessLayer.Test.csproj",
+      "projectPath": "C:\\POC\\WebAPI\\DataAccessLayer.Test\\DataAccessLayer.Test.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "E:\\PIBM\\WebAPI\\DataAccessLayer.Test\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI\\DataAccessLayer.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,187 @@
+﻿<table style="width:80%;margin-left: 100px">
+    <tr>
+        <td>
+            <h2>Signup Details</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br />
+            <div class="ContentSideSections Implementation">
+                <p-dialog header="Signup Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
+                    <div class="ui-grid ui-grid-responsive ui-fluid ui-grid-pad">
+                        <div class="ui-grid-row">
+                            <div class="ui-grid-col-4"><label for="courseName">Email</label></div>
+                            <div class="ui-grid-col-8">
+                            <input pInputText id="email" [(ngModel)]="signup.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email"/></div>
+                          
+                            </div>
+                        <div class="ui-grid-row">
+                            <div class="ui-grid-col-4"><label for="description">Password</label></div>
+                            <div class="ui-grid-col-8"><input pInputText id="lastname" [(ngModel)]="signup.password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{6,}$" type="password"/></div>
+                        </div>
+                        <div class="ui-grid-row">
+                            <div class="ui-grid-col-4"><label for="description">Confirm Password</label></div>
+                            <div class="ui-grid-col-8"><input pInputText id="lastname" [(ngModel)]="signup.confirmPassword" required type="password"/></div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                            <button type="button" pButton icon="fa-close" (click)="cancel()" label="Cancel"></button>
+                            <button type="button" pButton icon="fa-check" (click)="save(signup)" label="Sign Up"></button>
+                        </div>
+                    </footer>
+                </p-dialog>
+                <p-dialog header="Confirm Deletion" [(visible)]="displayDeleteDialog" modal="modal" showEffect="fade">
+                    <p>
+                        Are you sure to delete the following course?
+                    </p>
+                    <p>
+                        <strong>{{ fullname }}</strong><br />
+                    </p>
+                    <footer>
+                        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                            <button type="button" pButton icon="fa-close" (click)="okDelete(false)" label="No"></button>
+                            <button type="button" pButton icon="fa-check" (click)="okDelete(true)" label="Yes"></button>
+                        </div>
+                    </footer>
+                </p-dialog>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<!--<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table'>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let course of courses">
+            <td>{{course.id}}</td>
+            <td>{{course.courseName}}</td>
+            <td>{{ course.description  }}</td>
+
+        </tr>
+    </tbody>
+</table>-->
+
+
+<!--<div class="panel panel-success">
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class="panel-body">
+        <form class="form-horizontal"
+              novalidate
+              (ngSubmit)="register(signupForm)"
+              #signupForm="ngForm"
+              autocomplete="off">
+            <fieldset>
+                <div class="form-group"
+                     [ngClass]="{'has-error': (userNameVar.touched ||
+                                               userNameVar.dirty) &&
+                                               !userNameVar.valid }">
+                    <label class="col-md-2 control-label"
+                           for="userNameId">User Name</label>
+                    <div class="col-md-8">
+                        <input class="form-control"
+                               id="userNameId"
+                               type="text"
+                               placeholder="User Name (required)"
+                               required
+                               (ngModel)="userName"
+                               name="userName"
+                               #userNameVar="ngModel" />
+                        <span class="help-block" *ngIf="(userNameVar.touched ||
+                                                         userNameVar.dirty) &&
+                                                         userNameVar.errors">
+                            <span *ngIf="userNameVar.errors.required">
+                                User name is required.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group"
+                     [ngClass]="{'has-error': (passwordVar.touched ||
+                                               passwordVar.dirty) &&
+                                               !passwordVar.valid }">
+                    <label class="col-md-2 control-label" for="passwordId">Password</label>
+                    <div class="col-md-8">
+                        <input class="form-control"
+                               id="passwordId"
+                               type="password"
+                               placeholder="Password (required)"
+                               required
+                               (ngModel)="password"
+                               name="password"
+                               #passwordVar="ngModel" />
+                        <span class="help-block" *ngIf="(passwordVar.touched ||
+                                                         passwordVar.dirty) &&
+                                                         passwordVar.errors">
+                            <span *ngIf="passwordVar.errors.required">
+                                Password is required.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group"
+                     [ngClass]="{'has-error': (confirmPasswordVar.touched ||
+                                               confirmPasswordVar.dirty) &&
+                                               !confirmPasswordVar.valid }">
+                    <label class="col-md-2 control-label" for="confirmPasswordId">confirmPassword</label>
+                    <div class="col-md-8">
+                        <input class="form-control"
+                               id="confirmPasswordId"
+                               type="password"
+                               placeholder="confirmPassword (required)"
+                               required
+                               (ngModel)="confirmPassword"
+                               name="confirmPassword"
+                               #confirmPasswordVar="ngModel" />
+                        <span class="help-block" *ngIf="(confirmPasswordVar.touched ||
+                                                         confirmPasswordVar.dirty) &&
+                                                         confirmPasswordVar.errors">
+                            <span *ngIf="confirmPasswordVar.errors.required">
+                                confirmPassword is required.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4 col-md-offset-2">
+                        <span>
+                            <button class="btn btn-success"
+                                    type="submit"
+                                    style="width:80px;margin-right:10px"
+                                    [disabled]="!signupForm.valid">
+                                Sign Up
+                            </button>
+                        </span>
+                        <span>
+                            <a class="btn btn-default"
+                               [routerLink]="['/']">
+                                Cancel
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="has-error" *ngIf="errorMessage">{{errorMessage}}</div>
+    </div>
+</div>-->

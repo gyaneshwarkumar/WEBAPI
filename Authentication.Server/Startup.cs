@@ -104,7 +104,7 @@ namespace Authentication.Server
                 {
                     bldr.AllowAnyHeader()
                         .AllowAnyMethod()
-                        .WithOrigins("http://localhost:3276");
+                        .WithOrigins("http://localhost:35344");
                 });
             });
         }

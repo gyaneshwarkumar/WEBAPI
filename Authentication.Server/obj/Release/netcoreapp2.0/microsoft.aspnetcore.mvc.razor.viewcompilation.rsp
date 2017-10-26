@@ -1,0 +1,5 @@
+E:\PIBM\WebAPI\Authentication.Server
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=Authentication.Server
+--content-root=E:\PIBM\WebAPI\Authentication.Server
+--file=

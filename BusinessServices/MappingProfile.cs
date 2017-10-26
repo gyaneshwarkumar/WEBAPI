@@ -14,6 +14,9 @@ namespace BusinessServices
             // Add as many of these lines as you need to map your objects
             CreateMap<Course, CourseEntity>();
             CreateMap<CourseEntity, Course>();
+
+            CreateMap<Batch, BatchEntity>();
+            CreateMap<BatchEntity, Batch>();
         }
     }
 }

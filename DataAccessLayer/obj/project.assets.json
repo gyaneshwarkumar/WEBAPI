@@ -12657,11 +12657,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\PIBM\\WebAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "E:\\PIBM\\WebAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\POC\\WebAPI\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "E:\\PIBM\\WebAPI\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12680,8 +12680,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\PIBM\\WebAPI\\Authentication.Server\\Authentication.Server.csproj": {
-              "projectPath": "E:\\PIBM\\WebAPI\\Authentication.Server\\Authentication.Server.csproj"
+            "C:\\POC\\WebAPI\\Authentication.Server\\Authentication.Server.csproj": {
+              "projectPath": "C:\\POC\\WebAPI\\Authentication.Server\\Authentication.Server.csproj"
             }
           }
         }

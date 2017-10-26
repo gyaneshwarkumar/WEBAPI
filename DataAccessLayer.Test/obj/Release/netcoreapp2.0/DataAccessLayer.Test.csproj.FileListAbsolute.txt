@@ -6,9 +6,9 @@ E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Te
 E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Test.runtimeconfig.dev.json
 E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Test.dll
 E:\PIBM\WebAPI\DataAccessLayer.Test\bin\Release\netcoreapp2.0\DataAccessLayer.Test.pdb
+E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.csprojResolveAssemblyReference.cache
 E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.csproj.CoreCompileInputs.cache
 E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfoInputs.cache
 E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfo.cs
 E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.dll
 E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.pdb
-E:\PIBM\WebAPI\DataAccessLayer.Test\obj\Release\netcoreapp2.0\DataAccessLayer.Test.csprojResolveAssemblyReference.cache

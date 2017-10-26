@@ -1,0 +1,38 @@
+﻿<table style="width:80%;margin-left: 100px">
+    <tr>
+        <td>
+            <h2>Login</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br />
+            <div class="ContentSideSections Implementation">
+                <p-dialog header="Signup Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
+                    <div class="ui-grid ui-grid-responsive ui-fluid ui-grid-pad">
+                        <div class="ui-grid-row">
+                            <div class="ui-grid-col-4"><label for="courseName">Email</label></div>
+                            <div class="ui-grid-col-8"><input pInputText id="vin" [(ngModel)]="signup.email" /></div>
+                        </div>
+                        <div class="ui-grid-row">
+                            <div class="ui-grid-col-4"><label for="description">Password</label></div>
+                            <div class="ui-grid-col-8"><input pInputText id="lastname" [(ngModel)]="signup.password" type="password"/></div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                            <button type="button" pButton icon="fa-close" (click)="cancel()" label="Cancel"></button>
+                            <button type="button" pButton icon="fa-check" (click)="save(signup)" label="Sign Up"></button>
+                        </div>
+                    </footer>
+                </p-dialog>
+                
+            </div>
+        </td>
+    </tr>
+</table>
