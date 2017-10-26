@@ -101,11 +101,13 @@ export class CourseComponent implements OnInit {
             this.courseService.deleteCourse(this.course.id)
                 .subscribe(response => {
                     this.editContactId = 0;
+                    this.loadData();
                 });
             this.toastrService.error('Data Deleted Successfully');
+            
         }
         this.displayDeleteDialog = false;
-        this.loadData();
+       
     }
 }
 

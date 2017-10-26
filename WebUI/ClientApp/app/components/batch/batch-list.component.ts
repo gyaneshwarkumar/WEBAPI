@@ -106,11 +106,12 @@ export class BatchComponent implements OnInit {
                 .subscribe(response => {
                     this.editContactId = 0;
                     this.loadData();
+                    this.loadData();
                 });
             this.toastrService.error('Data Deleted Successfully');
+         
         }
         this.displayDeleteDialog = false;
-        this.loadData();
     }
 }
 

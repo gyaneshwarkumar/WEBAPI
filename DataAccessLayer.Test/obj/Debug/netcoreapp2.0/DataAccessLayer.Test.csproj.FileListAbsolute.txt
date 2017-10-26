@@ -53,4 +53,3 @@ C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.
 C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfo.cs
 C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.dll
 C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.pdb
-C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.csprojResolveAssemblyReference.cache

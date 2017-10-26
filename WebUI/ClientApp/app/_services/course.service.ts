@@ -61,9 +61,10 @@ export class CourseService {
     //Delete Operation
     deleteCourse(id: number): Observable<string> {
         var deleteByIdUrl = this.url + '/' + id
-        let headers = new Headers({ 'Content-Type': 'application/json', 'Accept': 'application/json' });
+        let profile = this.authProfile.getProfile();
+        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token,  'Content-Type': 'application/json', 'Accept': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-        return this.http.delete(deleteByIdUrl)
+        return this.http.delete(deleteByIdUrl, options)
             .map(response => response.json())
             .catch(this.handleError);
     }
