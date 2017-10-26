@@ -84,20 +84,25 @@ namespace BusinessServices
         public bool UpdateBatch(int batchId, BatchEntity batchEntity)
 
         {
+
+
+
+            var batch = _mapper.Map<BatchEntity, Batch>(batchEntity);
             var success = false;
-            if (batchEntity != null)
+            if (batch != null && batch.Id== batchId)
             {
                 //using (var scope = new TransactionScope())
                 //{
-                var batch = _unitOfWork.BatchRepository.GetByID(batchId);
+
                 if (batch != null)
                 {
-                    batch.Batch_Name = batchEntity.Batch_Name;
-                    batch.App_Status = batchEntity.App_Status;
-                    batch.Description = batchEntity.Description;
-                    batch.Del_Status = batchEntity.Del_Status;
-                    batch.Course_Id = batchEntity.Course_Id;
-                    batch.Acedemic_Year = batchEntity.Acedemic_Year;
+                    
+                    //batch.Batch_Name = batchEntity.Batch_Name;
+                    //batch.App_Status = batchEntity.App_Status;
+                    //batch.Description = batchEntity.Description;
+                    //batch.Del_Status = batchEntity.Del_Status;
+                    //batch.Course_Id = batchEntity.Course_Id;
+                    //batch.Acedemic_Year = batchEntity.Acedemic_Year;
 
                     _unitOfWork.BatchRepository.Update(batch);
                     _unitOfWork.Save();

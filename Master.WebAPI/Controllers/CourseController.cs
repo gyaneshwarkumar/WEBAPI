@@ -55,13 +55,15 @@ namespace WebAPI.Controllers
             return Ok(Course);
         }
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody]CourseEntity course)
+        public IActionResult Put(int id, [FromBody]CourseEntity courseEntity)
         {
-            if (id == course.Id)
-            {
-                _courseServices.UpdateCourse(id, course);
+     
 
-                return Ok(course);
+            if (id == courseEntity.Id)
+            {
+                _courseServices.UpdateCourse(id, courseEntity);
+
+                return Ok(courseEntity);
             }
             return NotFound();
         }

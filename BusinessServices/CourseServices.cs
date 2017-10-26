@@ -109,8 +109,10 @@ namespace BusinessServices
 
         public bool UpdateCourse(int courseId, CourseEntity courseEntity)
         {
+
+             var course = _mapper.Map<CourseEntity, Course>(courseEntity);
             var success = false;
-            if (courseEntity != null)
+            if (courseEntity != null && course.Id== courseId)
             {
 
 
@@ -118,13 +120,13 @@ namespace BusinessServices
 
                 //using (var scope = new TransactionScope())
                 //{
-                var course = _unitOfWork.CourseRepository.GetByID(courseId);
+                //var course = _unitOfWork.CourseRepository.GetByID(courseId);
                     if (course != null)
                     {
-                    course.Course_Name = courseEntity.Course_Name;
-                    course.App_Status = courseEntity.App_Status;
-                    course.Description = courseEntity.Description;
-                    course.Del_Status = courseEntity.Del_Status;
+                    //course.Course_Name = courseEntity.Course_Name;
+                    //course.App_Status = courseEntity.App_Status;
+                    //course.Description = courseEntity.Description;
+                    //course.Del_Status = courseEntity.Del_Status;
                         _unitOfWork.CourseRepository.Update(course);
                         _unitOfWork.Save();
                        // scope.Complete();
