@@ -2,6 +2,7 @@
 import { Login } from '../../_models/index';
 import { LoginService } from '../../_services/index';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 //Third Party js
 import { ToastrService } from 'toastr-ng2';
 import { InputTextModule, DataTableModule, ButtonModule, DialogModule } from 'primeng/primeng';
@@ -13,9 +14,10 @@ class LoginInfo implements Login {
 
 @Component({
     selector: 'login',
-    templateUrl: './login.component.html'
+    templateUrl: './login.component.html',
+
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
     public forecasts: Login[];
     public editContactId: any;
     signup: Login = new LoginInfo();
@@ -30,12 +32,14 @@ export class LoginComponent {
 
     public editCourseId: any;
     public fullname: string;
+    public newTrustFormVisible: boolean;
+    public showElement: boolean;
 
     constructor(private loginService: LoginService, private toastrService: ToastrService, private authService: UserService,
         private router: Router) {
 
     }
-    
+
     showDialogToAdd() {
         this.newCourse = true;
         this.editCourseId = 0;
@@ -43,7 +47,11 @@ export class LoginComponent {
         this.displayDialog = true;
 
     }
-    
+
+    ngOnInit() {
+      //  this.showElement = false;
+    }
+
     onRowSelect(event) {
     }
 
@@ -51,13 +59,15 @@ export class LoginComponent {
         this.displayDialog = false;
     }
 
-    save(signup) {
+    save(signup: NgForm) {
         var result = this.loginService.login(this.signup).subscribe(
             response => {
                 if (this.authService.redirectUrl) {
                     this.router.navigateByUrl(this.authService.redirectUrl);
                 } else {
+                    this.showElement = true;
                     this.router.navigate(['/home']);
+
                 }
             },
             error => {

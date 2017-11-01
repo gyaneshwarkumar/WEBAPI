@@ -63,7 +63,7 @@ namespace Authentication.Server.Controllers
             return BadRequest(result.Errors);
         }
 
-        [ValidateForm]
+       // [ValidateForm]
         [HttpPost]
         [Route("token")]
         public async Task<IActionResult> CreateToken([FromBody] LoginViewModel model)

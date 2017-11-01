@@ -1,0 +1,343 @@
+﻿<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Create Batch</h2>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<form class="form-horizontal" id="form1" novalidate (ngSubmit)="Batch(BatchForm)" #SubmitForm="ngForm" autocomplete="off">
+    <fieldset>
+
+        <div class="col-lg-7">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><font color="#1ab394">Please Create the New Batch Below :</font></h5>
+
+                </div>
+
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="form-horizontal">
+
+
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Select Course</label>
+                                <div class="col-lg-10 col-lg-4-width">
+                                    <select class="form-control m-b" cellpadding="4" cellspacing="4" style="width:200px;"
+                                            [(ngModel)]="batch.course_Name" name="course_Name">
+                                        <option selected="selected" value="">Please select a Course</option>
+                                        <option *ngFor="let course of courses"
+                                                [ngValue]="course.course_Name">
+                                            {{course.course_Name}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!--<div class="form-group">
+                                <label class="col-lg-2 control-label">Select Course</label>
+
+                                <div class="col-lg-10 col-lg-4-width">
+                                    <div id="updatepanel1">
+
+                                        <select name="ddlCourse" onchange="javascript:setTimeout('__doPostBack(\'ddlCourse\',\'\')', 0)" id="ddlCourse" class="form-control m-b" cellpadding="4" cellspacing="4" style="width:200px;">
+                                            <option selected="selected" value="0">Select</option>
+                                            <option value="10">B.Com</option>
+                                            <option value="8">B.Sc</option>
+                                            <option value="12">BBA</option>
+                                            <option value="6">BCA</option>
+                                            <option value="7">BCS</option>
+                                            <option value="11">CA</option>
+                                            <option value="1">computer networking </option>
+                                            <option value="13">Evaluation Testing</option>
+                                            <option value="16">fashion designing </option>
+                                            <option value="17">fashion history</option>
+                                            <option value="9">M.Sc</option>
+                                            <option value="2">MBA                               </option>
+                                            <option value="4">MCA</option>
+                                            <option value="5">MCS</option>
+                                            <option value="14">ME</option>
+                                            <option value="3">PGDM</option>
+                                            <option value="15">PGDM1</option>
+
+                                        </select>
+
+                                    </div>
+
+                                    <span class="help-block m-b-none">
+                                        <span id="RequiredFieldValidator2" style="color:Red;display:none;">Please Select The Course!!</span>
+                                    </span>
+                                </div>
+                            </div>-->
+
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Sub Course</label>
+                                <div class="col-lg-10 col-lg-4-width">
+
+                                    <select name="subCourse_Name" [(ngModel)]="batch.subCourse_Name" id="ddlSubCourse" class="form-control m-b" cellpadding="4" cellspacing="4" style="width:200px;">
+                                        <option selected="selected" value="0">Select</option>
+                                        <option value="16">Advanced computing</option>
+                                        <option value="19">Chemestry</option>
+                                        <option value="1">CNN</option>
+                                        <option value="17">Commerce</option>
+                                        <option value="15">Computer Basics</option>
+                                        <option value="8">Computer Basics</option>
+                                        <option value="3">Database Management System</option>
+                                        <option value="10">Databases</option>
+                                        <option value="12">dddd</option>
+                                        <option value="20">design and research </option>
+                                        <option value="11">Distributed databases</option>
+                                        <option value="9">ET</option>
+                                        <option value="21">history of fashion</option>
+                                        <option value="18">Marketing</option>
+                                        <option value="2">Marketting</option>
+                                        <option value="6">MCA Commerce</option>
+                                        <option value="7">MCA Management</option>
+                                        <option value="5">MCA Science</option>
+                                        <option value="13">Mytest</option>
+                                        <option value="14">Mytest</option>
+                                        <option value="4">Science</option>
+
+                                    </select>
+
+                                    <span class="help-block m-b-none"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Start Year</label>
+                                <div class="col-lg-10 col-lg-4-width">
+
+                                    <select id="ddlStartYear" class="form-control m-b" [(ngModel)]="batch.acedemic_Year" name="acedemic_Year" cellpadding="4" cellspacing="4" style="width:200px;">
+                                        <option value="2018">2018</option>
+                                        <option selected="selected" value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+
+                                    </select>
+
+                                    <span class="help-block m-b-none"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Course Duration</label>
+                                <div class="col-lg-3" style="width: 32%">
+
+                                    <select name="course_duration" [(ngModel)]="batch.course_duration" id="ddlDuration" class="form-control m-b col-lg-3" cellpadding="4" cellspacing="4">
+                                        <option selected="selected" value="0">Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+
+                                    </select>
+                                    <span id="RequiredFieldValidator3" style="color:Red;display:none;">Please Select Course Duration</span>
+
+                                </div>
+                                <div class="col-lg-3" style="width: 32%">
+
+                                    <select name="ddlMonthYear" id="ddlMonthYear" class="form-control m-b" cellpadding="4" cellspacing="4">
+                                        <option selected="selected" value="0">Select</option>
+                                        <option value="Month">Month(s)</option>
+                                        <option value="Year">Year(s)</option>
+
+                                    </select>
+                                    <span id="RequiredFieldValidator4" style="color:Red;display:none;">Please Select Month/Year</span>
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Batch Name</label>
+                                <div class="col-lg-10 col-lg-4-width">
+
+                                    <input name="batch_Name" type="text" [(ngModel)]="batch.batch_Name" id="txtBatchName" class="form-control" style="background-color:White;">
+
+                                    <span class="help-block m-b-none"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Pattern</label>
+                                <div class="col-lg-10 col-lg-4-width">
+
+                                    <select name="pattern" [(ngModel)]="batch.pattern" id="ddlPattern" class="form-control m-b" cellpadding="4" cellspacing="4">
+                                        <option selected="selected" value="0">Select</option>
+                                        <option value="2">Annual</option>
+                                        <option value="1">Semester </option>
+                                        <option value="3">Trimester</option>
+
+                                    </select>
+                                    <span id="RequiredFieldValidator5" style="color:Red;display:none;">Please Select The Course Pattern!!</span>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Batch Incharge</label>
+                                <div class="col-lg-10 col-lg-4-width">
+                                    <div id="updatepanel15">
+
+                                        <select name="batch_incharge" [(ngModel)]="batch_incharge" id="ddlbatchincharge" class="form-control m-b" cellpadding="4" cellspacing="4" style="width:271px;">
+                                            <option value="0">Select</option>
+                                            <option value="4">Ayesha   Shaikh</option>
+                                            <option value="2">Girsih N Potdar</option>
+                                            <option value="9">Lokesh  Kate</option>
+                                            <option value="3">Manoj S Bhosale</option>
+                                            <option value="6">Mansi Rajendra Waradkar</option>
+                                            <option value="5">Pree  Khadate</option>
+                                            <option value="1">Preeti  Khadate </option>
+                                            <option value="8">Soham  Kale</option>
+                                            <option value="7">Test  User</option>
+                                        </select>
+
+                                    </div>
+                                    <span class="help-block m-b-none"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <label class="col-lg-2 control-label">Start Date</label>
+                                <div class="col-lg-10 col-lg-4-width">
+                                    <!--<p-calendar name="datestart" [(ngModel)]="batch.StartDate" dateFormat="dd/mm/yy" [showIcon]="true" [monthNavigator]="true" [yearNavigator]="true" yearRange="2000:2030">-->
+                                        <span class="ng-tns-c1-3 ui-calendar ui-calendar-w-btn">
+
+                                            <input type="date" id="startdate" name="StartDate" [(ngModel)]="batch.StartDate" class="form-control">
+                                            <!--<button class="ui-datepicker-trigger ui-calendar-button ng-tns-c1-3 ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" pbutton="" tabindex="-1" type="button">
+                                                <span class="ui-button-icon-left ui-clickable fa fa-fw fa-calendar"></span><span class="ui-button-text ui-clickable">ui-btn</span>
+                                            </button>-->
+                                        </span>
+                                    <!--</p-calendar> <span style="margin-left:35px"></span>-->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label class="col-lg-2 control-label">End Date</label>
+                                <div class="col-lg-10 col-lg-4-width">
+                                    <!--<p-calendar name="EndDate" [(ngModel)]="batch.EndDate" [showIcon]="true" [monthNavigator]="true" [yearNavigator]="true" yearRange="2000:2030">-->
+                                        <span class="ng-tns-c1-3 ui-calendar ui-calendar-w-btn">
+
+                                            <input type="date" id="enddate" name="EndDate" [(ngModel)]="batch.EndDate" class="form-control">
+                                            <!--<button class="ui-datepicker-trigger ui-calendar-button ng-tns-c1-3 ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" pbutton="" tabindex="-1" type="button">
+                                                <span class="ui-button-icon-left ui-clickable fa fa-fw fa-calendar"></span><span class="ui-button-text ui-clickable">ui-btn</span>
+                                            </button>-->
+                                        </span>
+                                    <!--</p-calendar> <span style="margin-left:35px"></span>-->
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-4-width3">
+                            <h4>
+                                Please provide tentative start and end dates for all the Semesters below. You can also edit it later.
+                            </h4>
+                        </div>
+                        <br>
+
+                        <div class="col-sm-6 col-lg-4-width3">
+
+                            <div>
+                                <table class="col-lg-4-width5" cellspacing="0" id="gv_leadsource" style="width:100%;border-collapse:collapse;">
+                                    <tbody>
+                                        <tr style="color:Red;font-weight:bold;">
+                                            <td colspan="3">
+                                                <div id="gv_leadsource_divgridError">
+                                                    <p id="error" class="info">
+                                                        <span class="info_inner">
+                                                            <span id="gv_leadsource_lbl_divError">No Record Found.</span>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                            <div class="col-lg-11 control-label">
+
+
+                                <input type="submit" name="btnclear" value="Clear" id="btnclear" class="btn btn-sm btn-primary pull-right m-t-n-xs" style="margin-right:10%;">
+
+
+                            </div>
+                            <div class="col-lg-1">
+
+
+                                <input type="submit" name="btnSubmit" value="Save Changes" (click)="save(batch)" id="btnSubmit" class="btn btn-sm btn-primary pull-right m-t-n-xs">
+                            </div>
+
+
+                            <br>
+                            <br>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+           
+        </div>
+
+    </fieldset>
+</form>
+
+
+<!--<div class="ContentSideSections Implementation">
+    <p-dialog header="Course Details">
+        <div class="ui-grid ui-grid-responsive ui-fluid ui-grid-pad">
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-4"><label for="acedemic_year">Academic year</label></div>
+                <div class="ui-grid-col-8"><input pInputText id="vin" [(ngModel)]="batch.acedemic_Year" /></div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-4"><label for="batch_name">BatchName</label></div>
+                <div class="ui-grid-col-8"><input pInputText id="bacth_name" [(ngModel)]="batch.batch_Name" /></div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-4"><label for="course_id">Course Id</label></div>
+                <div class="ui-grid-col-8"><input pInputText id="cid" [(ngModel)]="batch.course_Id" /></div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-4"><label for="description">Description</label></div>
+                <div class="ui-grid-col-8"><input pInputText id="desc" [(ngModel)]="batch.description" /></div>
+            </div>
+        </div>
+        <footer>
+            <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                <button type="button" pButton icon="fa-close" (click)="cancel()" label="Cancel"></button>
+                <button type="button" pButton icon="fa-check" (click)="save(batch)" *ngIf="newBatch" label="Save"></button>
+                <button type="button" pButton icon="fa-check" (click)="update(batch)" *ngIf="!newBatch" label="Update"></button>
+            </div>
+        </footer>
+    </p-dialog>
+</div>-->

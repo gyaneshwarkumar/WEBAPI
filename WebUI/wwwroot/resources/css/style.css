@@ -1874,9 +1874,9 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  background-color: #18a689;
-  border-color: #18a689;
-  color: #FFFFFF;
+    background-color: #18a689 !important;
+    border-color: #18a689 !important;
+    color: #FFFFFF !important;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3369,7 +3369,7 @@ table.dataTable thead .sorting:after {
   border-radius: 1px;
   color: inherit;
   display: block;
-  padding: 3px 12px;
+  padding: 3px 12px !important;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%;
   font-size: 14px;
@@ -6548,7 +6548,7 @@ a.forum-item-title:hover {
 }
 .sidebar-content .wrapper,
 .wrapper.sidebar-content {
-  padding-right: 230px !important;
+  /*padding-right: 230px !important;*/
 }
 .body-small .sidebar-content .wrapper,
 .body-small .wrapper.sidebar-content {
@@ -7153,6 +7153,7 @@ code {
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
+    height:100%;
 }
 
 .ibox-content2 {
@@ -11468,8 +11469,20 @@ body.skin-3 {
 }
 
 /*Timeslot Ashish End*/
-
-
+#DivBatch ul {
+    padding:0;
+    
+    margin-top:10px;
+}
+    #DivBatch ul li {
+        box-shadow: 1px 2px 5px 1px #888888 !important;
+        width: 32% !important;
+        margin-right: 5px;
+        display: inline-block !important;
+    }
+.ui-widget-content {
+    border:none !important;
+}
 
 
 

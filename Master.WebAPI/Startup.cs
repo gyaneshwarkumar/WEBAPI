@@ -16,6 +16,8 @@ using AutoMapper;
 using System.IO;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
+using FluentValidation.AspNetCore;
+using WebAPI.Filters;
 
 namespace WebAPI
 {
@@ -51,8 +53,8 @@ namespace WebAPI
                             ValidateLifetime = true,
                             ValidateIssuerSigningKey = true,
 
-                            ValidIssuer = "http://logcorner.com",
-                            ValidAudience = "http://logcorner.com",
+                            ValidIssuer = Configuration.GetSection("JwtSecurityToken:Issuer").Value,// "http://logcorner.com",
+                            ValidAudience = Configuration.GetSection("JwtSecurityToken:Audience").Value,
                             IssuerSigningKey = signingKey
                         };
 
@@ -89,7 +91,10 @@ namespace WebAPI
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddAutoMapper();
-            services.AddMvc();
+            services.AddMvc(opt =>
+            {
+                opt.Filters.Add(typeof(ValidatorActionFilter));
+            }).AddFluentValidation(fvc => fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
             services.AddCors(cfg =>
             {
                 cfg.AddPolicy("AnyGET", bldr =>

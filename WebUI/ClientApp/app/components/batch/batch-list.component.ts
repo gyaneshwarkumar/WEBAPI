@@ -3,7 +3,7 @@ import { Batch } from '../../_models/index';
 import { BatchService } from '../../_services/index';
 //Third Party js
 import { ToastrService } from 'toastr-ng2';
-import { InputTextModule, DataTableModule, ButtonModule, DialogModule } from 'primeng/primeng';
+import { InputTextModule, DataTableModule, ButtonModule, DialogModule, DataListModule } from 'primeng/primeng';
 
 class BatchInfo implements Batch {
     constructor(public id?, public acedemic_Year?, public batch_Name?, public course_Id?, public description?) { }
@@ -22,6 +22,7 @@ export class BatchComponent implements OnInit {
     displayDialog: boolean;
     displayDeleteDialog: boolean;
     newBatch: boolean;
+    acedemic_Year: string;
 
     constructor(private batchService: BatchService, private toastrService: ToastrService) {
 
@@ -36,6 +37,7 @@ export class BatchComponent implements OnInit {
         
         this.batchService.getBatchs()
             .subscribe(batchs => this.rowData = batchs,
+            
             error => console.log(error));
        
     }
@@ -106,12 +108,11 @@ export class BatchComponent implements OnInit {
                 .subscribe(response => {
                     this.editContactId = 0;
                     this.loadData();
-                    this.loadData();
                 });
             this.toastrService.error('Data Deleted Successfully');
-         
         }
         this.displayDeleteDialog = false;
+        this.loadData();
     }
 }
 

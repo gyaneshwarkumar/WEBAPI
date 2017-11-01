@@ -32,9 +32,10 @@ export class BatchService {
 
 
     saveBatch(batch: Batch): Observable<string> {
+        debugger;
         let body = JSON.stringify(batch);
         let profile = this.authProfile.getProfile();
-        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token, 'Content-Type': 'application/json', 'Accept': 'application/json' });
+        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token,'Content-Type': 'application/json', 'Accept': 'application/json' });
         let options = new RequestOptions({ headers: headers });
 
         return this.http.post(this.url, body, options)
@@ -45,7 +46,7 @@ export class BatchService {
     updateBatch(batch: Batch): Observable<string> {
         let body = JSON.stringify(batch);
         let profile = this.authProfile.getProfile();
-        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token, 'Content-Type': 'application/json', 'Accept': 'application/json' });
+        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token,'Content-Type': 'application/json', 'Accept': 'application/json' });
         let options = new RequestOptions({ headers: headers });
 
         
@@ -62,10 +63,10 @@ export class BatchService {
     deleteBatch(id: number): Observable<string> {
         var deleteByIdUrl = this.url + '/' + id
         let profile = this.authProfile.getProfile();
-        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token,  'Content-Type': 'application/json', 'Accept': 'application/json' });
+        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token,'Content-Type': 'application/json', 'Accept': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-        return this.http.delete(deleteByIdUrl, options)
-            .map(response => response.json())
+        return this.http.delete(deleteByIdUrl)
+            .map(response => response.json().message)
             .catch(this.handleError);
     }
 

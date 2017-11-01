@@ -25,27 +25,35 @@ namespace DataAccessLayer.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("Acedemic_Year");
+                    b.Property<string>("Academic_Year");
 
                     b.Property<string>("App_Status");
 
-                    b.Property<string>("Batch_Name");
+                    b.Property<int>("BatchInchargeId");
 
-                    b.Property<int?>("Course_Id");
-
-                    b.Property<DateTime?>("Created_Date");
+                    b.Property<int>("CourseId");
 
                     b.Property<string>("Del_Status");
 
                     b.Property<string>("Description");
 
+                    b.Property<int>("Duration");
+
+                    b.Property<string>("DurationType");
+
                     b.Property<DateTime?>("EndDate");
+
+                    b.Property<int>("PatternId");
 
                     b.Property<DateTime?>("StartDate");
 
+                    b.Property<int>("StartYear");
+
+                    b.Property<int>("SubCourseId");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Batchs");
+                    b.ToTable("AcademicYear");
                 });
 
             modelBuilder.Entity("DataAccessLayer.Course", b =>
@@ -64,6 +72,52 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.Semister", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("App_Status");
+
+                    b.Property<int>("Batch_Id");
+
+                    b.Property<int>("Course_Id");
+
+                    b.Property<string>("Del_Status");
+
+                    b.Property<string>("Description");
+
+                    b.Property<DateTime?>("EndDate");
+
+                    b.Property<string>("Semister_Name");
+
+                    b.Property<DateTime?>("StartDate");
+
+                    b.Property<int>("StartMonth");
+
+                    b.Property<int>("StartYear");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Semisters");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.SubCourse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CourseId");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Sub_Course");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SubCourses");
                 });
 
             modelBuilder.Entity("DataAccessLayer.User", b =>

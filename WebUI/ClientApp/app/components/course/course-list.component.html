@@ -1,4 +1,194 @@
-﻿<table style="width:80%;margin-left: 100px">
+﻿<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Create Course</h2>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<form class="form-horizontal" id="form1" novalidate (ngSubmit)="Batch(BatchForm)" #SubmitForm="ngForm" autocomplete="off">
+    <fieldset>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><b><font color="#1ab394">Fill Course Information</font></b></h5>
+
+                        </div>
+
+
+                        <div class="ibox-content">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Course Name</label>
+
+                                    <div class="col-sm-10">
+                                        <input name="course_Name" type="text" [(ngModel)]="course.course_Name" id="txtcourse_Name" class="form-control" style="background-color:White;">
+                                    </div>
+                                </div>
+
+
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">
+                                        Description
+                                        <br>
+                                    </label>
+                                    <div class="col-sm-10">
+                                        <div class="i-checks">
+                                            <input name="description" type="text" [(ngModel)]="course.description" id="txtdescription" class="form-control" style="background-color:White;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none">
+                                    <input name="txtmsg" type="text" id="txtmsg" class="demo3">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <input type="submit" name="btnclear" value="Clear" id="btnclear" class="btn btn-sm btn-primary pull-right m-t-n-xs" style="margin-right:10%;margin-left:10px;">
+                                        <input type="submit" name="btnSubmit" value="Save Changes" (click)="save(course)" id="btnSubmit" class="btn btn-sm btn-primary pull-right m-t-n-xs">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ibox-content">
+                            <div>
+                                <p-dataTable [value]="rowData" [rows]="10" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[5,10,20]" class="table table-striped table-bordered table-hover ">
+                                    <p-column field="id" [style]="{'width':'50px'}" header="Sr. No." [sortable]="true"></p-column>
+                                    <p-column field="course_Name" header="Course Name" [sortable]="true"></p-column>
+                                    <p-column field="description" header="description" [sortable]="true"></p-column>
+                                    <p-column header="Edit">
+                                        <ng-template let-col let-course="rowData" pTemplate type="body">
+                                            <button type="button" pButton icon="fa-check" (click)="showDialogToEdit(course)" label="Edit"></button>
+                                        </ng-template>
+                                    </p-column>
+                                    <footer><div class="ui-helper-clearfix" style="width:100%"></div></footer>
+                                </p-dataTable>
+                            </div>
+                        </div>
+
+                        <!--<p-dialog header="Confirm Deletion" [(visible)]="displayDeleteDialog" modal="modal" showEffect="fade">
+                            <p>
+                                Are you sure to delete the following course?
+                            </p>
+                            <p>
+                                <strong>{{ fullname }}</strong><br />
+                            </p>
+                            <footer>
+                                <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                                    <button type="button" pButton icon="fa-close" (click)="okDelete(false)" label="No"></button>
+                                    <button type="button" pButton icon="fa-check" (click)="okDelete(true)" label="Yes"></button>
+                                </div>
+                            </footer>
+                        </p-dialog>-->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="col-lg-7">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><font color="#1ab394">Please Create the New Batch Below :</font></h5>
+
+                </div>
+
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="form-horizontal">
+
+
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Select Course</label>
+                                <div class="col-lg-10 col-lg-4-width">
+                                    <select class="form-control m-b" cellpadding="4" cellspacing="4" style="width:200px;"
+                                            [(ngModel)]="batch.course_Name" name="course_Name">
+                                        <option selected="selected" value="">Please select a Course</option>
+                                        <option *ngFor="let course of courses"
+                                                [ngValue]="course.course_Name">
+                                            {{course.course_Name}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-4-width3">
+                            <h4>
+                                Please provide tentative start and end dates for all the Semesters below. You can also edit it later.
+                            </h4>
+                        </div>
+                        <br>
+
+                        <div class="col-sm-6 col-lg-4-width3">
+
+                            <div>
+                                <table class="col-lg-4-width5" cellspacing="0" id="gv_leadsource" style="width:100%;border-collapse:collapse;">
+                                    <tbody>
+                                        <tr style="color:Red;font-weight:bold;">
+                                            <td colspan="3">
+                                                <div id="gv_leadsource_divgridError">
+                                                    <p id="error" class="info">
+                                                        <span class="info_inner">
+                                                            <span id="gv_leadsource_lbl_divError">No Record Found.</span>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                            <div class="col-lg-11 control-label">
+
+
+                                <input type="submit" name="btnclear" value="Clear" id="btnclear" class="btn btn-sm btn-primary pull-right m-t-n-xs" style="margin-right:10%;">
+
+
+                            </div>
+                            <div class="col-lg-1">
+
+
+                                <input type="submit" name="btnSubmit" value="Save Changes" (click)="save(batch)" id="btnSubmit" class="btn btn-sm btn-primary pull-right m-t-n-xs">
+                            </div>
+
+
+                            <br>
+                            <br>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>-->
+
+    </fieldset>
+</form>
+
+
+
+
+<!--<table style="width:80%;margin-left: 100px">
     <tr>
         <td>
             <h2>Course Details</h2>
@@ -67,29 +257,4 @@
             </div>
         </td>
     </tr>
-</table>
- 
-
-<!--<p>This component demonstrates fetching data from the server.</p>
-
-<p *ngIf="!forecasts"><em>Loading...</em></p>
-
-<table class='table'>
-    <thead>
-        <tr>
-            <th>Date</th>
-            <th>Temp. (C)</th>
-            <th>Temp. (F)</th>
-           
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let course of courses">
-            <td>{{course.id}}</td>
-            <td>{{course.courseName}}</td>
-            <td>{{ course.description  }}</td>
-           
-        </tr>
-    </tbody>
 </table>-->
-

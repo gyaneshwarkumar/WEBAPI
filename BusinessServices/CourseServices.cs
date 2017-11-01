@@ -112,7 +112,7 @@ namespace BusinessServices
 
              var course = _mapper.Map<CourseEntity, Course>(courseEntity);
             var success = false;
-            if (courseEntity != null && course.Id== courseId)
+            if (courseEntity != null && course.Id==courseId)
             {
 
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,6 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
 using System.Threading.Tasks;
+using Token.WebApiCore.Server.Filters;
 using Token.WebApiCore.Server.Models;
 
 namespace Authentication.Server
@@ -38,7 +40,10 @@ namespace Authentication.Server
             services.AddSingleton(Configuration);
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc(opt =>
+            {
+                opt.Filters.Add(typeof(ValidatorActionFilter));
+            }).AddFluentValidation(fvc => fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
             SetUpDataBase(services);
 
             var secretKey = Configuration.GetSection("JwtSecurityToken:Key").Value;

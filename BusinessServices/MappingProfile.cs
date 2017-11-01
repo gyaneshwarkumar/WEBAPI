@@ -17,6 +17,13 @@ namespace BusinessServices
 
             CreateMap<Batch, BatchEntity>();
             CreateMap<BatchEntity, Batch>();
+
+            CreateMap<SubCourse, SubCourseEntity>();
+            CreateMap<SubCourseEntity, SubCourse>();
+
+            CreateMap<Semister, SemisterEntity>();
+            CreateMap<SemisterEntity, Semister>();
+
         }
     }
 }

@@ -27,7 +27,10 @@ namespace DataAccessLayer
         public DbSet<User> Users { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Batch> Batchs { get; set; }
-
+        public DbSet<SubCourse> SubCourses { get; set; }
+       // public DbSet<AcademicYear> AcademicYears { get; set; }
+        public DbSet<Semister> Semisters { get; set; }
+//        public DbSet<Student> Students { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()

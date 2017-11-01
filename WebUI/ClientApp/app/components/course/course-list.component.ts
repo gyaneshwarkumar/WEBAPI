@@ -36,7 +36,7 @@ export class CourseComponent implements OnInit {
     }
 
     loadData() {
-        this.courseService.getCourses()
+         this.courseService.getCourses()
             .subscribe(courses => this.rowData = courses,
             error => console.log(error));
     }
@@ -69,6 +69,7 @@ export class CourseComponent implements OnInit {
     }
 
     save(course) {
+        debugger;
         this.courseService.saveCourse(this.course)
             .subscribe(response => {
                 this.course.id > 0 ? this.toastrService.success('Data updated Successfully') :
@@ -101,13 +102,11 @@ export class CourseComponent implements OnInit {
             this.courseService.deleteCourse(this.course.id)
                 .subscribe(response => {
                     this.editContactId = 0;
-                    this.loadData();
                 });
             this.toastrService.error('Data Deleted Successfully');
-            
         }
         this.displayDeleteDialog = false;
-       
+        this.loadData();
     }
 }
 

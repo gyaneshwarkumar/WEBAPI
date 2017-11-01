@@ -1,0 +1,10 @@
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.deps.json
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.runtimeconfig.json
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.runtimeconfig.dev.json
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.dll
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.pdb
+C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.AssemblyInfoInputs.cache
+C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.AssemblyInfo.cs
+C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.dll
+C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.pdb

@@ -34,7 +34,7 @@ export class CourseService {
     saveCourse(course: Course): Observable<string> {
         let body = JSON.stringify(course);
         let profile = this.authProfile.getProfile();
-        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token,'Content-Type': 'application/json', 'Accept': 'application/json' });
+        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token , 'Content-Type': 'application/json', 'Accept': 'application/json' });
         let options = new RequestOptions({ headers: headers });
 
         return this.http.post(this.url, body, options)
@@ -45,7 +45,7 @@ export class CourseService {
     updateCourse(course: Course): Observable<string> {
         let body = JSON.stringify(course);
         let profile = this.authProfile.getProfile();
-        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token, 'Content-Type': 'application/json', 'Accept': 'application/json' });
+        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token , 'Content-Type': 'application/json', 'Accept': 'application/json' });
         let options = new RequestOptions({ headers: headers });
 
         return this.http.put(this.url + '/' + course.id , body, options)
@@ -60,11 +60,11 @@ export class CourseService {
  
     //Delete Operation
     deleteCourse(id: number): Observable<string> {
-        var deleteByIdUrl = this.url + '/' + id
+        var deleteByIdUrl = this.url + '/' + id;
         let profile = this.authProfile.getProfile();
-        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token,  'Content-Type': 'application/json', 'Accept': 'application/json' });
+        let headers = new Headers({ 'Authorization': 'Bearer ' + profile.token, 'Content-Type': 'application/json', 'Accept': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-        return this.http.delete(deleteByIdUrl, options)
+        return this.http.delete(deleteByIdUrl)
             .map(response => response.json())
             .catch(this.handleError);
     }

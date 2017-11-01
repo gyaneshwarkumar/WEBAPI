@@ -21,8 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\app\components\batch\addbatch.component.ts" />
     <None Remove="ClientApp\app\components\batch\batch-list.component.ts" />
     <None Remove="ClientApp\app\components\course\course-list.component.ts" />
+    <None Remove="ClientApp\app\components\login\index.ts" />
     <None Remove="ClientApp\app\components\login\login.component.ts" />
     <None Remove="ClientApp\app\components\Registration\signup-list.component.ts" />
     <None Remove="ClientApp\app\user\index.ts" />
@@ -39,6 +41,7 @@
     <None Remove="ClientApp\app\_services\login.service.ts" />
     <None Remove="ClientApp\app\_services\signup.service.ts" />
     <None Remove="ClientApp\common\headers.ts" />
+    <None Remove="ClientApp\common\MyNgInclude.component.ts" />
     <None Remove="ClientApp\shared\common.service.ts" />
     <None Remove="ClientApp\shared\shared.module.ts" />
   </ItemGroup>
@@ -82,8 +85,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\components\batch\addbatch.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\batch\batch-list.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\course\course-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\login\index.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\login\login.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Registration\signup-list.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\user\index.ts" />
@@ -102,6 +107,7 @@
     <TypeScriptCompile Include="ClientApp\app\_services\signup.service.ts" />
     <TypeScriptCompile Include="ClientApp\common\auth.guard.ts" />
     <TypeScriptCompile Include="ClientApp\common\headers.ts" />
+    <TypeScriptCompile Include="ClientApp\common\MyNgInclude.component.ts" />
     <TypeScriptCompile Include="ClientApp\shared\common.service.ts" />
     <TypeScriptCompile Include="ClientApp\shared\shared.module.ts" />
   </ItemGroup>

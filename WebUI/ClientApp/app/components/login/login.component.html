@@ -1,38 +1,69 @@
-﻿<table style="width:80%;margin-left: 100px">
-    <tr>
-        <td>
-            <h2>Login</h2>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <br />
-            <div class="ContentSideSections Implementation">
-                <p-dialog header="Signup Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
-                    <div class="ui-grid ui-grid-responsive ui-fluid ui-grid-pad">
-                        <div class="ui-grid-row">
-                            <div class="ui-grid-col-4"><label for="courseName">Email</label></div>
-                            <div class="ui-grid-col-8"><input pInputText id="vin" [(ngModel)]="signup.email" /></div>
-                        </div>
-                        <div class="ui-grid-row">
-                            <div class="ui-grid-col-4"><label for="description">Password</label></div>
-                            <div class="ui-grid-col-8"><input pInputText id="lastname" [(ngModel)]="signup.password" type="password"/></div>
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pune Institute of Business Management | Login</title>
+
+</head>
+<body>
+
+
+    <form class="form-horizontal" id="form1" novalidate (ngSubmit)="login(loginForm)" #loginForm="ngForm" autocomplete="off">
+        <fieldset>
+            <div class="middle-box text-center loginscreen animated fadeInDown">
+                <div>
+
+                    <div>
+                        <h1 class="logo-name"><img src="../../../../wwwroot/resources/images/Logo/LOGO.png" /></h1>
+                    </div>
+                    <h3 style="color:white">Welcome to Pune Institute of Business Management</h3>
+                    <div class="form-group" [ngClass]="{'has-error': (userNameVar.touched || userNameVar.dirty) && !userNameVar.valid }">
+
+                        <div class="col-md-12">
+                            <input class="form-control" style="padding: 6px 12px; width: 100%;" id="userNameId" type="text" placeholder="User Name (required)" required [(ngModel)]="signup.email" name="userName" #userNameVar="ngModel" />
+                            <span class="help-block" *ngIf="(userNameVar.touched ||
+                                                         userNameVar.dirty) &&
+                                                         userNameVar.errors">
+                                <span *ngIf="userNameVar.errors.required">
+                                    User name is required.
+                                </span>
+                            </span>
                         </div>
                     </div>
-                    <footer>
-                        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
-                            <button type="button" pButton icon="fa-close" (click)="cancel()" label="Cancel"></button>
-                            <button type="button" pButton icon="fa-check" (click)="save(signup)" label="Sign Up"></button>
+                    <div class="form-group" [ngClass]="{'has-error': (passwordVar.touched || passwordVar.dirty) && !passwordVar.valid }">
+                        <div class="col-md-12">
+                            <input class="form-control" style="padding: 6px 12px; width: 100%;"
+                                   id="passwordId"
+                                   type="password"
+                                   placeholder="Password (required)"
+                                   required
+                                   [(ngModel)]="signup.password"
+                                   name="password"
+                                   #passwordVar="ngModel" />
+                            <span class="help-block" *ngIf="(passwordVar.touched ||  passwordVar.dirty) && passwordVar.errors">
+                                <span *ngIf="passwordVar.errors.required">
+                                    Password is required.
+                                </span>
+                            </span>
                         </div>
-                    </footer>
-                </p-dialog>
-                
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <span>
+                                <button class="btn btn-primary block full-width m-b" type="submit" (click)="save(signup)">
+                                    Log In
+                                </button>
+                                <a href="forgotPassword.aspx"><small><font color="white"><b>Forgot password?</b></font></small></a>
+                                <p class="text-muted text-center" style="display:none;"><small><font color="green"><b> Not have an account?</b></font></small></p>
+                                <a class="btn btn-sm btn-white btn-block" href="#" style="line-height:1.42857143 !important;border-radius:4px;">Create an account</a>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </td>
-    </tr>
-</table>
+        </fieldset>
+    </form>
+</body>
+</html>

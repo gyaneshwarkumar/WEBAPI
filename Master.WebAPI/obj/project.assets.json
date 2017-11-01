@@ -15,6 +15,20 @@
           "lib/netstandard1.1/Autofac.dll": {}
         }
       },
+      "Autofac.Extensions.DependencyInjection/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "AutoMapper/6.1.1": {
         "type": "package",
         "dependencies": {
@@ -56,6 +70,32 @@
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "FluentValidation/7.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/7.2.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "7.2.1",
+          "Microsoft.AspNetCore.Mvc": "1.1.2",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/FluentValidation.AspNetCore.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -2707,6 +2747,97 @@
           "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
         }
       },
+      "Microsoft.VisualStudio.OLE.Interop/7.10.6070": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop/7.10.6071": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.10.0/10.0.30319": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.11.0/11.0.61030": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.8.0/8.0.50727": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.TextManager.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.TextManager.Interop/7.10.6070": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.TextManager.Interop.8.0/8.0.50727": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll": {}
+        }
+      },
       "Microsoft.VisualStudio.Web.BrowserLink/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -5090,6 +5221,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "FluentValidation.AspNetCore": "7.2.1",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0"
         },
@@ -5170,6 +5302,17 @@
         "lib/netstandard1.1/Autofac.xml"
       ]
     },
+    "Autofac.Extensions.DependencyInjection/4.2.0": {
+      "sha512": "cqBmgg9y7ahGbt7CPdvZFL6bA0PEwFyhIofUoUxEteZc+d0yNnE6ZvIWxHEM2F2HPJlC9SRnHWiZQq8r53moAw==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/4.2.0",
+      "files": [
+        "autofac.extensions.dependencyinjection.4.2.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
     "AutoMapper/6.1.1": {
       "sha512": "A+6PAblvzmkXPS20nFBQJvlNSW5oEdyfN5+cxT/Du35fTNyuP5pNDXT64KT/jBgxt7CPduOM0Y7oLnNe0E5IXg==",
       "type": "package",
@@ -5193,6 +5336,32 @@
         "automapper.extensions.microsoft.dependencyinjection.3.0.1.nupkg.sha512",
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "FluentValidation/7.2.1": {
+      "sha512": "cQza24pZdc1aPziHNPOazZzg2/5l8S1zbnIpjKMBq8kopRAGj+YXqGyP8Xo4OIqV16SccmzU1hhKV3Q7FyXglg==",
+      "type": "package",
+      "path": "fluentvalidation/7.2.1",
+      "files": [
+        "fluentvalidation.7.2.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net45/FluentValidation.dll",
+        "lib/net45/FluentValidation.xml",
+        "lib/netstandard1.0/FluentValidation.dll",
+        "lib/netstandard1.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/7.2.1": {
+      "sha512": "l5NME8hnSMs61vIQez0nEqmB5YBa88j+o+Q8ar9/ALaNKeVgyDtnjIIGy24N44Lwwd0LUMg/6hEwK+51T+iAoQ==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/7.2.1",
+      "files": [
+        "fluentvalidation.aspnetcore.7.2.1.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net451/FluentValidation.AspNetCore.dll",
+        "lib/net451/FluentValidation.AspNetCore.xml",
+        "lib/netstandard1.6/FluentValidation.AspNetCore.dll",
+        "lib/netstandard1.6/FluentValidation.AspNetCore.xml"
       ]
     },
     "Libuv/1.10.0": {
@@ -7776,6 +7945,83 @@
         "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.xml",
         "microsoft.rest.clientruntime.azure.3.3.7.nupkg.sha512",
         "microsoft.rest.clientruntime.azure.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.OLE.Interop/7.10.6070": {
+      "sha512": "p7xNzxIoZWDqSGlCi84u1CsNSL9YL7HWBdurfBUW8TZOsfW/0DS8/2MQcicQZav2Csq1f7Pep+VRdZJZkmQKJA==",
+      "type": "package",
+      "path": "microsoft.visualstudio.ole.interop/7.10.6070",
+      "files": [
+        "lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "lib/Microsoft.VisualStudio.OLE.Interop.xml",
+        "microsoft.visualstudio.ole.interop.7.10.6070.nupkg.sha512",
+        "microsoft.visualstudio.ole.interop.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop/7.10.6071": {
+      "sha512": "zQaXvg+ykyftZm6jVCiJbCoVNH+uDqzYE5d3rTM8YeVwv0VvwVq+d+rvYIGLtYpQ0Z/UDnyxUsew1hNjx/HaGQ==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop/7.10.6071",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.xml",
+        "microsoft.visualstudio.shell.interop.7.10.6071.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.10.0/10.0.30319": {
+      "sha512": "BW9cz16ODOZKJQjEJIudBQ53HvD6fZLEK7ef3Rb6msUXMjnp3b7Gwx2FOgPEnOAAkfQQdUg6F3gQ4GAmZ5YYQA==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.10.0/10.0.30319",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.10.0.xml",
+        "microsoft.visualstudio.shell.interop.10.0.10.0.30319.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.10.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.11.0/11.0.61030": {
+      "sha512": "RzLpCC2UUOmr0fRt2EC/I+bLd2ktslzjNmd8zIYzvHWWqJ5RDUWzc5koFgrUFVUIOOUGWfnk5WcW4fl7qhijGg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.11.0/11.0.61030",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.11.0.xml",
+        "microsoft.visualstudio.shell.interop.11.0.11.0.61030.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.11.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.8.0/8.0.50727": {
+      "sha512": "Yana6Gz2o/i0NHE51TDI+lImC0HRbGNZGRCROBcKKgwz6jHSH9v1erirt6YHZPC6Qa22KIYgJ6FKBln+NkjHzw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.8.0/8.0.50727",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.8.0.xml",
+        "microsoft.visualstudio.shell.interop.8.0.8.0.50727.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.8.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.TextManager.Interop/7.10.6070": {
+      "sha512": "XZfTrFgqX17B180BaZhGlwcTQUhjsLS4DXveEcCaFy+3NGdxVZ+ySxk16FBjDEhiWtM/J7gungInLR+aVwq7ZQ==",
+      "type": "package",
+      "path": "microsoft.visualstudio.textmanager.interop/7.10.6070",
+      "files": [
+        "lib/Microsoft.VisualStudio.TextManager.Interop.dll",
+        "lib/Microsoft.VisualStudio.TextManager.Interop.xml",
+        "microsoft.visualstudio.textmanager.interop.7.10.6070.nupkg.sha512",
+        "microsoft.visualstudio.textmanager.interop.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.TextManager.Interop.8.0/8.0.50727": {
+      "sha512": "Wdx4gfPfESyGf1LJy5pf2yqjLknyFUHt3Y2iq5T820ESvskLEDnnJdOkRrtA+0HqIvd7HhCQ8PyDGFsg55z0gA==",
+      "type": "package",
+      "path": "microsoft.visualstudio.textmanager.interop.8.0/8.0.50727",
+      "files": [
+        "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll",
+        "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.xml",
+        "microsoft.visualstudio.textmanager.interop.8.0.8.0.50727.nupkg.sha512",
+        "microsoft.visualstudio.textmanager.interop.8.0.nuspec"
       ]
     },
     "Microsoft.VisualStudio.Web.BrowserLink/2.0.0": {
@@ -13297,14 +13543,17 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 3.0.1",
+      "Autofac.Extensions.DependencyInjection >= 4.2.0",
       "BusinessServices >= 1.0.0",
       "DataAccessLayer >= 1.0.0",
+      "FluentValidation.AspNetCore >= 7.2.1",
       "IBusinessServices >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.AspNetCore.Authentication.Cookies >= 2.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 2.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
+      "Microsoft.VisualStudio.Shell.Interop.11.0 >= 11.0.61030",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0"
     ]
   },
@@ -13362,6 +13611,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.VisualStudio.Shell.Interop.11.0": {
+            "target": "Package",
+            "version": "11.0.61030"
+          },
           "Microsoft.AspNetCore.Authentication.Cookies": {
             "target": "Package",
             "version": "2.0.0"
@@ -13369,6 +13622,14 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "3.0.1"
+          },
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "7.2.1"
+          },
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "4.2.0"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -13399,5 +13660,77 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.VisualStudio.OLE.Interop 7.10.6070' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.VisualStudio.OLE.Interop",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.VisualStudio.Shell.Interop 7.10.6071' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.VisualStudio.Shell.Interop",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.VisualStudio.Shell.Interop.10.0 10.0.30319' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.VisualStudio.Shell.Interop.10.0",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.VisualStudio.Shell.Interop.11.0 11.0.61030' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.VisualStudio.Shell.Interop.11.0",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.VisualStudio.Shell.Interop.8.0 8.0.50727' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.VisualStudio.Shell.Interop.8.0",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.VisualStudio.TextManager.Interop 7.10.6070' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.VisualStudio.TextManager.Interop",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.VisualStudio.TextManager.Interop.8.0 8.0.50727' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.VisualStudio.TextManager.Interop.8.0",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

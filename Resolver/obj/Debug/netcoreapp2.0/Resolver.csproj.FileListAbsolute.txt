@@ -28,9 +28,9 @@ E:\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.pdb
 C:\POC\WebAPI\Resolver\bin\Debug\netcoreapp2.0\Resolver.deps.json
 C:\POC\WebAPI\Resolver\bin\Debug\netcoreapp2.0\Resolver.dll
 C:\POC\WebAPI\Resolver\bin\Debug\netcoreapp2.0\Resolver.pdb
-C:\POC\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.csprojResolveAssemblyReference.cache
 C:\POC\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.csproj.CoreCompileInputs.cache
 C:\POC\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.AssemblyInfoInputs.cache
 C:\POC\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.AssemblyInfo.cs
 C:\POC\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.dll
 C:\POC\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.pdb
+C:\POC\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.csprojResolveAssemblyReference.cache

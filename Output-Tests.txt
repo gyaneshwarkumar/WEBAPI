@@ -1,0 +1,8 @@
+﻿[11/1/2017 11:31:35 AM Informational] ------ Load Playlist started ------
+[11/1/2017 11:31:35 AM Informational] ========== Load Playlist finished (0:00:00.0220589) ==========
+[11/1/2017 11:31:35 AM Informational] ------ Discover test started ------
+[11/1/2017 11:31:41 AM Informational] ========== Discover test finished: 3 found (0:00:06.2024711) ==========
+[11/1/2017 12:54:39 PM Informational] ------ Discover test started ------
+[11/1/2017 12:54:43 PM Informational] ========== Discover test finished: 3 found (0:00:03.7370852) ==========
+[11/1/2017 1:00:28 PM Error] A task was canceled.
+[11/1/2017 1:03:29 PM Error] A task was canceled.

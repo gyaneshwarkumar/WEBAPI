@@ -11,8 +11,8 @@ using System;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(DbEntities))]
-    [Migration("20171026064546_dbcontext")]
-    partial class dbcontext
+    [Migration("20171101094431_mymijlg")]
+    partial class mymijlg
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -46,7 +46,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Batchs");
+                    b.ToTable("AcademicYear");
                 });
 
             modelBuilder.Entity("DataAccessLayer.Course", b =>
@@ -65,6 +65,52 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.Semister", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("App_Status");
+
+                    b.Property<int>("Batch_Id");
+
+                    b.Property<int>("Course_Id");
+
+                    b.Property<string>("Del_Status");
+
+                    b.Property<string>("Description");
+
+                    b.Property<DateTime?>("EndDate");
+
+                    b.Property<string>("Semister_Name");
+
+                    b.Property<DateTime?>("StartDate");
+
+                    b.Property<int>("StartMonth");
+
+                    b.Property<int>("StartYear");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Semisters");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.SubCourse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CourseId");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Sub_Course");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SubCourses");
                 });
 
             modelBuilder.Entity("DataAccessLayer.User", b =>
