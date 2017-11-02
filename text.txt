@@ -1,0 +1,16 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=DESKTOP-TNSM1B0\\MSSQLSERVER2012;User Id=;password=;Database=;Trusted_Connection=True;MultipleActiveResultSets=true;"
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "JwtSecurityToken": {
+    "Key": "YouCannotAlterTokenIfYouCannotHoldThisVeryLongKey",
+    "Issuer": "http://logcorner.com",
+    "Audience": "http://logcorner.com"
+  }
+}
