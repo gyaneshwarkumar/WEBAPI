@@ -42,3 +42,4 @@ C:\POC\WebAPI\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Serve
 C:\POC\WebAPI\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.dll
 C:\POC\WebAPI\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.pdb
 C:\POC\WebAPI\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI\Authentication.Server\bin\Debug\netcoreapp2.0\appsettings.json

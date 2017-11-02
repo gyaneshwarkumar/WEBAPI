@@ -1,4 +1,835 @@
-﻿<table style="width:80%;margin-left: 100px">
+﻿<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>
+            <span id="lblUser">Add User Details</span>
+        </h2>
+    </div>
+    <div class="col-lg-2">   </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><font color="#1ab394">Please Fill User Information Below:</font></h5>
+                </div>
+                <div id="DivContent" class="ibox-content">
+
+                    <div style="display: block;" class="portlet-content">
+
+
+                    </div>
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">First Name</label>
+                            <span id="lblSubMsg" style="color:Red;"></span>
+                            <div class="col-sm-10">
+                                <input name="firstName" type="text" id="txtfirstName" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Last Name</label>
+                            <div class="col-sm-10">
+                                <input name="LastName" type="text" id="txtlastname" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Email/UserName</label>
+                            <div class="col-sm-10">
+                                <input name="email" type="text" [(ngModel)]="signup.email" id="txtemail" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input name="password" type="password" [(ngModel)]="signup.password" id="txtpassword" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Confirm Password</label>
+                            <div class="col-sm-10">
+                                <div class="ui-grid-col-8"><input pInputText id="lastname" class="form-control" [(ngModel)]="signup.confirmPassword" required type="password" style="background-color:White;width:200px;" /></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Contact No</label>
+                            <div class="col-sm-10">
+                                <input name="contact" type="text" id="txtcontact" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Reporting Head</label>
+                            <div class="col-sm-10">
+                                <div class="i-checks">
+                                    <select name="ddlReportingHead" id="ddlReportingHead" class="form-control m-b" style="width:200px;">
+                                        <option value="0">Select</option>
+                                        <option value="1">devdatta kolte Kolted</option>
+                                        <option value="8432">Pree  Khadate </option>
+                                        <option value="8461">Rahul Sonawane</option>
+                                        <option value="8465">Manoj Bhosale</option>
+                                        <option value="8553">Vishal Chauhan</option>
+                                        <option value="8554">Amol Chauhan</option>
+                                        <option value="8555">Manoj  Suryawanshii</option>
+                                        <option value="8556">Ayesha  Shaikh</option>
+
+                                    </select>
+                                    <span id="reqhead" style="color:Red;visibility:hidden;">*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label text-p">State</label>
+
+                            <div class="col-sm-10 text-p">
+                                <input name="state" type="text" id="txtstate" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label text-p">City</label>
+
+                            <div class="col-sm-10 text-p">
+                                <input name="city" type="text" id="txtcity" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Address</label>
+
+                            <div class="col-sm-10">
+                                <input name="address" type="text" id="txtaddress" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                User Role<br>
+                            </label>
+                            <div class="col-sm-10">
+                                <div class="i-checks">
+                                    <div id="updatepanel4">
+
+
+                                        <select name="ddlUserCategory" id="ddlUserCategory" class="form-control m-b" style="width:200px;">
+                                            <option value="0">Select</option>
+                                            <option value="2004">Academic Head</option>
+                                            <option value="3007">Driver</option>
+                                            <option value="3008">Facility Manager</option>
+                                            <option value="3006">IT Engineer</option>
+                                            <option value="1002">Mentor</option>
+                                            <option value="3009">Online Registration</option>
+                                            <option value="3">Staff</option>
+                                            <option value="3010">Store Manager</option>
+                                            <option value="1">SuperAdmin</option>
+                                            <option value="1004">Telecaller</option>
+                                            <option value="2005">Top Management</option>
+                                            <option value="3005">Web site User</option>
+
+                                        </select>
+                                        <span id="requiredrol" style="color:Red;visibility:hidden;">*</span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="userAccessRoles" class="thepet">
+                        <div class="box2">
+                            <div class="breadcrumb"> <h3><font color="#F58634">Please Tick(√) on module name which you want to give access to this user account</font></h3></div>
+
+                            <div id="upd">
+
+
+                                <div style="overflow: scroll;" onscroll="OnScrollDiv(this)" id="DivMainContent">
+                                    <div>
+                                        <table class="table table-striped table-bordered table-hover" cellspacing="0" id="gv_List" style="width:100%;border-collapse:collapse;">
+                                            <tbody>
+                                                <tr>
+                                                    <th align="center" scope="col" style="font-weight:bold;">Module Name</th>
+                                                    <th class="center" align="center" scope="col">
+                                                        <input id="gv_List_checkAll" type="checkbox" name="gv_List$ctl01$checkAll" onclick="checkAll(this);">
+
+                                                    </th>
+                                                    <th align="center" scope="col" style="width:10%;">&nbsp;</th>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Profile</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_0" type="checkbox" name="gv_List$ctl02$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl02$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_0"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Pre-Reading</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_1" type="checkbox" name="gv_List$ctl03$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl03$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_1"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Presentation</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_2" type="checkbox" name="gv_List$ctl04$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl04$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_2"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Case Study</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_3" type="checkbox" name="gv_List$ctl05$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl05$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_3"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Viva</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_4" type="checkbox" name="gv_List$ctl06$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl06$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_4"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>MCQ</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_5" type="checkbox" name="gv_List$ctl07$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl07$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_5"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Change Password</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_6" type="checkbox" name="gv_List$ctl08$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl08$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_6"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Profile</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_7" type="checkbox" name="gv_List$ctl09$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl09$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_7"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Subjects</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_8" type="checkbox" name="gv_List$ctl10$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl10$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_8"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Student List</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_9" type="checkbox" name="gv_List$ctl11$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl11$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_9"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>MCQ</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_10" type="checkbox" name="gv_List$ctl12$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl12$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_10"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Change Password</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_11" type="checkbox" name="gv_List$ctl13$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl13$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_11"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Assignment</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_12" type="checkbox" name="gv_List$ctl14$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl14$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_12"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Reports</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_13" type="checkbox" name="gv_List$ctl15$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl15$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_13"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Assignments Report</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_14" type="checkbox" name="gv_List$ctl16$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl16$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_14"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Subjectwise Entire Report</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_15" type="checkbox" name="gv_List$ctl17$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl17$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_15"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>PreReading Reports</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_16" type="checkbox" name="gv_List$ctl18$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl18$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_16"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Preasenation Reports</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_17" type="checkbox" name="gv_List$ctl19$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl19$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_17"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>CaseStudy Reports</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_18" type="checkbox" name="gv_List$ctl20$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl20$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_18"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Vehicle</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_19" type="checkbox" name="gv_List$ctl21$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl21$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_19"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Driver</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_20" type="checkbox" name="gv_List$ctl22$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl22$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_20"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Fill Oil</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_21" type="checkbox" name="gv_List$ctl23$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl23$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_21"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Vehicle Maintainance</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_22" type="checkbox" name="gv_List$ctl24$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl24$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_22"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Transport Dashboard</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_23" type="checkbox" name="gv_List$ctl25$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl25$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_23"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Apply Online</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_24" type="checkbox" name="gv_List$ctl26$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl26$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_24"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Register Compaint</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_25" type="checkbox" name="gv_List$ctl27$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl27$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_25"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Complaint List</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_26" type="checkbox" name="gv_List$ctl28$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl28$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_26"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My MCQ's Tests</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_27" type="checkbox" name="gv_List$ctl29$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl29$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_27"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>journeys Histroy</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_28" type="checkbox" name="gv_List$ctl30$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl30$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_28"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Daywise Schedule</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_29" type="checkbox" name="gv_List$ctl31$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl31$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_29"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Home</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_30" type="checkbox" name="gv_List$ctl32$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl32$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_30"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>TimeTable Schedule</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_31" type="checkbox" name="gv_List$ctl33$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl33$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_31"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Messeges</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_32" type="checkbox" name="gv_List$ctl34$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl34$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_32"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Download Links</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_33" type="checkbox" name="gv_List$ctl35$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl35$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_33"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Inbox</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_34" type="checkbox" name="gv_List$ctl36$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl36$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_34"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Tasksheet</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_35" type="checkbox" name="gv_List$ctl37$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl37$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_35"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Home</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_36" type="checkbox" name="gv_List$ctl38$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl38$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_36"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Home</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_37" type="checkbox" name="gv_List$ctl39$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl39$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_37"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Weekly Attendance Report</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_38" type="checkbox" name="gv_List$ctl40$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl40$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_38"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Inbox</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_39" type="checkbox" name="gv_List$ctl41$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl41$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_39"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Imp Dates</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_40" type="checkbox" name="gv_List$ctl42$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl42$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_40"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Imp  Dates</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_41" type="checkbox" name="gv_List$ctl43$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl43$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_41"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Viva</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_42" type="checkbox" name="gv_List$ctl44$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl44$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_42"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My MCQ Result</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_43" type="checkbox" name="gv_List$ctl45$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl45$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_43"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>MCQ RESULT</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_44" type="checkbox" name="gv_List$ctl46$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl46$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_44"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>MY Weekly Engegement Sheet</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_45" type="checkbox" name="gv_List$ctl47$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl47$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_45"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>My Engagement</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_46" type="checkbox" name="gv_List$ctl48$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl48$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_46"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Online Exam</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_47" type="checkbox" name="gv_List$ctl49$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl49$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_47"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="acess- ">
+                                                    <td>Evaluation</td>
+                                                    <td class="center" align="center">
+                                                        <div>
+                                                            <input id="gv_List_chkAddown_48" type="checkbox" name="gv_List$ctl50$chkAddown" onclick="javascript:setTimeout('__doPostBack(\'gv_List$ctl50$chkAddown\',\'\')', 0)">
+
+                                                        </div>
+
+                                                    </td>
+                                                    <td align="center" style="width:10%;">
+                                                        <span id="gv_List_lblTest_48"></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" name="hdd_StateId" id="hdd_StateId">
+                                <input type="hidden" name="hdd_CityId" id="hdd_CityId">
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="modal-footer">
+
+                        <input type="submit" name="btnSubmit" value="Save Changes" (click)="save(signup)" style="margin-top: 0px;margin-left: 10px;height: 34px;" id="btnSubmit" class="btn btn-sm btn-primary pull-right m-t-n-xs">
+                        <input type="submit" name="btnReset" value="Cancel" id="btnReset" class="btn">
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--<table style="width:80%;margin-left: 100px">
     <tr>
         <td>
             <h2>Signup Details</h2>
@@ -19,7 +850,7 @@
                             <div class="ui-grid-col-4"><label for="courseName">Email</label></div>
                             <div class="ui-grid-col-8">
                             <input pInputText id="email" [(ngModel)]="signup.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email"/></div>
-                          
+
                             </div>
                         <div class="ui-grid-row">
                             <div class="ui-grid-col-4"><label for="description">Password</label></div>
@@ -54,9 +885,7 @@
             </div>
         </td>
     </tr>
-</table>
-
-
+</table>-->
 <!--<p>This component demonstrates fetching data from the server.</p>
 
 <p *ngIf="!forecasts"><em>Loading...</em></p>
@@ -79,8 +908,6 @@
         </tr>
     </tbody>
 </table>-->
-
-
 <!--<div class="panel panel-success">
     <div class="panel-heading">
         {{pageTitle}}

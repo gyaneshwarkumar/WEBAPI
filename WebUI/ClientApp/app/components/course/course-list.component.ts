@@ -10,7 +10,7 @@ class CourseInfo implements Course {
 }
 
 @Component({
-    selector: 'course',
+    selector: 'add-course',
     templateUrl: './course-list.component.html'
 })
 export class CourseComponent implements OnInit {
@@ -33,6 +33,7 @@ export class CourseComponent implements OnInit {
     ngOnInit() {
         this.editContactId = 0;
         this.loadData();
+        this.newCourse = true;
     }
 
     loadData() {
@@ -69,7 +70,6 @@ export class CourseComponent implements OnInit {
     }
 
     save(course) {
-        debugger;
         this.courseService.saveCourse(this.course)
             .subscribe(response => {
                 this.course.id > 0 ? this.toastrService.success('Data updated Successfully') :

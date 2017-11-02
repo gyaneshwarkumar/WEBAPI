@@ -6,7 +6,9 @@ import { ToastrService } from 'toastr-ng2';
 import { InputTextModule, DataTableModule, ButtonModule, DialogModule, DataListModule } from 'primeng/primeng';
 
 class BatchInfo implements Batch {
-    constructor(public id?, public acedemic_Year?, public batch_Name?, public course_Id?, public description?) { }
+    constructor(public id?, public acedemic_Year?
+        //public batch_Name?, public course_Id?, public description?
+    ) { }
 }
 
 @Component({
@@ -56,9 +58,9 @@ export class BatchComponent implements OnInit {
         this.batch = new BatchInfo();
         this.batch.id = batch.id;
         this.batch.acedemic_Year = batch.acedemic_Year;
-        this.batch.batch_Name = batch.batch_Name;
-        this.batch.course_Id = batch.course_Id;
-        this.batch.description = batch.description;
+        //this.batch.batch_Name = batch.batch_Name;
+        //this.batch.course_Id = batch.course_Id;
+        //this.batch.description = batch.description;
 
         this.displayDialog = true;
 
@@ -95,9 +97,9 @@ export class BatchComponent implements OnInit {
 
     showDialogToDelete(batch: Batch) {
         this.batch.acedemic_Year = batch.acedemic_Year;
-        this.batch.batch_Name = batch.batch_Name;
-        this.batch.course_Id = batch.course_Id;
-        this.batch.description = batch.description;
+        //this.batch.batch_Name = batch.batch_Name;
+        //this.batch.course_Id = batch.course_Id;
+        //this.batch.description = batch.description;
         this.batch.id = batch.id;
         this.displayDeleteDialog = true;
     }

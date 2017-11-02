@@ -74,10 +74,18 @@ class AppBaseRequestOptions extends BaseRequestOptions {
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'course', component: CourseComponent },
             { path: 'batch', component: BatchComponent },
-            { path: 'addbatch', component: AddBatchComponent },
+            //{ path: 'addbatch', component: AddBatchComponent },
             //{ path: 'signup', component: SignupComponent },
             //{ path: 'login', component: LoginComponent },
+            {
+                path: 'addbatch',
+                component: AddBatchComponent,
+                children: [
+                    { path: 'course', component: CourseComponent }
+                ]
+            },
             { path: '**', redirectTo: 'login' }
+            
             //{ path: '', redirectTo: 'course', pathMatch: 'full' },
            
             //{ path: '**', redirectTo: 'course' }

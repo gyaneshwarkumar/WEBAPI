@@ -66,3 +66,4 @@ C:\POC\WebAPI\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.Assembly
 C:\POC\WebAPI\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.AssemblyInfo.cs
 C:\POC\WebAPI\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.dll
 C:\POC\WebAPI\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.pdb
+C:\POC\WebAPI\BusinessServices\bin\Debug\netcoreapp2.0\appsettings.json
