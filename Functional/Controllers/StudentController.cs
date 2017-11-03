@@ -9,11 +9,13 @@ using BusinessEntities;
 using BusinessServices;
 using DataAccessLayer;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Functional.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("AngularClient")]
+    [Authorize]
     public class StudentController : Controller
     {
         private readonly IStudentServices _studentServices;

@@ -9,3 +9,14 @@ E:\PIBM\WebAPI\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.Ass
 E:\PIBM\WebAPI\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.AssemblyInfo.cs
 E:\PIBM\WebAPI\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.dll
 E:\PIBM\WebAPI\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.pdb
+C:\POC\WebAPI - Copy\IBusinessServices\bin\Release\netcoreapp2.0\IBusinessServices.deps.json
+C:\POC\WebAPI - Copy\IBusinessServices\bin\Release\netcoreapp2.0\IBusinessServices.dll
+C:\POC\WebAPI - Copy\IBusinessServices\bin\Release\netcoreapp2.0\IBusinessServices.pdb
+C:\POC\WebAPI - Copy\IBusinessServices\bin\Release\netcoreapp2.0\BusinessEntities.dll
+C:\POC\WebAPI - Copy\IBusinessServices\bin\Release\netcoreapp2.0\BusinessEntities.pdb
+C:\POC\WebAPI - Copy\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI - Copy\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.AssemblyInfoInputs.cache
+C:\POC\WebAPI - Copy\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.AssemblyInfo.cs
+C:\POC\WebAPI - Copy\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.dll
+C:\POC\WebAPI - Copy\IBusinessServices\obj\Release\netcoreapp2.0\IBusinessServices.pdb

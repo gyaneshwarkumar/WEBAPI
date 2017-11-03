@@ -17,11 +17,11 @@ using System.IO;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using FluentValidation.AspNetCore;
-using WebAPI.Filters;
+using MasterWebapi.Filters;
 using Microsoft.Extensions.Logging;
 using Serilog;
 
-namespace WebAPI
+namespace MasterWebapi
 {
     public class Startup
     {
@@ -96,6 +96,7 @@ namespace WebAPI
             services.AddTransient<IStudentServices, StudentServices>();
             services.AddTransient<ICourseServices, CourseServices>();
             services.AddTransient<IBatchServices, BatchServices>();
+            services.AddTransient<ISubCourseServices, SubCourseServices>();
 
             services.AddTransient<IUnitOfWork,UnitOfWork>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

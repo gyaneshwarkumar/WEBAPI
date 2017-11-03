@@ -49,9 +49,9 @@ C:\POC\WebAPI - Copy\Authentication.Server\bin\Debug\netcoreapp2.0\Authenticatio
 C:\POC\WebAPI - Copy\Authentication.Server\bin\Debug\netcoreapp2.0\Authentication.Server.runtimeconfig.dev.json
 C:\POC\WebAPI - Copy\Authentication.Server\bin\Debug\netcoreapp2.0\Authentication.Server.dll
 C:\POC\WebAPI - Copy\Authentication.Server\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
+C:\POC\WebAPI - Copy\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.csprojResolveAssemblyReference.cache
 C:\POC\WebAPI - Copy\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.csproj.CoreCompileInputs.cache
 C:\POC\WebAPI - Copy\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.AssemblyInfoInputs.cache
 C:\POC\WebAPI - Copy\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.AssemblyInfo.cs
 C:\POC\WebAPI - Copy\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.dll
 C:\POC\WebAPI - Copy\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.pdb
-C:\POC\WebAPI - Copy\Authentication.Server\obj\Debug\netcoreapp2.0\Authentication.Server.csprojResolveAssemblyReference.cache

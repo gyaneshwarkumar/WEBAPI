@@ -13463,9 +13463,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\Functional\\Functional.csproj",
-      "projectName": "Functional",
-      "projectPath": "C:\\POC\\WebAPI - Copy\\Functional\\Functional.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\Functional\\Functional.WebAPI.csproj",
+      "projectName": "Functional.WebAPI",
+      "projectPath": "C:\\POC\\WebAPI - Copy\\Functional\\Functional.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
       "outputPath": "C:\\POC\\WebAPI - Copy\\Functional\\obj\\",
       "projectStyle": "PackageReference",

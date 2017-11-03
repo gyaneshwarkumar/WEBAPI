@@ -1,5 +1,5 @@
-E:\PIBM\WebAPI\Authentication.Server
+C:\POC\WebAPI - Copy\Authentication.Server
 --output-path=obj\Release\netcoreapp2.0\
 --application-name=Authentication.Server
---content-root=E:\PIBM\WebAPI\Authentication.Server
+--content-root=C:\POC\WebAPI - Copy\Authentication.Server
 --file=

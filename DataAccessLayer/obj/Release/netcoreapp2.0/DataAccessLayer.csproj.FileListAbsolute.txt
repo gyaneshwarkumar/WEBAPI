@@ -9,3 +9,15 @@ E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.Assembl
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.dll
 E:\PIBM\WebAPI\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.pdb
+C:\POC\WebAPI - Copy\DataAccessLayer\bin\Release\netcoreapp2.0\appsettings.json
+C:\POC\WebAPI - Copy\DataAccessLayer\bin\Release\netcoreapp2.0\DataAccessLayer.deps.json
+C:\POC\WebAPI - Copy\DataAccessLayer\bin\Release\netcoreapp2.0\DataAccessLayer.dll
+C:\POC\WebAPI - Copy\DataAccessLayer\bin\Release\netcoreapp2.0\DataAccessLayer.pdb
+C:\POC\WebAPI - Copy\DataAccessLayer\bin\Release\netcoreapp2.0\Authentication.Server.dll
+C:\POC\WebAPI - Copy\DataAccessLayer\bin\Release\netcoreapp2.0\Authentication.Server.pdb
+C:\POC\WebAPI - Copy\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI - Copy\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\POC\WebAPI - Copy\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
+C:\POC\WebAPI - Copy\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.dll
+C:\POC\WebAPI - Copy\DataAccessLayer\obj\Release\netcoreapp2.0\DataAccessLayer.pdb

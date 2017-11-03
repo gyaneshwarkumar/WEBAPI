@@ -1,5 +1,5 @@
-E:\PIBM\WebAPI\WebAPI
+C:\POC\WebAPI - Copy\Functional
 --output-path=obj\Release\netcoreapp2.0\
---application-name=WebAPI
---content-root=E:\PIBM\WebAPI\WebAPI
+--application-name=Functional
+--content-root=C:\POC\WebAPI - Copy\Functional
 --file=

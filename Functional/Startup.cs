@@ -17,7 +17,7 @@ using System.IO;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 
-namespace WebAPI
+namespace Functional
 {
     public class Startup
     {

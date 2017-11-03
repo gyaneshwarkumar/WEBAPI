@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace WebAPI.Filters
+namespace MasterWebapi.Filters
 {
     //public class ValidateFormAttribute : ActionFilterAttribute
     //{

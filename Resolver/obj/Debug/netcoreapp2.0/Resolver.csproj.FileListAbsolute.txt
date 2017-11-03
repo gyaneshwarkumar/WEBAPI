@@ -37,9 +37,9 @@ C:\POC\WebAPI\Resolver\obj\Debug\netcoreapp2.0\Resolver.csprojResolveAssemblyRef
 C:\POC\WebAPI - Copy\Resolver\bin\Debug\netcoreapp2.0\Resolver.deps.json
 C:\POC\WebAPI - Copy\Resolver\bin\Debug\netcoreapp2.0\Resolver.dll
 C:\POC\WebAPI - Copy\Resolver\bin\Debug\netcoreapp2.0\Resolver.pdb
+C:\POC\WebAPI - Copy\Resolver\obj\Debug\netcoreapp2.0\Resolver.csprojResolveAssemblyReference.cache
 C:\POC\WebAPI - Copy\Resolver\obj\Debug\netcoreapp2.0\Resolver.csproj.CoreCompileInputs.cache
 C:\POC\WebAPI - Copy\Resolver\obj\Debug\netcoreapp2.0\Resolver.AssemblyInfoInputs.cache
 C:\POC\WebAPI - Copy\Resolver\obj\Debug\netcoreapp2.0\Resolver.AssemblyInfo.cs
 C:\POC\WebAPI - Copy\Resolver\obj\Debug\netcoreapp2.0\Resolver.dll
 C:\POC\WebAPI - Copy\Resolver\obj\Debug\netcoreapp2.0\Resolver.pdb
-C:\POC\WebAPI - Copy\Resolver\obj\Debug\netcoreapp2.0\Resolver.csprojResolveAssemblyReference.cache

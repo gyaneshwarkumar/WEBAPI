@@ -9,3 +9,15 @@ E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Se
 E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.AssemblyInfo.cs
 E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.dll
 E:\PIBM\WebAPI\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.pdb
+C:\POC\WebAPI - Copy\Authentication.Server\bin\Release\netcoreapp2.0\appsettings.json
+C:\POC\WebAPI - Copy\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.deps.json
+C:\POC\WebAPI - Copy\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.runtimeconfig.json
+C:\POC\WebAPI - Copy\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.runtimeconfig.dev.json
+C:\POC\WebAPI - Copy\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.dll
+C:\POC\WebAPI - Copy\Authentication.Server\bin\Release\netcoreapp2.0\Authentication.Server.pdb
+C:\POC\WebAPI - Copy\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI - Copy\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.AssemblyInfoInputs.cache
+C:\POC\WebAPI - Copy\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.AssemblyInfo.cs
+C:\POC\WebAPI - Copy\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.dll
+C:\POC\WebAPI - Copy\Authentication.Server\obj\Release\netcoreapp2.0\Authentication.Server.pdb

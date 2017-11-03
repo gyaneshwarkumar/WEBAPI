@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
-namespace WebAPI.Controllers
+namespace MasterWebapi.Controllers
 {
     [Route("api/[controller]")]
    // [Authorize]

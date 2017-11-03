@@ -11,7 +11,7 @@ using System.Net.Http;
 using System.Net;
 using Microsoft.AspNetCore.Cors;
 
-namespace WebAPI.Controllers
+namespace MasterWebapi.Controllers
 {
      [Route("api/[controller]")]
     [EnableCors("AngularClient")]

@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.WebAPI", "Master.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERPPoc", "WebUI\ERPPoc.csproj", "{9D53EC5B-7644-477B-8F3E-97F85445E08B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functional", "Functional\Functional.csproj", "{35C7AF4E-878B-4833-B1A3-EBABDEA421B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functional.WebAPI", "Functional\Functional.WebAPI.csproj", "{35C7AF4E-878B-4833-B1A3-EBABDEA421B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

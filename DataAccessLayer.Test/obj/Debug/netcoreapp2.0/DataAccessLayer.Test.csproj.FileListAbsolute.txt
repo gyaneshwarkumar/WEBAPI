@@ -62,9 +62,9 @@ C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLaye
 C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLayer.Test.runtimeconfig.dev.json
 C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLayer.Test.dll
 C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLayer.Test.pdb
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.csprojResolveAssemblyReference.cache
 C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.csproj.CoreCompileInputs.cache
 C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfoInputs.cache
 C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfo.cs
 C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.dll
 C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.pdb
-C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.csprojResolveAssemblyReference.cache

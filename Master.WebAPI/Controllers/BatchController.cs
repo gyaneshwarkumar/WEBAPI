@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 
-namespace WebAPI.Controllers
+namespace MasterWebapi.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("AngularClient")]
-   // [Authorize]
+    [Authorize]
     public class BatchController : Controller
     {
         private readonly IBatchServices _batchServices;
