@@ -12,10 +12,10 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
 using System.Threading.Tasks;
-using Token.WebApiCore.Server.Filters;
-using Token.WebApiCore.Server.Models;
+using AuthenticationServer.Filters;
+using AuthenticationServer.Models;
 
-namespace Authentication.Server
+namespace AuthenticationServer
 {
     public class Startup
     {
@@ -117,7 +117,7 @@ namespace Authentication.Server
         public virtual void SetUpDataBase(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("Authentication.Server")));
+           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("AuthenticationServer")));
         }
 
         public virtual void EnsureDatabaseCreated(DataContext dbContext)
@@ -164,100 +164,4 @@ namespace Authentication.Server
 }
 
 
-//    public class Startup
-//    {
-
-//        public IConfigurationRoot Configuration { get; }
-//        private IHostingEnvironment _env;
-
-//        public Startup(IHostingEnvironment env)
-//        {
-//            var builder = new ConfigurationBuilder()
-//                .SetBasePath(env.ContentRootPath)
-//                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-//                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-//                .AddEnvironmentVariables();
-//            Configuration = builder.Build();
-//        }
-
-//        public void ConfigureServices(
-//            IServiceCollection services)
-//        {
-
-//            var secretKey = Configuration.GetSection("JwtSecurityToken:Key").Value;
-//            var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
-
-//            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-//                    .AddJwtBearer(options => {
-//                        options.TokenValidationParameters = new TokenValidationParameters
-//                        {
-//                            ValidateIssuer = true,
-//                            ValidateAudience = true,
-//                            ValidateLifetime = true,
-//                            ValidateIssuerSigningKey = true,
-
-//                            ValidIssuer = "http://logcorner.com",
-//                            ValidAudience = "http://logcorner.com",
-//                            IssuerSigningKey = signingKey
-//                        };
-
-//                        options.Events = new JwtBearerEvents
-//                        {
-//                            OnAuthenticationFailed = context =>
-//                            {
-//                                Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
-//                                return Task.CompletedTask;
-//                            },
-//                            OnTokenValidated = context =>
-//                            {
-//                                Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
-//                                return Task.CompletedTask;
-//                            }
-//                        };
-//                    });
-
-//            //services.AddAuthorization(options =>
-//            //{
-//            //    options.AddPolicy("Member",
-//            //        policy => policy.RequireClaim("MembershipId"));
-//            //});
-
-
-
-//            services.AddDbContext<DataContext>(options =>
-//           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("Authentication.Server")));
-
-//            //services.AddTransient<IUnitOfWork, UnitOfWork>();
-//            //services.AddTransient<ICourseServices, CourseServices>();
-//            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-//            //services.AddAutoMapper();
-//            services.AddMvc();
-//        }
-
-
-
-//        public virtual void SetUpDataBase(IServiceCollection services)
-//        {
-
-//            services.AddDbContext<DataContext>(options =>
-//  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("Authentication.Server")));
-//        }
-
-//        public virtual void EnsureDatabaseCreated(DataContext dbContext)
-//        {
-//           // dbContext.Database.Migrate();
-//        }
-
-//        public void Configure(
-//            IApplicationBuilder app,
-//            IHostingEnvironment env)
-//        {
-//            app.UseDeveloperExceptionPage();
-//            app.UseStaticFiles();
-//            app.UseAuthentication();
-//            app.UseMvcWithDefaultRoute();
-//            loggerFactory.AddDebug();
-//        }
-//    }
-//}
 

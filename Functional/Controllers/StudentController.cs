@@ -11,7 +11,7 @@ using DataAccessLayer;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Functional.Controllers
+namespace FunctionalWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("AngularClient")]

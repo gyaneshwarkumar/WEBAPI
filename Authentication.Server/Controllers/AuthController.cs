@@ -12,10 +12,10 @@ using System.Net;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using Token.WebApiCore.Server.Filters;
-using Token.WebApiCore.Server.Models;
+using AuthenticationServer.Filters;
+using AuthenticationServer.Models;
 
-namespace Authentication.Server.Controllers
+namespace AuthenticationServer.Controllers
 {
    // [EnableCors("AngularClient")]
     [Route("api/auth")]

@@ -10,9 +10,9 @@ using System;
 
 namespace DataAccessLayer.Migrations
 {
-    [DbContext(typeof(DbEntities))]
-    [Migration("20171103053127_newmigration")]
-    partial class newmigration
+    [DbContext(typeof(FunctionalDbEntities))]
+    [Migration("20171103104013_new")]
+    partial class @new
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,90 +20,6 @@ namespace DataAccessLayer.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("DataAccessLayer.Batch", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Academic_Year");
-
-                    b.Property<string>("App_Status");
-
-                    b.Property<int>("BatchInchargeId");
-
-                    b.Property<int>("CourseId");
-
-                    b.Property<string>("Del_Status");
-
-                    b.Property<string>("Description");
-
-                    b.Property<int>("Duration");
-
-                    b.Property<string>("DurationType");
-
-                    b.Property<DateTime?>("EndDate");
-
-                    b.Property<int>("PatternId");
-
-                    b.Property<DateTime?>("StartDate");
-
-                    b.Property<int>("StartYear");
-
-                    b.Property<int>("SubCourseId");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("AcademicYear");
-                });
-
-            modelBuilder.Entity("DataAccessLayer.Course", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("App_Status");
-
-                    b.Property<string>("Course_Name");
-
-                    b.Property<string>("Del_Status");
-
-                    b.Property<string>("Description");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Courses");
-                });
-
-            modelBuilder.Entity("DataAccessLayer.Semister", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("App_Status");
-
-                    b.Property<int>("Batch_Id");
-
-                    b.Property<int>("Course_Id");
-
-                    b.Property<string>("Del_Status");
-
-                    b.Property<string>("Description");
-
-                    b.Property<DateTime?>("EndDate");
-
-                    b.Property<string>("Semister_Name");
-
-                    b.Property<DateTime?>("StartDate");
-
-                    b.Property<int>("StartMonth");
-
-                    b.Property<int>("StartYear");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Semisters");
-                });
 
             modelBuilder.Entity("DataAccessLayer.Student", b =>
                 {
@@ -227,38 +143,6 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Students");
-                });
-
-            modelBuilder.Entity("DataAccessLayer.SubCourse", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("CourseId");
-
-                    b.Property<string>("Description");
-
-                    b.Property<string>("Sub_Course");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SubCourses");
-                });
-
-            modelBuilder.Entity("DataAccessLayer.User", b =>
-                {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Name");
-
-                    b.Property<string>("Password");
-
-                    b.Property<string>("UserName");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

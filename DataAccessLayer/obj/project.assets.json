@@ -4829,7 +4829,7 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Authentication.Server/1.0.0": {
+      "AuthenticationServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
@@ -4838,10 +4838,10 @@
           "Microsoft.NETCore.App": "2.0.0"
         },
         "compile": {
-          "bin/placeholder/Authentication.Server.dll": {}
+          "bin/placeholder/AuthenticationServer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Authentication.Server.dll": {}
+          "bin/placeholder/AuthenticationServer.dll": {}
         }
       }
     }
@@ -12686,7 +12686,7 @@
         "windowsazure.storage.nuspec"
       ]
     },
-    "Authentication.Server/1.0.0": {
+    "AuthenticationServer/1.0.0": {
       "type": "project",
       "path": "../Authentication.Server/Authentication.Server.csproj",
       "msbuildProject": "../Authentication.Server/Authentication.Server.csproj"
@@ -12694,7 +12694,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Authentication.Server >= 1.0.0",
+      "AuthenticationServer >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 3.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "autofac >= 4.6.1"

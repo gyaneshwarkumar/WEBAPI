@@ -65,12 +65,6 @@ C:\POC\WebAPI\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.AssemblyInfo.c
 C:\POC\WebAPI\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.dll
 C:\POC\WebAPI\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.pdb
 C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\appsettings.json
-C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.deps.json
-C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.runtimeconfig.json
-C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.runtimeconfig.dev.json
-C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.dll
-C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.pdb
-C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\Authentication.Server.dll
 C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\BusinessEntities.dll
 C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\BusinessServices.dll
 C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
@@ -78,11 +72,17 @@ C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\IBusinessServices.dll
 C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\BusinessServices.pdb
 C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
 C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
-C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
 C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
 C:\POC\WebAPI - Copy\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.csprojResolveAssemblyReference.cache
 C:\POC\WebAPI - Copy\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.csproj.CoreCompileInputs.cache
 C:\POC\WebAPI - Copy\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.AssemblyInfoInputs.cache
 C:\POC\WebAPI - Copy\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.AssemblyInfo.cs
-C:\POC\WebAPI - Copy\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.dll
-C:\POC\WebAPI - Copy\Master.WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.pdb
+C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\AuthenticationServer.dll
+C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\AuthenticationServer.pdb
+C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\MasterWebAPI.deps.json
+C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\MasterWebAPI.runtimeconfig.json
+C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\MasterWebAPI.runtimeconfig.dev.json
+C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\MasterWebAPI.dll
+C:\POC\WebAPI - Copy\Master.WebAPI\bin\Debug\netcoreapp2.0\MasterWebAPI.pdb
+C:\POC\WebAPI - Copy\Master.WebAPI\obj\Debug\netcoreapp2.0\MasterWebAPI.dll
+C:\POC\WebAPI - Copy\Master.WebAPI\obj\Debug\netcoreapp2.0\MasterWebAPI.pdb

@@ -1,5 +1,4 @@
 ﻿using System;
-using Authentication.Server;
 using AutoMapper.Configuration;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

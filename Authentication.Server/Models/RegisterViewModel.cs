@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Token.WebApiCore.Server.Models
+namespace AuthenticationServer.Models
 {
     public class RegisterViewModel
     {

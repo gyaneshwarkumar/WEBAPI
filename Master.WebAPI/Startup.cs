@@ -17,11 +17,11 @@ using System.IO;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using FluentValidation.AspNetCore;
-using MasterWebapi.Filters;
+using MasterWebAPI.Filters;
 using Microsoft.Extensions.Logging;
 using Serilog;
 
-namespace MasterWebapi
+namespace MasterWebAPI
 {
     public class Startup
     {
@@ -128,8 +128,8 @@ namespace MasterWebapi
         public virtual void SetUpDataBase(IServiceCollection services)
         {
 
-            //services.AddDbContext<DbEntities>(options =>
-            //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+            services.AddDbContext<DbEntities>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
         }
 
         public virtual void EnsureDatabaseCreated(DbEntities dbContext)

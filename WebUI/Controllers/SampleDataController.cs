@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ERPPoc.Controllers
+namespace ERPUI.Controllers
 {
     [Route("api/[controller]")]
     public class SampleDataController : Controller

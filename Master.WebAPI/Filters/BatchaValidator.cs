@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using FluentValidation;
 using BusinessEntities;
 
-namespace Master.WebAPI.Filters
+namespace MasterWebAPI.Filters
 {
 
     public class BatchaValidator : AbstractValidator<BatchEntity>

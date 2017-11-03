@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "0a37b68511613a45303c023da00c7d514fb3284d"
+    "signature": "540041526cee2b0454001f7e939c4267127ff238"
   },
   "compilationOptions": {
     "defines": [
@@ -21,29 +21,25 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Master.WebAPI/1.0.0": {
+      "FunctionalWebAPI/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.0.1",
-          "Autofac.Extensions.DependencyInjection": "4.2.0",
           "BusinessServices": "1.0.0",
           "DataAccessLayer": "1.0.0",
-          "FluentValidation.AspNetCore": "7.2.1",
           "IBusinessServices": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Shell.Interop.11.0": "11.0.61030",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
-          "Serilog.Extensions.Logging": "2.0.2",
-          "Serilog.Sinks.File": "4.0.0"
+          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0"
         },
         "runtime": {
-          "Master.WebAPI.dll": {}
+          "FunctionalWebAPI.dll": {}
         },
         "compile": {
-          "Master.WebAPI.dll": {}
+          "FunctionalWebAPI.dll": {}
         }
       },
       "Autofac/4.6.1": {
@@ -56,19 +52,6 @@
         },
         "compile": {
           "lib/netstandard1.1/Autofac.dll": {}
-        }
-      },
-      "Autofac.Extensions.DependencyInjection/4.2.0": {
-        "dependencies": {
-          "Autofac": "4.6.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
-          "NETStandard.Library": "2.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
       "AutoMapper/6.1.1": {
@@ -2440,34 +2423,6 @@
           "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Shell.Interop.11.0/11.0.61030": {
-        "dependencies": {
-          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
-          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
-          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
-          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727"
-        },
-        "runtime": {
-          "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll": {}
-        },
-        "compile": {
-          "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll": {}
-        }
-      },
-      "Microsoft.VisualStudio.Shell.Interop.8.0/8.0.50727": {
-        "dependencies": {
-          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
-          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
-          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070",
-          "Microsoft.VisualStudio.TextManager.Interop.8.0": "8.0.50727"
-        },
-        "runtime": {
-          "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll": {}
-        },
-        "compile": {
-          "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll": {}
-        }
-      },
       "Microsoft.VisualStudio.TextManager.Interop/7.10.6070": {
         "dependencies": {
           "Microsoft.VisualStudio.OLE.Interop": "7.10.6070"
@@ -2477,19 +2432,6 @@
         },
         "compile": {
           "lib/Microsoft.VisualStudio.TextManager.Interop.dll": {}
-        }
-      },
-      "Microsoft.VisualStudio.TextManager.Interop.8.0/8.0.50727": {
-        "dependencies": {
-          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
-          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
-          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
-        },
-        "runtime": {
-          "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll": {}
-        },
-        "compile": {
-          "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.BrowserLink/2.0.0": {
@@ -2870,58 +2812,6 @@
             "rid": "win-x86",
             "assetType": "native"
           }
-        }
-      },
-      "Serilog/2.5.0": {
-        "dependencies": {
-          "Microsoft.CSharp": "4.4.0",
-          "System.Collections": "4.3.0",
-          "System.Collections.NonGeneric": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Serilog.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.3/Serilog.dll": {}
-        }
-      },
-      "Serilog.Extensions.Logging/2.0.2": {
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "2.0.0",
-          "Serilog": "2.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
-        },
-        "compile": {
-          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
-        }
-      },
-      "Serilog.Sinks.File/4.0.0": {
-        "dependencies": {
-          "Serilog": "2.5.0",
-          "System.IO": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Timer": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.7": {
@@ -4292,17 +4182,17 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Authentication.Server/1.0.0": {
+      "AuthenticationServer/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "7.2.1",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0"
         },
         "runtime": {
-          "Authentication.Server.dll": {}
+          "AuthenticationServer.dll": {}
         },
         "compile": {
-          "Authentication.Server.dll": {}
+          "AuthenticationServer.dll": {}
         }
       },
       "BusinessEntities/1.0.0": {
@@ -4329,7 +4219,7 @@
       },
       "DataAccessLayer/1.0.0": {
         "dependencies": {
-          "Authentication.Server": "1.0.0",
+          "AuthenticationServer": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.0.1",
           "Autofac": "4.6.1"
         },
@@ -4530,7 +4420,7 @@
     }
   },
   "libraries": {
-    "Master.WebAPI/1.0.0": {
+    "FunctionalWebAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -4541,13 +4431,6 @@
       "sha512": "sha512-/feXiAKiSe9XLK+fdnz0p1iDg6JCkOhjqMkw9ewGy0f6IzXgmPLDRa4FUg6nIGRm2sTO677w/76uJ5OJU6EiyA==",
       "path": "autofac/4.6.1",
       "hashPath": "autofac.4.6.1.nupkg.sha512"
-    },
-    "Autofac.Extensions.DependencyInjection/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cqBmgg9y7ahGbt7CPdvZFL6bA0PEwFyhIofUoUxEteZc+d0yNnE6ZvIWxHEM2F2HPJlC9SRnHWiZQq8r53moAw==",
-      "path": "autofac.extensions.dependencyinjection/4.2.0",
-      "hashPath": "autofac.extensions.dependencyinjection.4.2.0.nupkg.sha512"
     },
     "AutoMapper/6.1.1": {
       "type": "package",
@@ -5725,33 +5608,12 @@
       "path": "microsoft.visualstudio.shell.interop.10.0/10.0.30319",
       "hashPath": "microsoft.visualstudio.shell.interop.10.0.10.0.30319.nupkg.sha512"
     },
-    "Microsoft.VisualStudio.Shell.Interop.11.0/11.0.61030": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-RzLpCC2UUOmr0fRt2EC/I+bLd2ktslzjNmd8zIYzvHWWqJ5RDUWzc5koFgrUFVUIOOUGWfnk5WcW4fl7qhijGg==",
-      "path": "microsoft.visualstudio.shell.interop.11.0/11.0.61030",
-      "hashPath": "microsoft.visualstudio.shell.interop.11.0.11.0.61030.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Shell.Interop.8.0/8.0.50727": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Yana6Gz2o/i0NHE51TDI+lImC0HRbGNZGRCROBcKKgwz6jHSH9v1erirt6YHZPC6Qa22KIYgJ6FKBln+NkjHzw==",
-      "path": "microsoft.visualstudio.shell.interop.8.0/8.0.50727",
-      "hashPath": "microsoft.visualstudio.shell.interop.8.0.8.0.50727.nupkg.sha512"
-    },
     "Microsoft.VisualStudio.TextManager.Interop/7.10.6070": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-XZfTrFgqX17B180BaZhGlwcTQUhjsLS4DXveEcCaFy+3NGdxVZ+ySxk16FBjDEhiWtM/J7gungInLR+aVwq7ZQ==",
       "path": "microsoft.visualstudio.textmanager.interop/7.10.6070",
       "hashPath": "microsoft.visualstudio.textmanager.interop.7.10.6070.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.TextManager.Interop.8.0/8.0.50727": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Wdx4gfPfESyGf1LJy5pf2yqjLknyFUHt3Y2iq5T820ESvskLEDnnJdOkRrtA+0HqIvd7HhCQ8PyDGFsg55z0gA==",
-      "path": "microsoft.visualstudio.textmanager.interop.8.0/8.0.50727",
-      "hashPath": "microsoft.visualstudio.textmanager.interop.8.0.8.0.50727.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.BrowserLink/2.0.0": {
       "type": "package",
@@ -6004,27 +5866,6 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
-    },
-    "Serilog/2.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JwwkgNYNFKT4kQZ3qBV3VqPgchUg1A6FnlFa9hgyanylwBhJ7eTFl3pgLVxijFEb+oHLImRcMaTsMzBt2AG0aQ==",
-      "path": "serilog/2.5.0",
-      "hashPath": "serilog.2.5.0.nupkg.sha512"
-    },
-    "Serilog.Extensions.Logging/2.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PYAkzUn/VV16Es7U06BfEhNZEltnYWu0WFCM4d2lLY/dvlA7xMwFXBuGRxR0XvEBPoOxPorjhFLy9txwiMO6rg==",
-      "path": "serilog.extensions.logging/2.0.2",
-      "hashPath": "serilog.extensions.logging.2.0.2.nupkg.sha512"
-    },
-    "Serilog.Sinks.File/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vBj43RkAbeP1dzoPFR2+LfV5GevDRPDq6265JJBv223lMvT9rfdwe/S/I9ow7aZSLYKfw4qPDw6NW8YwjbDbvg==",
-      "path": "serilog.sinks.file/4.0.0",
-      "hashPath": "serilog.sinks.file.4.0.0.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_green/1.1.7": {
       "type": "package",
@@ -6775,7 +6616,7 @@
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
-    "Authentication.Server/1.0.0": {
+    "AuthenticationServer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Token.WebApiCore.Server.Filters
+namespace AuthenticationServer.Filters
 {
     //public class ValidateFormAttribute : ActionFilterAttribute
     //{

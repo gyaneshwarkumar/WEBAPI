@@ -1,4 +1,4 @@
-﻿using Authentication.Server;
+﻿
 using AutoMapper.Configuration;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -30,7 +30,7 @@ namespace DataAccessLayer
         public DbSet<SubCourse> SubCourses { get; set; }
        // public DbSet<AcademicYear> AcademicYears { get; set; }
         public DbSet<Semister> Semisters { get; set; }
-       public DbSet<Student> Students { get; set; }
+      /// public DbSet<Student> Students { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()

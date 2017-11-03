@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v2.0": {
       "DataAccessLayer/1.0.0": {
         "dependencies": {
-          "Authentication.Server": "1.0.0",
+          "AuthenticationServer": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.0.1",
           "Autofac": "4.6.1"
         },
@@ -3255,13 +3255,13 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Authentication.Server/1.0.0": {
+      "AuthenticationServer/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "7.2.1",
           "Microsoft.AspNetCore.All": "2.0.0"
         },
         "runtime": {
-          "Authentication.Server.dll": {}
+          "AuthenticationServer.dll": {}
         }
       }
     }
@@ -5309,7 +5309,7 @@
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
-    "Authentication.Server/1.0.0": {
+    "AuthenticationServer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

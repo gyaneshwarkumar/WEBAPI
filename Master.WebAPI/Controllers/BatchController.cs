@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 
-namespace MasterWebapi.Controllers
+namespace MasterWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("AngularClient")]

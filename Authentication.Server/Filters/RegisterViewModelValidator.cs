@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Token.WebApiCore.Server.Models;
+using AuthenticationServer.Models;
 
-namespace Authentication.Server.Filters
+namespace AuthenticationServer.Filters
 {
     //    public class RegisterViewModelValidator
     //    {

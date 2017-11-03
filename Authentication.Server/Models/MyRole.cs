@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-namespace Token.WebApiCore.Server.Models
+namespace AuthenticationServer.Models
 {
     public class MyRole : IdentityRole
     {

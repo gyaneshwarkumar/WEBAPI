@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 using System.Collections.Generic;
 
-namespace Authentication.Server.Migrations
+namespace AuthenticationServer.Migrations
 {
-    public partial class datacontext : Migration
+    public partial class migration1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
