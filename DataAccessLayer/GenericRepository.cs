@@ -14,6 +14,7 @@ namespace DataAccessLayer
     {
         #region Private member variables...
         internal DbEntities Context;
+        internal FunctionalDbEntities FunctionalContext;
         internal DbSet<TEntity> DbSet;
         #endregion
 
@@ -27,6 +28,15 @@ namespace DataAccessLayer
             this.Context = context;
             this.DbSet = context.Set<TEntity>();
         }
+
+        public GenericRepository(FunctionalDbEntities functionalDbEntities)
+        {
+            
+            this.FunctionalContext = functionalDbEntities;
+            this.DbSet = FunctionalContext.Set<TEntity>();
+           
+        }
+
         #endregion
 
         #region Public member methods...

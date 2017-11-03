@@ -1,40 +1,143 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System;
+using System.Threading.Tasks;
+using DataAccessLayer;
+using DataAccessLayer.UnitOfWork;
+using IBusinessServices;
+using BusinessServices;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Http;
+using AutoMapper;
+using System.IO;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
 
 namespace Functional
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+
+        public IConfigurationRoot Configuration { get; }
+        private IHostingEnvironment _env;
+
+        public Startup(IHostingEnvironment env)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
+            Configuration = builder.Build();
         }
 
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+      
+        public void ConfigureServices(
+            IServiceCollection services)
         {
+           
+            var secretKey = Configuration.GetSection("JwtSecurityToken:Key").Value;
+            var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options => {
+                        options.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateIssuer = true,
+                            ValidateAudience = true,
+                            ValidateLifetime = true,
+                            ValidateIssuerSigningKey = true,
+
+                            ValidIssuer = "http://logcorner.com",
+                            ValidAudience = "http://logcorner.com",
+                            IssuerSigningKey = signingKey
+                        };
+
+                        options.Events = new JwtBearerEvents
+                        {
+                            OnAuthenticationFailed = context =>
+                            {
+                                Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
+                                return Task.CompletedTask;
+                            },
+                            OnTokenValidated = context =>
+                            {
+                                Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
+                                return Task.CompletedTask;
+                            }
+                        };
+                    });
+
+            //services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("Member",
+            //        policy => policy.RequireClaim("MembershipId"));
+            //});
+
+
+
+             //services.AddDbContext<FunctionalDbEntities>(options =>
+             //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+
+
+            // services.AddTransient<ICourseServices, CourseServices>();
+            // services.AddTransient<IBatchServices, BatchServices>();
+            // services.AddTransient<ISubCourseServices, SubCourseServices>();
+            // services.AddTransient<ISemisterServices, SemisterServices>();
+            
+            //SetUpDataBase(services);
+            //services.AddTransient<IStudentServices, StudentServices>();
+           
+            services.AddTransient<IStudentServices, StudentServices>();
+            services.AddTransient<FunctionalUnitOfWork, FunctionalUnitOfWork>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddAutoMapper();
             services.AddMvc();
+            services.AddCors(cfg =>
+            {
+                cfg.AddPolicy("AnyGET", bldr =>
+                {
+                    bldr.AllowAnyHeader()
+                        .WithMethods("GET", "PUT", "POST", "DELETE")
+                        .AllowAnyOrigin();
+                });
+
+                cfg.AddPolicy("AngularClient", bldr =>
+                {
+                    bldr.AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .WithOrigins("http://localhost:35344");
+                });
+            });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
 
-            app.UseMvc();
+
+        public virtual void SetUpDataBase(IServiceCollection services)
+        {
+
+           services.AddDbContext<FunctionalDbEntities>(options =>
+           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+        }
+
+        public virtual void EnsureDatabaseCreated(DbEntities dbContext)
+        {
+            // dbContext.Database.Migrate();
+        }
+
+        public void Configure(
+            IApplicationBuilder app,
+            IHostingEnvironment env)
+        {
+            app.UseDeveloperExceptionPage();
+            app.UseStaticFiles();
+            app.UseAuthentication();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
+

@@ -16,6 +16,10 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "dependencies": {
+      // ...
+      "Serilog.Extensions.Logging.File": "2.0.2"
+    },
     "WebAPI": {
       "commandName": "Project",
       "launchBrowser": true,

@@ -67,3 +67,21 @@ C:\POC\WebAPI\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.Assembly
 C:\POC\WebAPI\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.dll
 C:\POC\WebAPI\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.pdb
 C:\POC\WebAPI\BusinessServices\bin\Debug\netcoreapp2.0\appsettings.json
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\appsettings.json
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\BusinessServices.deps.json
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\BusinessServices.dll
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\BusinessServices.pdb
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\Authentication.Server.dll
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\BusinessEntities.dll
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\IBusinessServices.dll
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
+C:\POC\WebAPI - Copy\BusinessServices\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
+C:\POC\WebAPI - Copy\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI - Copy\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.AssemblyInfoInputs.cache
+C:\POC\WebAPI - Copy\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.AssemblyInfo.cs
+C:\POC\WebAPI - Copy\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.dll
+C:\POC\WebAPI - Copy\BusinessServices\obj\Debug\netcoreapp2.0\BusinessServices.pdb

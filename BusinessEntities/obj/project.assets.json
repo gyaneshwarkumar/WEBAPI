@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\POC\\WebAPI\\BusinessEntities\\BusinessEntities.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\BusinessEntities\\BusinessEntities.csproj",
       "projectName": "BusinessEntities",
-      "projectPath": "C:\\POC\\WebAPI\\BusinessEntities\\BusinessEntities.csproj",
+      "projectPath": "C:\\POC\\WebAPI - Copy\\BusinessEntities\\BusinessEntities.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "C:\\POC\\WebAPI\\BusinessEntities\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI - Copy\\BusinessEntities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

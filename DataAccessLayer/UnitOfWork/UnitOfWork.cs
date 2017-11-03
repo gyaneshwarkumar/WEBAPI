@@ -28,7 +28,7 @@ namespace DataAccessLayer.UnitOfWork
         private GenericRepository<Batch> _batchRepository;
         private GenericRepository<SubCourse> _SubcourseRepository;
         private GenericRepository<Semister> _SemisterRepository;
-       // private GenericRepository<Student> _StudentRepository;
+        private GenericRepository<Student> _StudentRepository;
         #endregion
 
         public UnitOfWork()
@@ -98,15 +98,15 @@ namespace DataAccessLayer.UnitOfWork
             }
         }
 
-        //public GenericRepository<Student> StudentRepository
-        //{
-        //    get
-        //    {
-        //        if (this._StudentRepository == null)
-        //            this._StudentRepository = new GenericRepository<Student>(_context);
-        //         return _StudentRepository;
-        //    }
-        //}
+        public GenericRepository<Student> StudentRepository
+        {
+            get
+            {
+                if (this._StudentRepository == null)
+                    this._StudentRepository = new GenericRepository<Student>(_context);
+                return _StudentRepository;
+            }
+        }
         #endregion
 
         #region Public member methods...

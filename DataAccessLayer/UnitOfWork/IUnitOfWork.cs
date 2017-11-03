@@ -10,7 +10,7 @@ namespace DataAccessLayer.UnitOfWork
         GenericRepository<Batch> BatchRepository { get; }
         GenericRepository<SubCourse> SubcourseRepository { get; }
         GenericRepository<Semister> SemisterRepository { get; }
-      //  GenericRepository<Student> StudentRepository { get; }
+        GenericRepository<Student> StudentRepository { get; }
         #endregion
 
         #region Public methods

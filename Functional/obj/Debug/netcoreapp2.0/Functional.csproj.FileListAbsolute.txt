@@ -1,10 +1,66 @@
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\appsettings.json
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.deps.json
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.runtimeconfig.json
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.runtimeconfig.dev.json
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.dll
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.pdb
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\Authentication.Server.dll
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\BusinessEntities.dll
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\BusinessServices.dll
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\IBusinessServices.dll
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\BusinessServices.pdb
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
+E:\WebAPI\Functional\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
+E:\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.csprojResolveAssemblyReference.cache
+E:\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.csproj.CoreCompileInputs.cache
+E:\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.AssemblyInfoInputs.cache
+E:\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.AssemblyInfo.cs
+E:\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.dll
+E:\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.pdb
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\appsettings.json
 C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.deps.json
 C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.runtimeconfig.json
 C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.runtimeconfig.dev.json
 C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.dll
 C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Functional.pdb
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Authentication.Server.dll
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\BusinessEntities.dll
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\BusinessServices.dll
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\IBusinessServices.dll
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\BusinessServices.pdb
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
+C:\POC\WebAPI\Functional\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
+C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.csprojResolveAssemblyReference.cache
 C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.csproj.CoreCompileInputs.cache
 C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.AssemblyInfoInputs.cache
 C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.AssemblyInfo.cs
 C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.dll
 C:\POC\WebAPI\Functional\obj\Debug\netcoreapp2.0\Functional.pdb
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\appsettings.json
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\Functional.deps.json
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\Functional.runtimeconfig.json
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\Functional.runtimeconfig.dev.json
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\Functional.dll
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\Functional.pdb
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\Authentication.Server.dll
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\BusinessEntities.dll
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\BusinessServices.dll
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\IBusinessServices.dll
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\BusinessServices.pdb
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
+C:\POC\WebAPI - Copy\Functional\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
+C:\POC\WebAPI - Copy\Functional\obj\Debug\netcoreapp2.0\Functional.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\Functional\obj\Debug\netcoreapp2.0\Functional.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI - Copy\Functional\obj\Debug\netcoreapp2.0\Functional.AssemblyInfoInputs.cache
+C:\POC\WebAPI - Copy\Functional\obj\Debug\netcoreapp2.0\Functional.AssemblyInfo.cs
+C:\POC\WebAPI - Copy\Functional\obj\Debug\netcoreapp2.0\Functional.dll
+C:\POC\WebAPI - Copy\Functional\obj\Debug\netcoreapp2.0\Functional.pdb

@@ -7,27 +7,30 @@ using IBusinessServices;
 using BusinessEntities;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
 namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("AngularClient")]
-    [Authorize]
+   // [Authorize]
     public class BatchController : Controller
     {
         private readonly IBatchServices _batchServices;
+        private readonly ILogger<BatchController> _logger;
 
 
-        public BatchController(IBatchServices batchServices)
+        public BatchController(IBatchServices batchServices, ILogger<BatchController> logger)
         {
             _batchServices = batchServices;
+            _logger = logger;
         }
 
 
         [HttpGet]
         public IEnumerable<BatchEntity> Get()
         {
-
+            _logger.LogInformation("Executed Get action");
             var batchs = _batchServices.GetAllBatches();
             if (batchs != null && batchs.Any())
                 return batchs.ToList();

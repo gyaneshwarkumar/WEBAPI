@@ -12764,11 +12764,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\POC\\WebAPI\\BusinessServices\\BusinessServices.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\BusinessServices\\BusinessServices.csproj",
       "projectName": "BusinessServices",
-      "projectPath": "C:\\POC\\WebAPI\\BusinessServices\\BusinessServices.csproj",
+      "projectPath": "C:\\POC\\WebAPI - Copy\\BusinessServices\\BusinessServices.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "C:\\POC\\WebAPI\\BusinessServices\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI - Copy\\BusinessServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12787,14 +12787,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\POC\\WebAPI\\BusinessEntities\\BusinessEntities.csproj": {
-              "projectPath": "C:\\POC\\WebAPI\\BusinessEntities\\BusinessEntities.csproj"
+            "C:\\POC\\WebAPI - Copy\\BusinessEntities\\BusinessEntities.csproj": {
+              "projectPath": "C:\\POC\\WebAPI - Copy\\BusinessEntities\\BusinessEntities.csproj"
             },
-            "C:\\POC\\WebAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\POC\\WebAPI\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\POC\\WebAPI - Copy\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\POC\\WebAPI - Copy\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\POC\\WebAPI\\IBusinessServices\\IBusinessServices.csproj": {
-              "projectPath": "C:\\POC\\WebAPI\\IBusinessServices\\IBusinessServices.csproj"
+            "C:\\POC\\WebAPI - Copy\\IBusinessServices\\IBusinessServices.csproj": {
+              "projectPath": "C:\\POC\\WebAPI - Copy\\IBusinessServices\\IBusinessServices.csproj"
             }
           }
         }

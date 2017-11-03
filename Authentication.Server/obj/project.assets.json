@@ -12595,11 +12595,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\POC\\WebAPI\\Authentication.Server\\Authentication.Server.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\Authentication.Server\\Authentication.Server.csproj",
       "projectName": "Authentication.Server",
-      "projectPath": "C:\\POC\\WebAPI\\Authentication.Server\\Authentication.Server.csproj",
+      "projectPath": "C:\\POC\\WebAPI - Copy\\Authentication.Server\\Authentication.Server.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "C:\\POC\\WebAPI\\Authentication.Server\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI - Copy\\Authentication.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

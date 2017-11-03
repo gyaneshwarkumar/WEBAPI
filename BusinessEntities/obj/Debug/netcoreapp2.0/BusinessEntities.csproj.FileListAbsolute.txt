@@ -34,3 +34,12 @@ C:\POC\WebAPI\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.Assembly
 C:\POC\WebAPI\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.dll
 C:\POC\WebAPI\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.pdb
 C:\POC\WebAPI\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\BusinessEntities\bin\Debug\netcoreapp2.0\BusinessEntities.deps.json
+C:\POC\WebAPI - Copy\BusinessEntities\bin\Debug\netcoreapp2.0\BusinessEntities.dll
+C:\POC\WebAPI - Copy\BusinessEntities\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
+C:\POC\WebAPI - Copy\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI - Copy\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.AssemblyInfoInputs.cache
+C:\POC\WebAPI - Copy\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.AssemblyInfo.cs
+C:\POC\WebAPI - Copy\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.dll
+C:\POC\WebAPI - Copy\BusinessEntities\obj\Debug\netcoreapp2.0\BusinessEntities.pdb

@@ -18,6 +18,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using FluentValidation.AspNetCore;
 using WebAPI.Filters;
+using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace WebAPI
 {
@@ -35,6 +37,12 @@ namespace WebAPI
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            Log.Logger = new LoggerConfiguration()
+      .WriteTo.File(@"E:\log.txt")
+      .CreateLogger();
+
+
         }
 
         public void ConfigureServices(
@@ -81,14 +89,14 @@ namespace WebAPI
 
 
 
-           // services.AddDbContext<DbEntities>(options =>
-           //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+            // services.AddDbContext<DbEntities>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
 
-    
+            services.AddTransient<IStudentServices, StudentServices>();
             services.AddTransient<ICourseServices, CourseServices>();
             services.AddTransient<IBatchServices, BatchServices>();
 
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IUnitOfWork,UnitOfWork>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddAutoMapper();
             services.AddMvc(opt =>
@@ -129,8 +137,9 @@ namespace WebAPI
 
         public void Configure(
             IApplicationBuilder app,
-            IHostingEnvironment env)
+            IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddSerilog();
             app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
             app.UseAuthentication();

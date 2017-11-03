@@ -24,6 +24,8 @@ namespace BusinessServices
             CreateMap<Semister, SemisterEntity>();
             CreateMap<SemisterEntity, Semister>();
 
+            CreateMap<Student, StudentEntity>();
+            CreateMap<StudentEntity, Student>();
         }
     }
 }
