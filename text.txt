@@ -14,3 +14,37 @@
     "Audience": "http://logcorner.com"
   }
 }
+
+
+
+create database ERP;
+create database IDP;
+create database Functional;
+
+---Auth server db table creation
+
+/* 
+
+add-migration migration1 -context datacontext
+ update-database
+
+ */
+
+ --Master db creation
+
+ /*
+ add-migration newmigration -context dbentities
+  update-database -context dbentities
+ */
+
+ 
+ --Functional db creation
+
+ /*
+ add-migration newFunctionalmigration -context FunctionalDbEntities
+  update-database -context FunctionalDbEntities
+ */
+
+ 
+
+

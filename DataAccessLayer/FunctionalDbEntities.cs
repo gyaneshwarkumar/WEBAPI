@@ -23,12 +23,20 @@ namespace DataAccessLayer
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
+            //  IConfigurationRoot configuration = new ConfigurationBuilder()
+            //.SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+            //.AddJsonFile("appsettings.json")
+            //.Build();
+            //  builder.UseSqlServer("Server=DESKTOP-TNSM1B0\\MSSQLSERVER2012;Database=Functional;Trusted_Connection=True;");
+            //  base.OnConfiguring(builder);
+
             IConfigurationRoot configuration = new ConfigurationBuilder()
           .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
           .AddJsonFile("appsettings.json")
           .Build();
-            builder.UseSqlServer("Server=DESKTOP-TNSM1B0\\MSSQLSERVER2012;Database=Functional;Trusted_Connection=True;");
+            builder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             base.OnConfiguring(builder);
+
         }
     }
 }

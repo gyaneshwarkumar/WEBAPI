@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Functional
+namespace WebAPI
 {
     public class Program
     {
@@ -16,6 +16,17 @@ namespace Functional
         {
             BuildWebHost(args).Run();
         }
+        //public static void Main(string[] args)
+        //{
+        //    var host = new WebHostBuilder()
+        //        .UseKestrel()
+        //        .UseContentRoot(Directory.GetCurrentDirectory())
+        //        .UseIISIntegration()
+        //      //  .UseStartup()
+        //        .Build();
+
+        //    host.Run();
+        //}
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)

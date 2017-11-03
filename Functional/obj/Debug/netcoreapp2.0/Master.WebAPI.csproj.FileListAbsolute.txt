@@ -1,0 +1,44 @@
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\appsettings.json
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.deps.json
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.runtimeconfig.json
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.runtimeconfig.dev.json
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.dll
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.pdb
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\Authentication.Server.dll
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\BusinessEntities.dll
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\BusinessServices.dll
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\IBusinessServices.dll
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\BusinessServices.pdb
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
+E:\WebAPI - Copy\WebAPI\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
+E:\WebAPI - Copy\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.csprojResolveAssemblyReference.cache
+E:\WebAPI - Copy\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.csproj.CoreCompileInputs.cache
+E:\WebAPI - Copy\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.AssemblyInfoInputs.cache
+E:\WebAPI - Copy\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.AssemblyInfo.cs
+E:\WebAPI - Copy\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.dll
+E:\WebAPI - Copy\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.pdb
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\appsettings.json
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.deps.json
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.runtimeconfig.json
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.runtimeconfig.dev.json
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.dll
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\Master.WebAPI.pdb
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\Authentication.Server.dll
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\BusinessEntities.dll
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\BusinessServices.dll
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\IBusinessServices.dll
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\BusinessServices.pdb
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.0\BusinessEntities.pdb
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.csprojResolveAssemblyReference.cache
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.csproj.CoreCompileInputs.cache
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.AssemblyInfoInputs.cache
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.AssemblyInfo.cs
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.dll
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.0\Master.WebAPI.pdb

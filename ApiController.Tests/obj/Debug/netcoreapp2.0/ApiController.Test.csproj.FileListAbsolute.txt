@@ -54,3 +54,17 @@ C:\POC\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.Ass
 C:\POC\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.dll
 C:\POC\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.pdb
 C:\POC\WebAPI\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\ApiController.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\POC\WebAPI - Copy\ApiController.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\POC\WebAPI - Copy\ApiController.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\POC\WebAPI - Copy\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.deps.json
+C:\POC\WebAPI - Copy\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.runtimeconfig.json
+C:\POC\WebAPI - Copy\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.runtimeconfig.dev.json
+C:\POC\WebAPI - Copy\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.dll
+C:\POC\WebAPI - Copy\ApiController.Tests\bin\Debug\netcoreapp2.0\ApiController.Test.pdb
+C:\POC\WebAPI - Copy\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI - Copy\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI - Copy\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.AssemblyInfoInputs.cache
+C:\POC\WebAPI - Copy\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.AssemblyInfo.cs
+C:\POC\WebAPI - Copy\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.dll
+C:\POC\WebAPI - Copy\ApiController.Tests\obj\Debug\netcoreapp2.0\ApiController.Test.pdb

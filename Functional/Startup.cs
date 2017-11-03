@@ -17,7 +17,7 @@ using System.IO;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 
-namespace Functional
+namespace WebAPI
 {
     public class Startup
     {
@@ -35,14 +35,13 @@ namespace Functional
             Configuration = builder.Build();
         }
 
-      
         public void ConfigureServices(
             IServiceCollection services)
         {
-           
+
             var secretKey = Configuration.GetSection("JwtSecurityToken:Key").Value;
             var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
-
+            SetUpDataBase(services);
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options => {
                         options.TokenValidationParameters = new TokenValidationParameters
@@ -80,20 +79,15 @@ namespace Functional
 
 
 
-             //services.AddDbContext<FunctionalDbEntities>(options =>
-             //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+           // services.AddDbContext<DbEntities>(options =>
+           //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
 
-
-            // services.AddTransient<ICourseServices, CourseServices>();
-            // services.AddTransient<IBatchServices, BatchServices>();
-            // services.AddTransient<ISubCourseServices, SubCourseServices>();
-            // services.AddTransient<ISemisterServices, SemisterServices>();
             
-            //SetUpDataBase(services);
-            //services.AddTransient<IStudentServices, StudentServices>();
            
             services.AddTransient<IStudentServices, StudentServices>();
-            services.AddTransient<FunctionalUnitOfWork, FunctionalUnitOfWork>();
+            services.AddTransient<ICourseServices, CourseServices>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IFunctionalUnitOfWork, FunctionalUnitOfWork>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddAutoMapper();
             services.AddMvc();
@@ -120,13 +114,13 @@ namespace Functional
         public virtual void SetUpDataBase(IServiceCollection services)
         {
 
-           services.AddDbContext<FunctionalDbEntities>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
+            services.AddDbContext<FunctionalDbEntities>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("DataAccessLayer")));
         }
 
         public virtual void EnsureDatabaseCreated(DbEntities dbContext)
         {
-            // dbContext.Database.Migrate();
+           // dbContext.Database.Migrate();
         }
 
         public void Configure(

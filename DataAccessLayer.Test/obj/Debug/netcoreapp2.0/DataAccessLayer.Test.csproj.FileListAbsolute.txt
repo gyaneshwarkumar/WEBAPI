@@ -54,3 +54,17 @@ C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.
 C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfo.cs
 C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.dll
 C:\POC\WebAPI\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.pdb
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLayer.Test.deps.json
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLayer.Test.runtimeconfig.json
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLayer.Test.runtimeconfig.dev.json
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLayer.Test.dll
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\bin\Debug\netcoreapp2.0\DataAccessLayer.Test.pdb
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfoInputs.cache
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.AssemblyInfo.cs
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.dll
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.pdb
+C:\POC\WebAPI - Copy\DataAccessLayer.Test\obj\Debug\netcoreapp2.0\DataAccessLayer.Test.csprojResolveAssemblyReference.cache

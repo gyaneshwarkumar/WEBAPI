@@ -49,6 +49,7 @@ namespace WebAPI
             IServiceCollection services)
         {
 
+            SetUpDataBase(services);
             var secretKey = Configuration.GetSection("JwtSecurityToken:Key").Value;
             var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
 
