@@ -1,13 +1,16 @@
 ﻿export interface Batch {
     id?;
-    acedemic_Year?;
-    Start_Date?;
-    End_Date?;
-    Del_Status?;
-    App_Status?;
-    BatchInchargeId?;
+    academic_Year?;
+    description?;
+    startDate?;
+    endDate?;
+    del_Status?;
+    app_Status?;
+    batchInchargeId?;
+    courseId?;
     subCourseId?;
     startYear?;
     duration?;
     durationType?;
+    patternId?;
 }

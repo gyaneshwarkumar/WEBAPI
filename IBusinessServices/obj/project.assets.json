@@ -689,11 +689,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\IBusinessServices\\IBusinessServices.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI\\IBusinessServices\\IBusinessServices.csproj",
       "projectName": "IBusinessServices",
-      "projectPath": "C:\\POC\\WebAPI - Copy\\IBusinessServices\\IBusinessServices.csproj",
+      "projectPath": "C:\\POC\\WebAPI\\IBusinessServices\\IBusinessServices.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "C:\\POC\\WebAPI - Copy\\IBusinessServices\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI\\IBusinessServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -712,8 +712,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\POC\\WebAPI - Copy\\BusinessEntities\\BusinessEntities.csproj": {
-              "projectPath": "C:\\POC\\WebAPI - Copy\\BusinessEntities\\BusinessEntities.csproj"
+            "C:\\POC\\WebAPI\\BusinessEntities\\BusinessEntities.csproj": {
+              "projectPath": "C:\\POC\\WebAPI\\BusinessEntities\\BusinessEntities.csproj"
             }
           }
         }

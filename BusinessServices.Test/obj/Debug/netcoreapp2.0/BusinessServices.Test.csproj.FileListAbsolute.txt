@@ -39,20 +39,6 @@ E:\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.As
 E:\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.AssemblyInfo.cs
 E:\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.dll
 E:\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.pdb
-C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.deps.json
-C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.runtimeconfig.json
-C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.runtimeconfig.dev.json
-C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.dll
-C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.pdb
-C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.csproj.CoreCompileInputs.cache
-C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.AssemblyInfoInputs.cache
-C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.AssemblyInfo.cs
-C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.dll
-C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.pdb
-C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.csprojResolveAssemblyReference.cache
 C:\POC\WebAPI - Copy\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\POC\WebAPI - Copy\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\POC\WebAPI - Copy\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -67,3 +53,16 @@ C:\POC\WebAPI - Copy\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServi
 C:\POC\WebAPI - Copy\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.dll
 C:\POC\WebAPI - Copy\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.pdb
 C:\POC\WebAPI - Copy\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.deps.json
+C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.runtimeconfig.json
+C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.runtimeconfig.dev.json
+C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.dll
+C:\POC\WebAPI\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.pdb
+C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.AssemblyInfoInputs.cache
+C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.AssemblyInfo.cs
+C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.dll
+C:\POC\WebAPI\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.pdb

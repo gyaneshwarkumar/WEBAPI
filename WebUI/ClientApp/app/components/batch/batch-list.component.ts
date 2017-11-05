@@ -4,9 +4,11 @@ import { BatchService } from '../../_services/index';
 //Third Party js
 import { ToastrService } from 'toastr-ng2';
 import { InputTextModule, DataTableModule, ButtonModule, DialogModule, DataListModule } from 'primeng/primeng';
+import { UserService } from '../../user/user.service';
+
 
 class BatchInfo implements Batch {
-    constructor(public id?, public acedemic_Year?
+    constructor(public id?, public academic_Year?
         //public batch_Name?, public course_Id?, public description?
     ) { }
 }
@@ -24,25 +26,31 @@ export class BatchComponent implements OnInit {
     displayDialog: boolean;
     displayDeleteDialog: boolean;
     newBatch: boolean;
-    acedemic_Year: string;
+    academic_Year: string;
+    templateUrl1: string;
 
-    constructor(private batchService: BatchService, private toastrService: ToastrService) {
+
+
+    constructor(private batchService: BatchService, private toastrService: ToastrService,
+        private authService: UserService) {
 
     }
 
     ngOnInit() {
-        //this.editContactId = 0;
         this.loadData();
-    }
 
+    }
+ 
     loadData() {
-        
+        this.templateUrl1 = "./batch";
+        this.authService.checkathentication(this.templateUrl1)
         this.batchService.getBatchs()
             .subscribe(batchs => this.rowData = batchs,
-            
             error => console.log(error));
-       
+
     }
+
+
 
     showDialogToAdd() {
         this.newBatch = true;
@@ -57,7 +65,7 @@ export class BatchComponent implements OnInit {
         this.newBatch = false;
         this.batch = new BatchInfo();
         this.batch.id = batch.id;
-        this.batch.acedemic_Year = batch.acedemic_Year;
+        this.batch.academic_Year = batch.academic_Year;
         //this.batch.batch_Name = batch.batch_Name;
         //this.batch.course_Id = batch.course_Id;
         //this.batch.description = batch.description;
@@ -81,7 +89,7 @@ export class BatchComponent implements OnInit {
                 this.loadData();
             });
         this.displayDialog = false;
-       
+
     }
 
     update(batch) {
@@ -96,7 +104,7 @@ export class BatchComponent implements OnInit {
     }
 
     showDialogToDelete(batch: Batch) {
-        this.batch.acedemic_Year = batch.acedemic_Year;
+        this.batch.academic_Year = batch.academic_Year;
         //this.batch.batch_Name = batch.batch_Name;
         //this.batch.course_Id = batch.course_Id;
         //this.batch.description = batch.description;

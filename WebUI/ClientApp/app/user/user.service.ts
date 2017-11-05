@@ -80,4 +80,16 @@ export class UserService {
     logout(): void {
         this.authProfile.resetProfile();
     }
+
+
+    checkathentication(redirecturl?) {
+        let cached: any;
+        cached = sessionStorage.getItem("access_token");
+        if (cached == null) {
+            this.router.navigate(['/Login.component']);
+        } else {
+            this.router.navigate([redirecturl]);
+        }
+    }
+
 }

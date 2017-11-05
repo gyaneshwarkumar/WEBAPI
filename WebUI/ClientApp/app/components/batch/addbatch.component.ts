@@ -1,26 +1,30 @@
 ﻿import { Component, OnInit, NgModule, Injectable } from '@angular/core';
 import { NgForm, ReactiveFormsModule, FormsModule, FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Batch } from '../../_models/index';
-import { BatchService, CourseService } from '../../_services/index';
+import { BatchService, CourseService, SubcourseService } from '../../_services/index';
 //Third Party js
 import { ToastrService } from 'toastr-ng2';
 import { InputTextModule, DataTableModule, ButtonModule, DialogModule, DataListModule, DropdownModule, CalendarModule } from 'primeng/primeng';
-import { Course } from '../../_models/index';
+import { Course, Subcourse } from '../../_models/index';
 
 
 
 
 
 class BatchInfo implements Batch {
-    constructor(public id?, public acedemic_Year?, public end_Date?, public start_Date?, public App_Status?, public Del_Status?,
+    constructor(public id?, public academic_Year?, public description?, 
+        public startDate?, public endDate?, public Del_Status?, public App_Status?, 
         public batchInchargeId?, public courseId?,
-        public subCourseId?, public duration?, public startYear?,
-       
+        public subCourseId?, public startYear?, public duration?,
         public durationType?, public patternId?) { }
 }
 
 class CourseInfo implements Course {
     constructor(public id?, public course_Name?, public description?) { }
+}
+
+class SubcourseInfo implements Subcourse {
+    constructor(public id?, public sub_Course?, public courseId?, public description?) { }
 }
 
 
@@ -39,22 +43,27 @@ export class AddBatchComponent implements OnInit {
     displayDialog: boolean;
     displayDeleteDialog: boolean;
     newBatch: boolean;
-    acedemic_Year: string;
+    academic_Year: string;
     course: Course = new CourseInfo();
     courses: Course[];
+
+    subcourse: Subcourse = new SubcourseInfo();
+    subcourses: Subcourse[];
     courseList: FormControl;
     StartDate: Date;
     EndDate: Date;
     addCourse: boolean;
 
 
-    constructor(private batchService: BatchService, private toastrService: ToastrService, private courseService: CourseService) {
+    constructor(private batchService: BatchService, private toastrService: ToastrService, private courseService: CourseService,
+        private subcourseService: SubcourseService) {
 
     }
 
     ngOnInit() {
         //this.editContactId = 0;
         this.loadData();
+        this.loadSubcourseData();
         this.addCourse = false;
     }
 
@@ -63,6 +72,12 @@ export class AddBatchComponent implements OnInit {
             .subscribe(data => this.courses = data,
             error => console.log(error));
     }
+    loadSubcourseData() {
+        this.subcourseService.getSubcourses()
+            .subscribe(data => this.subcourses = data,
+            error => console.log(error));
+    }
+
     showCourse() {
         this.addCourse = true;
     }
@@ -76,16 +91,7 @@ export class AddBatchComponent implements OnInit {
     }
 
 
-    showDialogToEdit(batch: Batch) {
-        this.newBatch = false;
-        this.batch = new BatchInfo();
-        this.batch.id = batch.id;
-        this.batch.acedemic_Year = batch.acedemic_Year;
      
-        this.displayDialog = true;
-
-
-    }
     onRowSelect(event) {
     }
 
@@ -94,7 +100,6 @@ export class AddBatchComponent implements OnInit {
     }
 
     save(batch: NgForm) {
-        debugger;
         this.batchService.saveBatch(this.batch)
             .subscribe(response => {
                 this.batch.id > 0 ? this.toastrService.success('Data updated Successfully') :
@@ -117,7 +122,7 @@ export class AddBatchComponent implements OnInit {
     }
 
     showDialogToDelete(batch: Batch) {
-        this.batch.acedemic_Year = batch.acedemic_Year;
+        this.batch.academic_Year = batch.academic_Year;
       
         this.batch.id = batch.id;
         this.displayDeleteDialog = true;

@@ -7,6 +7,7 @@ import { Response } from '@angular/http';
 export class CommonService {
     private baseAuthUrl = 'http://localhost:22524/api';
     private baseMasterUrl = 'http://localhost:25363/api';
+    private baseFunctionalUrl = 'http://localhost:17837/api';
 
     constructor() { }
 
@@ -15,6 +16,9 @@ export class CommonService {
     }
     getBaseMasterUrl(): string {
         return this.baseMasterUrl;
+    }
+    getBaseFunctionalUrl(): string {
+        return this.baseFunctionalUrl;
     }
     handleFullError(error: Response) {
         return Observable.throw(error);

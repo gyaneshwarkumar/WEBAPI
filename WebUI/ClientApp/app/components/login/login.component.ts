@@ -14,7 +14,7 @@ class LoginInfo implements Login {
 
 @Component({
     selector: 'login',
-    templateUrl: './login.component.html',
+    templateUrl: './Login.component.html',
 
 })
 export class LoginComponent implements OnInit {
@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
     public editCourseId: any;
     public fullname: string;
     public newTrustFormVisible: boolean;
-    public showElement: boolean;
+   // public showElement: boolean;
 
     constructor(private loginService: LoginService, private toastrService: ToastrService, private authService: UserService,
         private router: Router) {
@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
     }
 
     ngOnInit() {
-      //  this.showElement = false;
+      // this.showElement = false;
     }
 
     onRowSelect(event) {
@@ -65,9 +65,8 @@ export class LoginComponent implements OnInit {
                 if (this.authService.redirectUrl) {
                     this.router.navigateByUrl(this.authService.redirectUrl);
                 } else {
-                    this.showElement = true;
+                    //this.showElement = true;
                     this.router.navigate(['/home']);
-
                 }
             },
             error => {

@@ -1657,11 +1657,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\Resolver\\Resolver.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI\\Resolver\\Resolver.csproj",
       "projectName": "Resolver",
-      "projectPath": "C:\\POC\\WebAPI - Copy\\Resolver\\Resolver.csproj",
+      "projectPath": "C:\\POC\\WebAPI\\Resolver\\Resolver.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "C:\\POC\\WebAPI - Copy\\Resolver\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI\\Resolver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

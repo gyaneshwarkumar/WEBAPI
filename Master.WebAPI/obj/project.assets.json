@@ -13673,11 +13673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\Master.WebAPI\\Master.WebAPI.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI\\Master.WebAPI\\Master.WebAPI.csproj",
       "projectName": "Master.WebAPI",
-      "projectPath": "C:\\POC\\WebAPI - Copy\\Master.WebAPI\\Master.WebAPI.csproj",
+      "projectPath": "C:\\POC\\WebAPI\\Master.WebAPI\\Master.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "C:\\POC\\WebAPI - Copy\\Master.WebAPI\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI\\Master.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13696,14 +13696,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\POC\\WebAPI - Copy\\BusinessServices\\BusinessServices.csproj": {
-              "projectPath": "C:\\POC\\WebAPI - Copy\\BusinessServices\\BusinessServices.csproj"
+            "C:\\POC\\WebAPI\\BusinessServices\\BusinessServices.csproj": {
+              "projectPath": "C:\\POC\\WebAPI\\BusinessServices\\BusinessServices.csproj"
             },
-            "C:\\POC\\WebAPI - Copy\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\POC\\WebAPI - Copy\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\POC\\WebAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\POC\\WebAPI\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\POC\\WebAPI - Copy\\IBusinessServices\\IBusinessServices.csproj": {
-              "projectPath": "C:\\POC\\WebAPI - Copy\\IBusinessServices\\IBusinessServices.csproj"
+            "C:\\POC\\WebAPI\\IBusinessServices\\IBusinessServices.csproj": {
+              "projectPath": "C:\\POC\\WebAPI\\IBusinessServices\\IBusinessServices.csproj"
             }
           }
         }

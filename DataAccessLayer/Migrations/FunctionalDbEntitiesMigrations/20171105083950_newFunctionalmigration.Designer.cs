@@ -8,12 +8,13 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
-namespace DataAccessLayer.Migrations
+namespace DataAccessLayer.Migrations.FunctionalDbEntitiesMigrations
 {
     [DbContext(typeof(FunctionalDbEntities))]
-    partial class FunctionalDbEntitiesModelSnapshot : ModelSnapshot
+    [Migration("20171105083950_newFunctionalmigration")]
+    partial class newFunctionalmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

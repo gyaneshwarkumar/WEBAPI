@@ -31,18 +31,6 @@ E:\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfoIn
 E:\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
 E:\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
 E:\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb
-C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.deps.json
-C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
-C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
-C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Authentication.Server.dll
-C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\Authentication.Server.pdb
-C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.csprojResolveAssemblyReference.cache
-C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
-C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfoInputs.cache
-C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
-C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
-C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb
-C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\appsettings.json
 C:\POC\WebAPI - Copy\DataAccessLayer\bin\Debug\netcoreapp2.0\appsettings.json
 C:\POC\WebAPI - Copy\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.deps.json
 C:\POC\WebAPI - Copy\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
@@ -55,3 +43,15 @@ C:\POC\WebAPI - Copy\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
 C:\POC\WebAPI - Copy\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb
 C:\POC\WebAPI - Copy\DataAccessLayer\bin\Debug\netcoreapp2.0\AuthenticationServer.dll
 C:\POC\WebAPI - Copy\DataAccessLayer\bin\Debug\netcoreapp2.0\AuthenticationServer.pdb
+C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\appsettings.json
+C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.deps.json
+C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\AuthenticationServer.dll
+C:\POC\WebAPI\DataAccessLayer\bin\Debug\netcoreapp2.0\AuthenticationServer.pdb
+C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
+C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\POC\WebAPI\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb

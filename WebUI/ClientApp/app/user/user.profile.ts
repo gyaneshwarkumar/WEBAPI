@@ -15,6 +15,8 @@ export class UserProfile {
         currentUser: { id: '', userName: '', email: '' }
     };
 
+    currentUser: boolean;
+
 
     constructor(private router: Router) {
     }
@@ -49,6 +51,9 @@ export class UserProfile {
     resetProfile(): User {
         sessionStorage.removeItem('access_token');
         sessionStorage.removeItem('expires_in');
+        sessionStorage.removeItem('userName');
+        sessionStorage.removeItem('id');
+        sessionStorage.removeItem('email');
         this.userProfile = {
             token: "",
             expiration: "",
@@ -56,5 +61,12 @@ export class UserProfile {
             claims: []
         };
         return this.userProfile;
+    }
+
+
+
+    get isLoggedIn(): boolean {
+        var accessToken = sessionStorage.getItem('access_token');
+        return accessToken != null;
     }
 }

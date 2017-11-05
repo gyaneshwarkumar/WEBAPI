@@ -123,7 +123,8 @@ namespace AuthenticationServer
         public virtual void EnsureDatabaseCreated(DataContext dbContext)
         {
             // run Migrations
-            //  dbContext.Database.Migrate();
+             dbContext.Database.Migrate();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -159,6 +160,8 @@ namespace AuthenticationServer
                 var dbContext = serviceScope.ServiceProvider.GetService<DataContext>();
                 EnsureDatabaseCreated(dbContext);
             }
+
+
         }
     }
 }

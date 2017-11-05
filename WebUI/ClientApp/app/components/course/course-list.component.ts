@@ -1,9 +1,11 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import { Course } from '../../_models/index';
 import { CourseService } from '../../_services/index';
+import { Router } from '@angular/router';
 //Third Party js
 import { ToastrService } from 'toastr-ng2';
 import { InputTextModule, DataTableModule, ButtonModule, DialogModule } from 'primeng/primeng';
+import { UserService } from '../../user/user.service';
 
 class CourseInfo implements Course {
     constructor(public id?, public course_Name?, public description?) { }
@@ -22,18 +24,26 @@ export class CourseComponent implements OnInit {
     displayDialog: boolean;
     displayDeleteDialog: boolean;
     newCourse: boolean;
+    templateUrl: string;
 
     public editCourseId: any;
     public fullname: string;
 
-    constructor(private courseService: CourseService, private toastrService: ToastrService) {
+    constructor(private courseService: CourseService, private toastrService: ToastrService, private router: Router,
+        private authService: UserService) {
 
     }
 
     ngOnInit() {
+        this.getProfile();
         this.editContactId = 0;
         this.loadData();
         this.newCourse = true;
+    }
+
+    getProfile() {
+        this.templateUrl = "./course";
+        this.authService.checkathentication(this.templateUrl)
     }
 
     loadData() {
@@ -41,6 +51,8 @@ export class CourseComponent implements OnInit {
             .subscribe(courses => this.rowData = courses,
             error => console.log(error));
     }
+
+    
 
     showDialogToAdd() {
         this.newCourse = true;
@@ -70,6 +82,7 @@ export class CourseComponent implements OnInit {
     }
 
     save(course) {
+        debugger;
         this.courseService.saveCourse(this.course)
             .subscribe(response => {
                 this.course.id > 0 ? this.toastrService.success('Data updated Successfully') :

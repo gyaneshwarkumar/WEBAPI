@@ -10,7 +10,7 @@ import { UserProfile } from '../user/user.profile'
 @Injectable()
 export class CourseService {
 
-    private _getCoursesUrl = "/Course/GetContacts";
+  
     public url = this.commonService.getBaseMasterUrl() + '/Course';
     public _saveUrl: string = '/Course/SaveContact/';
     //public _updateUrl: string = '/Course/UpdateContact/';

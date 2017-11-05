@@ -1,10 +1,20 @@
 <div class='container-fluid'>
     <div class='row'>
-        <div class=''>
+        <div class=''  *ngIf="showElement()">
             <nav-menu></nav-menu>
         </div>
         <div class='col-sm-12 body-content' style="margin:0;padding:0;">
             <router-outlet></router-outlet>
+        </div>
+        <div class="footer"   *ngIf="showElement()">
+            <div class="pull-right">
+                <strong>e-ClassRoom</strong>
+            </div>
+            <div>
+                <strong>Copyright :</strong> <span class="m-r-sm text-muted welcome-message">
+                    Classroom<sup>+</sup> © 2017-2018
+                </span>
+            </div>
         </div>
     </div>
 </div>

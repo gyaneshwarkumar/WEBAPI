@@ -27,6 +27,7 @@
                             <div class="col-sm-10">
                                 <input name="firstName" type="text" id="txtfirstName" class="form-control" style="background-color:White;width:200px;">
                             </div>
+                            
 
                         </div>
                         <div class="form-group">
@@ -37,20 +38,49 @@
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Email/UserName</label>
-                            <div class="col-sm-10">
-                                <input name="email" type="text" [(ngModel)]="signup.email" id="txtemail" class="form-control" style="background-color:White;width:200px;">
+                            <div class="col-sm-2">
+                                <input name="email" type="email" required  [(ngModel)]="signup.email" #email="ngModel" id="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+                            <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                                 class="alert alert-danger col-sm-4" style="padding:7px;margin-bottom:0;">
+
+                                <span *ngIf="email.errors.required">
+                                    Email is required.
+                                </span>
+                                <span *ngIf="email.errors.pattern">
+                                    Please enter the correct email, this email not valid.
+                                </span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Password</label>
-                            <div class="col-sm-10">
-                                <input name="password" type="password" [(ngModel)]="signup.password" id="txtpassword" class="form-control" style="background-color:White;width:200px;">
+                            <div class="col-sm-2">
+                                <input name="password" required type="password" validateEqual="confirmPassword" reverse="true" minlength="8" #password="ngModel" [(ngModel)]="signup.password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" class="form-control" style="background-color:White;width:200px;">
+                            </div>
+                            <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                                 class="alert alert-danger col-sm-5" style="padding:7px;margin-bottom:0;">
+
+                                <span *ngIf="password.errors.required">
+                                    password is required.
+                                </span>
+                                <span *ngIf="password.errors.length">
+                                    Password lenth must atleast 8 characters.
+                                </span>
+                                <span *ngIf="password.errors.pattern">
+                                    Password should have lowercase, uppercase. special characters and numbers.
+                                </span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Confirm Password</label>
-                            <div class="col-sm-10">
-                                <div class="ui-grid-col-8"><input pInputText id="lastname" class="form-control" [(ngModel)]="signup.confirmPassword" required type="password" style="background-color:White;width:200px;" /></div>
+                            <div class="col-sm-2">
+                                <input name="confirmPassword" validateEqual="password"  #confirmPassword="ngModel" id="confirmPassword" type="password" class="form-control" [(ngModel)]="signup.confirmPassword"  required style="background-color:White;width:200px;" />
+                            </div>
+                            <div *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)"
+                                 class="alert alert-danger col-sm-5" style="padding:7px;margin-bottom:0;">
+                                <span [hidden]="confirmPassword.valid ||  (confirmPassword.pristine)">
+                                    Password mismatch
+                                </span>
                             </div>
                         </div>
                         <div class="form-group">

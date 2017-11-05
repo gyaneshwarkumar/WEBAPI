@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace AuthenticationServer.Migrations
 {
-    public partial class migration1 : Migration
+    public partial class datacontext : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -5630,11 +5630,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\POC\\WebAPI - Copy\\BusinessServices.Test\\BusinessServices.Test.csproj",
+      "projectUniqueName": "C:\\POC\\WebAPI\\BusinessServices.Test\\BusinessServices.Test.csproj",
       "projectName": "BusinessServices.Test",
-      "projectPath": "C:\\POC\\WebAPI - Copy\\BusinessServices.Test\\BusinessServices.Test.csproj",
+      "projectPath": "C:\\POC\\WebAPI\\BusinessServices.Test\\BusinessServices.Test.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
-      "outputPath": "C:\\POC\\WebAPI - Copy\\BusinessServices.Test\\obj\\",
+      "outputPath": "C:\\POC\\WebAPI\\BusinessServices.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

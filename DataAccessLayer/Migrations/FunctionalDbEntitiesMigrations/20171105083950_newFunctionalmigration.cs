@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 using System.Collections.Generic;
 
-namespace DataAccessLayer.Migrations
+namespace DataAccessLayer.Migrations.FunctionalDbEntitiesMigrations
 {
-    public partial class @new : Migration
+    public partial class newFunctionalmigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
