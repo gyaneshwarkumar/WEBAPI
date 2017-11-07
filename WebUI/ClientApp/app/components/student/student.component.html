@@ -8,165 +8,122 @@
         </tr>
     </tbody>
 </table>
-<div id="DivContent" class="wrapper wrapper-content">
-    <div class="row animated fadeInRight">
-        <div class="col-md-3">
-            <div class="ibox float-e-margins">
-                <div>
-                    <div class="ibox-content profile-content">
-                        <div class="col-md-6 external-box-01 ">
-                            <h4>Profile Image</h4>
-                            <div class="img-preview img-preview-sm">
-                                <div id="UpdatePanel65">
 
-
+<form class="form-horizontal" id="form1" novalidate (ngSubmit)="Batch(BatchForm)" #SubmitForm="ngForm" autocomplete="off">
+    <fieldset>
+        <div id="DivContent" class="wrapper wrapper-content">
+            <div class="row animated fadeInRight">
+                <div class="col-md-3">
+                    <div class="ibox float-e-margins">
+                        <div>
+                            <div class="ibox-content profile-content">
+                                <div class="col-md-6 external-box-01 ">
+                                    <h4>Profile Image</h4>
                                     <div class="img-preview img-preview-sm">
-                                        <img id="ImgProfileImage" src="" style="height:150px;width:200px;">
+                                        <div id="UpdatePanel65">
 
+
+                                            <div class="img-preview img-preview-sm">
+                                                <img id="ImgProfileImage" src="" style="height:150px;width:200px;">
+
+                                            </div>
+
+                                        </div>
                                     </div>
 
-                                </div>
-                            </div>
-
-                            <h4></h4>
-
-                            <div class="btn-group">
-
-                                <div id="UpdatePanel64">
+                                    <h4></h4>
 
                                     <div class="btn-group">
 
-                                        <div id="FileUploadProfile" class="btn btn-primary">
-                                            <input type="hidden" name="FileUploadProfile$ctl00" id="FileUploadProfile_ctl00"><div id="FileUploadProfile_ctl01"><input name="FileUploadProfile$ctl02" type="file" id="FileUploadProfile_ctl02" style="width:220px;"></div>
+                                        <div id="UpdatePanel64">
+
+                                            <div class="btn-group">
+
+                                                <div id="FileUploadProfile" class="btn btn-primary">
+                                                    <input type="hidden" name="FileUploadProfile$ctl00" id="FileUploadProfile_ctl00"><div id="FileUploadProfile_ctl01"><input name="FileUploadProfile$ctl02" type="file" id="FileUploadProfile_ctl02" style="width:220px;"></div>
+                                                </div>
+                                                <input type="submit" name="btnUpload" value="Upload" id="btnUpload" class="btn btn-primary">
+                                            </div>
+
+
                                         </div>
-                                        <input type="submit" name="btnUpload" value="Upload" id="btnUpload" class="btn btn-primary">
+
                                     </div>
 
+                                    <div id="Panel2" style="height:300px;overflow-y:scroll;">
 
+                                        <div class="external-box-02">
+
+                                            <a href="#Student01" id="achr1" class="external-box-03">Personal Details</a>
+
+
+                                        </div>
+
+                                    </div>
                                 </div>
 
-                            </div>
-
-                            <div id="Panel2" style="height:300px;overflow-y:scroll;">
-
-                                <div class="external-box-02">
-
-                                    <a href="#Student01" id="achr1" class="external-box-03">Personal Details</a>
-
-
+                                <div class="user-button">
+                                    <div class="row">
+                                    </div>
                                 </div>
-
-                            </div>
-                        </div>
-
-                        <div class="user-button">
-                            <div class="row">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-9">
-            <div class="ibox float-e-margins">
+                <div class="col-md-9">
+                    <div class="ibox float-e-margins">
 
-                <div class="ibox-content chat-discussion13">
+                        <div class="ibox-content chat-discussion13">
 
-                    <div>
+                            <div>
 
-                        <div class="feed-activity-list">
-                            <!-- feed-element 01 -->
-                            <div id="Student01" class="feed-element">
-
-                                <div class="Activites-box-01"><i class="fa fa-stack-exchange"></i>Personal Details</div>
-
-                                <br>
-
-                                <div class="form-horizontal">
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">First Name</label>
-                                        <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel3">
-
-                                                <input name="txtFirstName" type="text" id="txtFirstName" class="form-control" placeholder="FirstName" onblur="return initCap(this.value)" onkeypress="return ValidateAlpha(event)">
+                                <div class="feed-activity-list">
+                                    <!-- feed-element 01 -->
+                                    <div id="Student01" class="feed-element">
+                                        <div class="Activites-box-01"><i class="fa fa-stack-exchange"></i>Personal Details</div>
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">First Name</label>
+                                                <div class="col-lg-10 col-lg-4-width">
+                                                    <input name="firstName" type="text" id="txtFirstName" class="form-control" placeholder="FirstName" [(ngModel)]="student.firstName">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Middle Name</label>
+                                                <div class="col-lg-10 col-lg-4-width">
+                                                    <input name="middleName" type="text" id="txtMiddleName" class="form-control" placeholder="MiddleName" [(ngModel)]="student.middleName">
+                                                </div>
 
                                             </div>
-                                            <span id="RequiredFieldValidator12" style="color:Red;display:none;">Please Select First Name..!!!</span>
                                         </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Middle Name</label>
-                                        <div class="col-lg-10 col-lg-4-width">
-
-                                            <div id="UpdatePanel4">
-
-                                                <input name="txtMiddleName" type="text" id="txtMiddleName" class="form-control" placeholder="MiddleName" onblur="return initCaps(this.value)" onkeypress="return ValidateAlpha(event)">
-
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Last Name</label>
+                                            <div class="col-lg-10 col-lg-4-width">
+                                                <input name="lastName" type="text" id="txtLastName" class="form-control" placeholder="LastName" [(ngModel)]="student.lastName">
                                             </div>
-
                                         </div>
-                                    </div>
-
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Last Name</label>
-                                        <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel5">
-
-                                                <input name="txtLastName" type="text" id="txtLastName" class="form-control" placeholder="LastName" onblur="return initCapital(this.value)" onkeypress="return ValidateAlpha(event)">
-
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">RollNo</label>
+                                            <div class="col-lg-10 col-lg-4-width">
+                                                <input name="rollNo" type="text" id="txtRollNo" class="form-control" placeholder="RollNo" [(ngModel)]="student.rollNo">
                                             </div>
-                                            <span id="RequiredFieldValidator13" style="color:Red;display:none;">Please Select Last Name..!!!</span>
-
                                         </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">RollNo</label>
-                                        <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel6">
-
-                                                <input name="txtRollNo" type="text" id="txtRollNo" class="form-control" placeholder="RollNo">
-
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">PrnNo</label>
+                                            <div class="col-lg-10 col-lg-4-width">
+                                                <input name="pRNNo" type="text" id="txtPrnNo" class="form-control" placeholder="PrnNo" [(ngModel)]="student.pRNNo">
                                             </div>
-                                            <span id="RequiredFieldValidator14" style="color:Red;display:none;">Please Select Roll No..!!!</span>
-
                                         </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">PrnNo</label>
-                                        <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel7">
-
-                                                <input name="txtPrnNo" type="text" id="txtPrnNo" class="form-control" placeholder="PrnNo">
-
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">FCRollNo</label>
+                                            <div class="col-lg-10 col-lg-4-width">
+                                                <input name="fCRollNo" type="text" id="txtFCRollNo" class="form-control" placeholder="FCRollNo" [(ngModel)]="student.fCRollNo">
                                             </div>
-
-
                                         </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">FCRollNo</label>
-                                        <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel8">
-
-                                                <input name="txtFCRollNo" type="text" id="txtFCRollNo" class="form-control" placeholder="FCRollNo">
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Course</label>
-                                        <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel9">
-
-                                                <select name="ddlCourse" onchange="javascript:setTimeout('__doPostBack(\'ddlCourse\',\'\')', 0)" id="ddlCourse" class="form-control m-b">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Course</label>
+                                            <div class="col-lg-10 col-lg-4-width">
+                                                <select name="course" id="ddlCourse" class="form-control m-b" [(ngModel)]="student.course">
                                                     <option selected="selected" value="0">Select</option>
                                                     <option value="6">B.Sc</option>
                                                     <option value="4">B.tech</option>
@@ -177,30 +134,16 @@
                                                     <option value="5">MBA </option>
                                                     <option value="1">MCA </option>
                                                     <option value="3">MCS</option>
-
                                                 </select>
-
                                             </div>
-                                            <span id="RequiredFieldValidator8" style="color:Red;display:none;">Please Select Course..!!!</span>
-
-
                                         </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Batch</label>
-                                        <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel23">
-
-                                                <select name="ddlBatch" onchange="javascript:setTimeout('__doPostBack(\'ddlBatch\',\'\')', 0)" id="ddlBatch" class="form-control m-b">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Batch</label>
+                                            <div class="col-lg-10 col-lg-4-width">
+                                                <select name="batch" [(ngModel)]="student.batch" id="ddlBatch" class="form-control m-b">
                                                     <option selected="selected" value="0">Batch</option>
-
                                                 </select>
-
-
-
                                             </div>
-                                            <span id="RequiredFieldValidator9" style="color:Red;display:none;">Please Select Batch..!!!</span>
                                         </div>
                                     </div>
 
@@ -208,13 +151,9 @@
                                         <label class="col-lg-2 control-label">Semester</label>
                                         <div class="col-lg-10 col-lg-4-width">
                                             <div id="updatepanelw">
-
-                                                <select name="ddlSemester" onchange="javascript:setTimeout('__doPostBack(\'ddlSemester\',\'\')', 0)" id="ddlSemester" class="form-control m-b">
+                                                <select name="semester" [(ngModel)]="student.semester" id="ddlSemester" class="form-control m-b">
                                                     <option selected="selected" value="0">Semester</option>
-
                                                 </select>
-
-
                                             </div>
                                             <span id="RequiredFieldValidator10" style="color:Red;display:none;">Please Select Semester..!!!</span>
                                         </div>
@@ -222,102 +161,66 @@
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Section</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel1">
-
-
-                                                <select name="ddlSection" onchange="javascript:setTimeout('__doPostBack(\'ddlSection\',\'\')', 0)" id="ddlSection" class="form-control m-b">
-                                                    <option selected="selected" value="0">Section</option>
-
-                                                </select>
-
-
-                                            </div>
-                                            <span id="RequiredFieldValidator11" style="color:Red;display:none;">Please Select Section..!!!</span>
+                                            <select name="section" [(ngModel)]="student.section" id="ddlSection" class="form-control m-b">
+                                                <option selected="selected" value="0">Section</option>
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Specialisation Major</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel10">
-
-                                                <select name="ddlSpecialisationMajor" id="ddlSpecialisationMajor" class="form-control m-b">
-                                                    <option selected="selected" value="0">Specialisation Major</option>
-                                                    <option value="Marketing">Marketing</option>
-                                                    <option value="Finance">Finance</option>
-                                                    <option value="IT">IT</option>
-                                                    <option value="HR">HR</option>
-
-                                                </select>
-
-                                            </div>
-
+                                            <select name="specializationMajor" id="ddlSpecialisationMajor" [(ngModel)]="student.specializationMajor" class="form-control m-b">
+                                                <option selected="selected" value="0">Specialisation Major</option>
+                                                <option value="Marketing">Marketing</option>
+                                                <option value="Finance">Finance</option>
+                                                <option value="IT">IT</option>
+                                                <option value="HR">HR</option>
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Specialisation Minor</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel11">
-
-                                                <select name="ddlSpecialisationMinor" id="ddlSpecialisationMinor" class="form-control m-b">
-                                                    <option selected="selected" value="0">Specialisation Minor</option>
-                                                    <option value="Marketing">Marketing</option>
-                                                    <option value="Finance">Finance</option>
-                                                    <option value="HR">HR</option>
-                                                    <option value="IT">IT</option>
-                                                    <option value="NA">NA</option>
-
-                                                </select>
-
-                                            </div>
+                                            <select name="specialization_Minor" id="ddlSpecialisationMinor" [(ngModel)]="student.specialization_Minor" class="form-control m-b">
+                                                <option selected="selected" value="0">Specialisation Minor</option>
+                                                <option value="Marketing">Marketing</option>
+                                                <option value="Finance">Finance</option>
+                                                <option value="HR">HR</option>
+                                                <option value="IT">IT</option>
+                                                <option value="NA">NA</option>
+                                            </select>
                                         </div>
                                     </div>
-
-
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Gender</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel12">
-
-                                                <select name="ddlGender" id="ddlGender" class="form-control m-b">
-                                                    <option selected="selected" value="0">Select Gender</option>
-                                                    <option value="Male">Male</option>
-                                                    <option value="Female">Female</option>
-                                                    <option value="Other">Other</option>
-
-                                                </select>
-
-                                            </div>
-                                            <span id="RequiredFieldValidator3" style="color:Red;display:none;">Please Select Gender..!!!</span>
-
+                                            <select name="gender" id="ddlGender" class="form-control m-b" [(ngModel)]="student.gender">
+                                                <option selected="selected" value="0">Select Gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Blood Group</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel13">
-
-                                                <select name="ddlBloodGroup" id="ddlBloodGroup" class="form-control m-b">
-                                                    <option selected="selected" value="0">Select Blood-Group</option>
-                                                    <option value="A+ve">A+ve</option>
-                                                    <option value="A-ve">A-ve</option>
-                                                    <option value="B+ve">B+ve</option>
-                                                    <option value="B-ve">B-ve</option>
-                                                    <option value="O+ve">O+ve</option>
-                                                    <option value="O-ve">O-ve</option>
-                                                    <option value="AB+ve">AB+ve</option>
-                                                    <option value="AB-ve">AB-ve</option>
-
-                                                </select>
-
-                                            </div>
-
+                                            <select name="bloodGroup" id="ddlBloodGroup" class="form-control m-b" [(ngModel)]="student.bloodGroup">
+                                                <option selected="selected" value="0">Select Blood-Group</option>
+                                                <option value="A+ve">A+ve</option>
+                                                <option value="A-ve">A-ve</option>
+                                                <option value="B+ve">B+ve</option>
+                                                <option value="B-ve">B-ve</option>
+                                                <option value="O+ve">O+ve</option>
+                                                <option value="O-ve">O-ve</option>
+                                                <option value="AB+ve">AB+ve</option>
+                                                <option value="AB-ve">AB-ve</option>
+                                            </select>
                                         </div>
                                     </div>
-
-
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Date of Birth</label>
                                         <div class="col-lg-10 col-lg-4-width">
@@ -326,155 +229,131 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td>
-                                                            <div id="updatepanel14">
-
-                                                                <select name="ddlDay" id="ddlDay" class="form-control m-b">
-                                                                    <option selected="selected" value="0">Day</option>
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="6">6</option>
-                                                                    <option value="7">7</option>
-                                                                    <option value="8">8</option>
-                                                                    <option value="9">9</option>
-                                                                    <option value="10">10</option>
-                                                                    <option value="11">11</option>
-                                                                    <option value="12">12</option>
-                                                                    <option value="13">13</option>
-                                                                    <option value="14">14</option>
-                                                                    <option value="15">15</option>
-                                                                    <option value="16">16</option>
-                                                                    <option value="17">17</option>
-                                                                    <option value="18">18</option>
-                                                                    <option value="19">19</option>
-                                                                    <option value="20">20</option>
-                                                                    <option value="21">21</option>
-                                                                    <option value="22">22</option>
-                                                                    <option value="23">23</option>
-                                                                    <option value="24">24</option>
-                                                                    <option value="25">25</option>
-                                                                    <option value="26">26</option>
-                                                                    <option value="27">27</option>
-                                                                    <option value="28">28</option>
-                                                                    <option value="29">29</option>
-                                                                    <option value="30">30</option>
-                                                                    <option value="31">31</option>
-
-                                                                </select>
-
-                                                            </div>
-
-
+                                                            <select name="ddlDay" id="ddlDay" class="form-control m-b">
+                                                                <option selected="selected" value="0">Day</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                                <option value="16">16</option>
+                                                                <option value="17">17</option>
+                                                                <option value="18">18</option>
+                                                                <option value="19">19</option>
+                                                                <option value="20">20</option>
+                                                                <option value="21">21</option>
+                                                                <option value="22">22</option>
+                                                                <option value="23">23</option>
+                                                                <option value="24">24</option>
+                                                                <option value="25">25</option>
+                                                                <option value="26">26</option>
+                                                                <option value="27">27</option>
+                                                                <option value="28">28</option>
+                                                                <option value="29">29</option>
+                                                                <option value="30">30</option>
+                                                                <option value="31">31</option>
+                                                            </select>
                                                         </td>
                                                         <td>&nbsp;</td>
                                                         <td>
-                                                            <div id="updatepanel15">
-
-                                                                <select name="ddlMonth" id="ddlMonth" class="form-control m-b">
-                                                                    <option selected="selected" value="0">Month</option>
-                                                                    <option value="1">Jan</option>
-                                                                    <option value="2">Feb</option>
-                                                                    <option value="3">Mar</option>
-                                                                    <option value="4">Apr</option>
-                                                                    <option value="5">May</option>
-                                                                    <option value="6">Jun</option>
-                                                                    <option value="7">Jul</option>
-                                                                    <option value="8">Aug</option>
-                                                                    <option value="9">Sep</option>
-                                                                    <option value="10">Oct</option>
-                                                                    <option value="11">Nov</option>
-                                                                    <option value="12">Dec</option>
-
-                                                                </select>
-
-                                                            </div>
-
-
-
-
+                                                            <select name="ddlMonth" id="ddlMonth" class="form-control m-b">
+                                                                <option selected="selected" value="0">Month</option>
+                                                                <option value="1">Jan</option>
+                                                                <option value="2">Feb</option>
+                                                                <option value="3">Mar</option>
+                                                                <option value="4">Apr</option>
+                                                                <option value="5">May</option>
+                                                                <option value="6">Jun</option>
+                                                                <option value="7">Jul</option>
+                                                                <option value="8">Aug</option>
+                                                                <option value="9">Sep</option>
+                                                                <option value="10">Oct</option>
+                                                                <option value="11">Nov</option>
+                                                                <option value="12">Dec</option>
+                                                            </select>
                                                         </td>
                                                         <td>&nbsp;</td>
                                                         <td>
-                                                            <div id="updatepanel16">
-
-                                                                <select name="ddlYear" id="ddlYear" class="form-control m-b">
-                                                                    <option value="0">Year</option>
-                                                                    <option value="2017">2017</option>
-                                                                    <option value="2016">2016</option>
-                                                                    <option value="2015">2015</option>
-                                                                    <option value="2014">2014</option>
-                                                                    <option value="2013">2013</option>
-                                                                    <option value="2012">2012</option>
-                                                                    <option value="2011">2011</option>
-                                                                    <option value="2010">2010</option>
-                                                                    <option value="2009">2009</option>
-                                                                    <option value="2008">2008</option>
-                                                                    <option value="2007">2007</option>
-                                                                    <option value="2006">2006</option>
-                                                                    <option value="2005">2005</option>
-                                                                    <option value="2004">2004</option>
-                                                                    <option value="2003">2003</option>
-                                                                    <option value="2002">2002</option>
-                                                                    <option value="2001">2001</option>
-                                                                    <option value="2000">2000</option>
-                                                                    <option value="1999">1999</option>
-                                                                    <option value="1998">1998</option>
-                                                                    <option value="1997">1997</option>
-                                                                    <option value="1996">1996</option>
-                                                                    <option value="1995">1995</option>
-                                                                    <option value="1994">1994</option>
-                                                                    <option value="1993">1993</option>
-                                                                    <option value="1992">1992</option>
-                                                                    <option value="1991">1991</option>
-                                                                    <option value="1990">1990</option>
-                                                                    <option value="1989">1989</option>
-                                                                    <option value="1988">1988</option>
-                                                                    <option value="1987">1987</option>
-                                                                    <option value="1986">1986</option>
-                                                                    <option value="1985">1985</option>
-                                                                    <option value="1984">1984</option>
-                                                                    <option value="1983">1983</option>
-                                                                    <option value="1982">1982</option>
-                                                                    <option value="1981">1981</option>
-                                                                    <option value="1980">1980</option>
-                                                                    <option value="1979">1979</option>
-                                                                    <option value="1978">1978</option>
-                                                                    <option value="1977">1977</option>
-                                                                    <option value="1976">1976</option>
-                                                                    <option value="1975">1975</option>
-                                                                    <option value="1974">1974</option>
-                                                                    <option value="1973">1973</option>
-                                                                    <option value="1972">1972</option>
-                                                                    <option value="1971">1971</option>
-                                                                    <option value="1970">1970</option>
-                                                                    <option value="1969">1969</option>
-                                                                    <option value="1968">1968</option>
-                                                                    <option value="1967">1967</option>
-                                                                    <option value="1966">1966</option>
-                                                                    <option value="1965">1965</option>
-                                                                    <option value="1964">1964</option>
-                                                                    <option value="1963">1963</option>
-                                                                    <option value="1962">1962</option>
-                                                                    <option value="1961">1961</option>
-                                                                    <option value="1960">1960</option>
-                                                                    <option value="1959">1959</option>
-                                                                    <option value="1958">1958</option>
-                                                                    <option value="1957">1957</option>
-                                                                    <option value="1956">1956</option>
-                                                                    <option value="1955">1955</option>
-                                                                    <option value="1954">1954</option>
-                                                                    <option value="1953">1953</option>
-                                                                    <option value="1952">1952</option>
-                                                                    <option value="1951">1951</option>
-
-                                                                </select>
-
-                                                            </div>
-
-
-
+                                                            <select name="ddlYear" id="ddlYear" class="form-control m-b">
+                                                                <option value="0">Year</option>
+                                                                <option value="2017">2017</option>
+                                                                <option value="2016">2016</option>
+                                                                <option value="2015">2015</option>
+                                                                <option value="2014">2014</option>
+                                                                <option value="2013">2013</option>
+                                                                <option value="2012">2012</option>
+                                                                <option value="2011">2011</option>
+                                                                <option value="2010">2010</option>
+                                                                <option value="2009">2009</option>
+                                                                <option value="2008">2008</option>
+                                                                <option value="2007">2007</option>
+                                                                <option value="2006">2006</option>
+                                                                <option value="2005">2005</option>
+                                                                <option value="2004">2004</option>
+                                                                <option value="2003">2003</option>
+                                                                <option value="2002">2002</option>
+                                                                <option value="2001">2001</option>
+                                                                <option value="2000">2000</option>
+                                                                <option value="1999">1999</option>
+                                                                <option value="1998">1998</option>
+                                                                <option value="1997">1997</option>
+                                                                <option value="1996">1996</option>
+                                                                <option value="1995">1995</option>
+                                                                <option value="1994">1994</option>
+                                                                <option value="1993">1993</option>
+                                                                <option value="1992">1992</option>
+                                                                <option value="1991">1991</option>
+                                                                <option value="1990">1990</option>
+                                                                <option value="1989">1989</option>
+                                                                <option value="1988">1988</option>
+                                                                <option value="1987">1987</option>
+                                                                <option value="1986">1986</option>
+                                                                <option value="1985">1985</option>
+                                                                <option value="1984">1984</option>
+                                                                <option value="1983">1983</option>
+                                                                <option value="1982">1982</option>
+                                                                <option value="1981">1981</option>
+                                                                <option value="1980">1980</option>
+                                                                <option value="1979">1979</option>
+                                                                <option value="1978">1978</option>
+                                                                <option value="1977">1977</option>
+                                                                <option value="1976">1976</option>
+                                                                <option value="1975">1975</option>
+                                                                <option value="1974">1974</option>
+                                                                <option value="1973">1973</option>
+                                                                <option value="1972">1972</option>
+                                                                <option value="1971">1971</option>
+                                                                <option value="1970">1970</option>
+                                                                <option value="1969">1969</option>
+                                                                <option value="1968">1968</option>
+                                                                <option value="1967">1967</option>
+                                                                <option value="1966">1966</option>
+                                                                <option value="1965">1965</option>
+                                                                <option value="1964">1964</option>
+                                                                <option value="1963">1963</option>
+                                                                <option value="1962">1962</option>
+                                                                <option value="1961">1961</option>
+                                                                <option value="1960">1960</option>
+                                                                <option value="1959">1959</option>
+                                                                <option value="1958">1958</option>
+                                                                <option value="1957">1957</option>
+                                                                <option value="1956">1956</option>
+                                                                <option value="1955">1955</option>
+                                                                <option value="1954">1954</option>
+                                                                <option value="1953">1953</option>
+                                                                <option value="1952">1952</option>
+                                                                <option value="1951">1951</option>
+                                                            </select>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -488,61 +367,35 @@
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Phone No</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel17">
-
-                                                <input name="txtPhoneNo" type="text" id="txtPhoneNo" class="form-control" onkeypress="return onlyNos(event,this)">
-
-                                            </div>
+                                            <input name="phoneNo" type="text" id="txtPhoneNo" class="form-control" [(ngModel)]="student.phoneNo">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Mobile No</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel18">
-
-                                                <input name="txtMobileNo" type="text" id="txtMobileNo" class="form-control" onkeypress="return onlyNos(event,this)">
-
-                                            </div>
+                                            <input name="mobileNo" type="text" id="txtMobileNo" class="form-control" [(ngModel)]="student.mobileNo">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">WhatsApp Mobile No</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel19">
-
-                                                <input name="txtWhatsAppNo" type="text" id="txtWhatsAppNo" class="form-control" onkeypress="return onlyNos(event,this)">
-
-                                            </div>
-
-
+                                            <input name="whatsappMobileNo" type="text" id="txtWhatsAppNo" class="form-control" [(ngModel)]="student.whatsappMobileNo">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">PersonalEmail</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel20">
-
-                                                <input name="txtEmailId" type="text" id="txtEmailId" class="form-control">
-
-                                            </div>
-                                            <span id="RegularExpressionValidator1" style="color:Red;visibility:hidden;">Please enter valid Email ID</span>
-
+                                            <input name="email" type="text" id="txtEmailId" class="form-control" [(ngModel)]="student.email">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">PIBM-Email</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel21">
-
-                                                <input name="txtPIBMEmail" type="text" id="txtPIBMEmail" class="form-control">
-
-                                            </div>
-
-
+                                            <input name="pIBMEmailId" type="text" id="txtPIBMEmail" class="form-control" [(ngModel)]="student.pIBMEmailId">
                                         </div>
                                     </div>
 
@@ -550,390 +403,335 @@
 
                                         <label class="col-lg-2 control-label">Address Line1</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel22">
-
-                                                <input name="txtAL1" type="text" id="txtAL1" class="form-control">
-
-                                            </div>
+                                            <input name="addressLine1" type="text" id="txtAL1" class="form-control" [(ngModel)]="student.addressLine1">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Address Line2</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel24">
-
-                                                <input name="txtAL2" type="text" id="txtAL2" class="form-control">
-
-                                            </div>
+                                            <input name="addressLine2" type="text" id="txtAL2" class="form-control" [(ngModel)]="student.addressLine2">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Address Line3</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel25">
-
-                                                <input name="txtAL3" type="text" id="txtAL3" class="form-control">
-
-                                            </div>
+                                            <input name="addressLine3" type="text" id="txtAL3" class="form-control" [(ngModel)]="student.addressLine3">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Country</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="updatepanel26">
+                                            <select name="country" id="ddlCountry" class="form-control m-b" [(ngModel)]="student.country">
+                                                <option selected="selected" value="0">Select</option>
+                                                <option value="1">Afghanistan </option>
+                                                <option value="2">Albania </option>
+                                                <option value="3">Algeria </option>
+                                                <option value="4">American Samoa </option>
+                                                <option value="5">Andorra </option>
+                                                <option value="6">Angola </option>
+                                                <option value="7">Anguilla </option>
+                                                <option value="8">Antigua &amp; Barbuda </option>
+                                                <option value="9">Argentina </option>
+                                                <option value="10">Armenia </option>
+                                                <option value="11">Aruba </option>
+                                                <option value="12">Australia </option>
+                                                <option value="13">Austria </option>
+                                                <option value="14">Azerbaijan </option>
+                                                <option value="15">Bahamas, The </option>
+                                                <option value="16">Bahrain </option>
+                                                <option value="17">Bangladesh </option>
+                                                <option value="18">Barbados </option>
+                                                <option value="19">Belarus </option>
+                                                <option value="20">Belgium </option>
+                                                <option value="21">Belize </option>
+                                                <option value="22">Benin </option>
+                                                <option value="23">Bermuda </option>
+                                                <option value="24">Bhutan </option>
+                                                <option value="25">Bolivia </option>
+                                                <option value="26">Bosnia &amp; Herzegovina </option>
+                                                <option value="27">Botswana </option>
+                                                <option value="28">Brazil </option>
+                                                <option value="29">British Virgin Is. </option>
+                                                <option value="30">Brunei </option>
+                                                <option value="31">Bulgaria </option>
+                                                <option value="32">Burkina Faso </option>
+                                                <option value="33">Burma </option>
+                                                <option value="34">Burundi </option>
+                                                <option value="35">Cambodia </option>
+                                                <option value="36">Cameroon </option>
+                                                <option value="37">Canada </option>
+                                                <option value="38">Cape Verde </option>
+                                                <option value="39">Cayman Islands </option>
+                                                <option value="40">Central African Rep. </option>
+                                                <option value="41">Chad </option>
+                                                <option value="42">Chile </option>
+                                                <option value="43">China </option>
+                                                <option value="44">Colombia </option>
+                                                <option value="45">Comoros </option>
+                                                <option value="46">Congo, Dem. Rep. </option>
+                                                <option value="47">Congo, Repub. of the </option>
+                                                <option value="48">Cook Islands </option>
+                                                <option value="49">Costa Rica </option>
+                                                <option value="50">Cote d'Ivoire </option>
+                                                <option value="51">Croatia </option>
+                                                <option value="52">Cuba </option>
+                                                <option value="53">Cyprus </option>
+                                                <option value="54">Czech Republic </option>
+                                                <option value="55">Denmark </option>
+                                                <option value="56">Djibouti </option>
+                                                <option value="57">Dominica </option>
+                                                <option value="58">Dominican Republic </option>
+                                                <option value="59">East Timor </option>
+                                                <option value="60">Ecuador </option>
+                                                <option value="61">Egypt </option>
+                                                <option value="62">El Salvador </option>
+                                                <option value="63">Equatorial Guinea </option>
+                                                <option value="64">Eritrea </option>
+                                                <option value="65">Estonia </option>
+                                                <option value="66">Ethiopia </option>
+                                                <option value="67">Faroe Islands </option>
+                                                <option value="68">Fiji </option>
+                                                <option value="69">Finland </option>
+                                                <option value="70">France </option>
+                                                <option value="71">French Guiana </option>
+                                                <option value="72">French Polynesia </option>
+                                                <option value="73">Gabon </option>
+                                                <option value="74">Gambia, The </option>
+                                                <option value="75">Gaza Strip </option>
+                                                <option value="76">Georgia </option>
+                                                <option value="77">Germany </option>
+                                                <option value="78">Ghana </option>
+                                                <option value="79">Gibraltar </option>
+                                                <option value="80">Greece </option>
+                                                <option value="81">Greenland </option>
+                                                <option value="82">Grenada </option>
+                                                <option value="83">Guadeloupe </option>
+                                                <option value="84">Guam </option>
+                                                <option value="85">Guatemala </option>
+                                                <option value="86">Guernsey </option>
+                                                <option value="87">Guinea </option>
+                                                <option value="88">Guinea-Bissau </option>
+                                                <option value="89">Guyana </option>
+                                                <option value="90">Haiti </option>
+                                                <option value="91">Honduras </option>
+                                                <option value="92">Hong Kong </option>
+                                                <option value="93">Hungary </option>
+                                                <option value="94">Iceland </option>
+                                                <option value="95">India </option>
+                                                <option value="96">Indonesia </option>
+                                                <option value="97">Iran </option>
+                                                <option value="98">Iraq </option>
+                                                <option value="99">Ireland </option>
+                                                <option value="100">Isle of Man </option>
+                                                <option value="101">Israel </option>
+                                                <option value="102">Italy </option>
+                                                <option value="103">Jamaica </option>
+                                                <option value="104">Japan </option>
+                                                <option value="105">Jersey </option>
+                                                <option value="106">Jordan </option>
+                                                <option value="107">Kazakhstan </option>
+                                                <option value="108">Kenya </option>
+                                                <option value="109">Kiribati </option>
+                                                <option value="110">Korea, North </option>
+                                                <option value="111">Korea, South </option>
+                                                <option value="112">Kuwait </option>
+                                                <option value="113">Kyrgyzstan </option>
+                                                <option value="114">Laos </option>
+                                                <option value="115">Latvia </option>
+                                                <option value="116">Lebanon </option>
+                                                <option value="117">Lesotho </option>
+                                                <option value="118">Liberia </option>
+                                                <option value="119">Libya </option>
+                                                <option value="120">Liechtenstein </option>
+                                                <option value="121">Lithuania </option>
+                                                <option value="122">Luxembourg </option>
+                                                <option value="123">Macau </option>
+                                                <option value="124">Macedonia </option>
+                                                <option value="125">Madagascar </option>
+                                                <option value="126">Malawi </option>
+                                                <option value="127">Malaysia </option>
+                                                <option value="128">Maldives </option>
+                                                <option value="129">Mali </option>
+                                                <option value="130">Malta </option>
+                                                <option value="131">Marshall Islands </option>
+                                                <option value="132">Martinique </option>
+                                                <option value="133">Mauritania </option>
+                                                <option value="134">Mauritius </option>
+                                                <option value="135">Mayotte </option>
+                                                <option value="136">Mexico </option>
+                                                <option value="137">Micronesia, Fed. St. </option>
+                                                <option value="138">Moldova </option>
+                                                <option value="139">Monaco </option>
+                                                <option value="140">Mongolia </option>
+                                                <option value="141">Montserrat </option>
+                                                <option value="142">Morocco </option>
+                                                <option value="143">Mozambique </option>
+                                                <option value="154">N. Mariana Islands </option>
+                                                <option value="144">Namibia </option>
+                                                <option value="145">Nauru </option>
+                                                <option value="146">Nepal </option>
+                                                <option value="147">Netherlands </option>
+                                                <option value="148">Netherlands Antilles </option>
+                                                <option value="149">New Caledonia </option>
+                                                <option value="150">New Zealand </option>
+                                                <option value="151">Nicaragua </option>
+                                                <option value="152">Niger </option>
+                                                <option value="153">Nigeria </option>
+                                                <option value="155">Norway </option>
+                                                <option value="156">Oman </option>
+                                                <option value="157">Pakistan </option>
+                                                <option value="158">Palau </option>
+                                                <option value="159">Panama </option>
+                                                <option value="160">Papua New Guinea </option>
+                                                <option value="161">Paraguay </option>
+                                                <option value="162">Peru </option>
+                                                <option value="163">Philippines </option>
+                                                <option value="164">Poland </option>
+                                                <option value="165">Portugal </option>
+                                                <option value="166">Puerto Rico </option>
+                                                <option value="167">Qatar </option>
+                                                <option value="168">Reunion </option>
+                                                <option value="169">Romania </option>
+                                                <option value="170">Russia </option>
+                                                <option value="171">Rwanda </option>
+                                                <option value="172">Saint Helena </option>
+                                                <option value="173">Saint Kitts &amp; Nevis </option>
+                                                <option value="174">Saint Lucia </option>
+                                                <option value="176">Saint Vincent and the Grenadines </option>
+                                                <option value="177">Samoa </option>
+                                                <option value="178">San Marino </option>
+                                                <option value="179">Sao Tome &amp; Principe </option>
+                                                <option value="180">Saudi Arabia </option>
+                                                <option value="181">Senegal </option>
+                                                <option value="182">Serbia </option>
+                                                <option value="183">Seychelles </option>
+                                                <option value="184">Sierra Leone </option>
+                                                <option value="185">Singapore </option>
+                                                <option value="186">Slovakia </option>
+                                                <option value="187">Slovenia </option>
+                                                <option value="188">Solomon Islands </option>
+                                                <option value="189">Somalia </option>
+                                                <option value="190">South Africa </option>
+                                                <option value="191">Spain </option>
+                                                <option value="192">Sri Lanka </option>
+                                                <option value="175">St Pierre &amp; Miquelon </option>
+                                                <option value="193">Sudan </option>
+                                                <option value="194">Suriname </option>
+                                                <option value="195">Swaziland </option>
+                                                <option value="196">Sweden </option>
+                                                <option value="197">Switzerland </option>
+                                                <option value="198">Syria </option>
+                                                <option value="199">Taiwan </option>
+                                                <option value="200">Tajikistan </option>
+                                                <option value="201">Tanzania </option>
+                                                <option value="202">Thailand </option>
+                                                <option value="203">Togo </option>
+                                                <option value="204">Tonga </option>
+                                                <option value="205">Trinidad &amp; Tobago </option>
+                                                <option value="206">Tunisia </option>
+                                                <option value="207">Turkey </option>
+                                                <option value="208">Turkmenistan </option>
+                                                <option value="209">Turks &amp; Caicos Is </option>
+                                                <option value="210">Tuvalu </option>
+                                                <option value="211">Uganda </option>
+                                                <option value="212">Ukraine </option>
+                                                <option value="213">United Arab Emirates </option>
+                                                <option value="214">United Kingdom </option>
+                                                <option value="215">United States </option>
+                                                <option value="216">Uruguay </option>
+                                                <option value="217">Uzbekistan </option>
+                                                <option value="218">Vanuatu </option>
+                                                <option value="219">Venezuela </option>
+                                                <option value="220">Vietnam </option>
+                                                <option value="221">Virgin Islands </option>
+                                                <option value="222">Wallis and Futuna </option>
+                                                <option value="223">West Bank </option>
+                                                <option value="224">Western Sahara </option>
+                                                <option value="225">Yemen </option>
+                                                <option value="226">Zambia </option>
+                                                <option value="227">Zimbabwe </option>
 
-                                                <select name="ddlCountry" id="ddlCountry" class="form-control m-b">
-                                                    <option selected="selected" value="0">Select</option>
-                                                    <option value="1">Afghanistan </option>
-                                                    <option value="2">Albania </option>
-                                                    <option value="3">Algeria </option>
-                                                    <option value="4">American Samoa </option>
-                                                    <option value="5">Andorra </option>
-                                                    <option value="6">Angola </option>
-                                                    <option value="7">Anguilla </option>
-                                                    <option value="8">Antigua &amp; Barbuda </option>
-                                                    <option value="9">Argentina </option>
-                                                    <option value="10">Armenia </option>
-                                                    <option value="11">Aruba </option>
-                                                    <option value="12">Australia </option>
-                                                    <option value="13">Austria </option>
-                                                    <option value="14">Azerbaijan </option>
-                                                    <option value="15">Bahamas, The </option>
-                                                    <option value="16">Bahrain </option>
-                                                    <option value="17">Bangladesh </option>
-                                                    <option value="18">Barbados </option>
-                                                    <option value="19">Belarus </option>
-                                                    <option value="20">Belgium </option>
-                                                    <option value="21">Belize </option>
-                                                    <option value="22">Benin </option>
-                                                    <option value="23">Bermuda </option>
-                                                    <option value="24">Bhutan </option>
-                                                    <option value="25">Bolivia </option>
-                                                    <option value="26">Bosnia &amp; Herzegovina </option>
-                                                    <option value="27">Botswana </option>
-                                                    <option value="28">Brazil </option>
-                                                    <option value="29">British Virgin Is. </option>
-                                                    <option value="30">Brunei </option>
-                                                    <option value="31">Bulgaria </option>
-                                                    <option value="32">Burkina Faso </option>
-                                                    <option value="33">Burma </option>
-                                                    <option value="34">Burundi </option>
-                                                    <option value="35">Cambodia </option>
-                                                    <option value="36">Cameroon </option>
-                                                    <option value="37">Canada </option>
-                                                    <option value="38">Cape Verde </option>
-                                                    <option value="39">Cayman Islands </option>
-                                                    <option value="40">Central African Rep. </option>
-                                                    <option value="41">Chad </option>
-                                                    <option value="42">Chile </option>
-                                                    <option value="43">China </option>
-                                                    <option value="44">Colombia </option>
-                                                    <option value="45">Comoros </option>
-                                                    <option value="46">Congo, Dem. Rep. </option>
-                                                    <option value="47">Congo, Repub. of the </option>
-                                                    <option value="48">Cook Islands </option>
-                                                    <option value="49">Costa Rica </option>
-                                                    <option value="50">Cote d'Ivoire </option>
-                                                    <option value="51">Croatia </option>
-                                                    <option value="52">Cuba </option>
-                                                    <option value="53">Cyprus </option>
-                                                    <option value="54">Czech Republic </option>
-                                                    <option value="55">Denmark </option>
-                                                    <option value="56">Djibouti </option>
-                                                    <option value="57">Dominica </option>
-                                                    <option value="58">Dominican Republic </option>
-                                                    <option value="59">East Timor </option>
-                                                    <option value="60">Ecuador </option>
-                                                    <option value="61">Egypt </option>
-                                                    <option value="62">El Salvador </option>
-                                                    <option value="63">Equatorial Guinea </option>
-                                                    <option value="64">Eritrea </option>
-                                                    <option value="65">Estonia </option>
-                                                    <option value="66">Ethiopia </option>
-                                                    <option value="67">Faroe Islands </option>
-                                                    <option value="68">Fiji </option>
-                                                    <option value="69">Finland </option>
-                                                    <option value="70">France </option>
-                                                    <option value="71">French Guiana </option>
-                                                    <option value="72">French Polynesia </option>
-                                                    <option value="73">Gabon </option>
-                                                    <option value="74">Gambia, The </option>
-                                                    <option value="75">Gaza Strip </option>
-                                                    <option value="76">Georgia </option>
-                                                    <option value="77">Germany </option>
-                                                    <option value="78">Ghana </option>
-                                                    <option value="79">Gibraltar </option>
-                                                    <option value="80">Greece </option>
-                                                    <option value="81">Greenland </option>
-                                                    <option value="82">Grenada </option>
-                                                    <option value="83">Guadeloupe </option>
-                                                    <option value="84">Guam </option>
-                                                    <option value="85">Guatemala </option>
-                                                    <option value="86">Guernsey </option>
-                                                    <option value="87">Guinea </option>
-                                                    <option value="88">Guinea-Bissau </option>
-                                                    <option value="89">Guyana </option>
-                                                    <option value="90">Haiti </option>
-                                                    <option value="91">Honduras </option>
-                                                    <option value="92">Hong Kong </option>
-                                                    <option value="93">Hungary </option>
-                                                    <option value="94">Iceland </option>
-                                                    <option value="95">India </option>
-                                                    <option value="96">Indonesia </option>
-                                                    <option value="97">Iran </option>
-                                                    <option value="98">Iraq </option>
-                                                    <option value="99">Ireland </option>
-                                                    <option value="100">Isle of Man </option>
-                                                    <option value="101">Israel </option>
-                                                    <option value="102">Italy </option>
-                                                    <option value="103">Jamaica </option>
-                                                    <option value="104">Japan </option>
-                                                    <option value="105">Jersey </option>
-                                                    <option value="106">Jordan </option>
-                                                    <option value="107">Kazakhstan </option>
-                                                    <option value="108">Kenya </option>
-                                                    <option value="109">Kiribati </option>
-                                                    <option value="110">Korea, North </option>
-                                                    <option value="111">Korea, South </option>
-                                                    <option value="112">Kuwait </option>
-                                                    <option value="113">Kyrgyzstan </option>
-                                                    <option value="114">Laos </option>
-                                                    <option value="115">Latvia </option>
-                                                    <option value="116">Lebanon </option>
-                                                    <option value="117">Lesotho </option>
-                                                    <option value="118">Liberia </option>
-                                                    <option value="119">Libya </option>
-                                                    <option value="120">Liechtenstein </option>
-                                                    <option value="121">Lithuania </option>
-                                                    <option value="122">Luxembourg </option>
-                                                    <option value="123">Macau </option>
-                                                    <option value="124">Macedonia </option>
-                                                    <option value="125">Madagascar </option>
-                                                    <option value="126">Malawi </option>
-                                                    <option value="127">Malaysia </option>
-                                                    <option value="128">Maldives </option>
-                                                    <option value="129">Mali </option>
-                                                    <option value="130">Malta </option>
-                                                    <option value="131">Marshall Islands </option>
-                                                    <option value="132">Martinique </option>
-                                                    <option value="133">Mauritania </option>
-                                                    <option value="134">Mauritius </option>
-                                                    <option value="135">Mayotte </option>
-                                                    <option value="136">Mexico </option>
-                                                    <option value="137">Micronesia, Fed. St. </option>
-                                                    <option value="138">Moldova </option>
-                                                    <option value="139">Monaco </option>
-                                                    <option value="140">Mongolia </option>
-                                                    <option value="141">Montserrat </option>
-                                                    <option value="142">Morocco </option>
-                                                    <option value="143">Mozambique </option>
-                                                    <option value="154">N. Mariana Islands </option>
-                                                    <option value="144">Namibia </option>
-                                                    <option value="145">Nauru </option>
-                                                    <option value="146">Nepal </option>
-                                                    <option value="147">Netherlands </option>
-                                                    <option value="148">Netherlands Antilles </option>
-                                                    <option value="149">New Caledonia </option>
-                                                    <option value="150">New Zealand </option>
-                                                    <option value="151">Nicaragua </option>
-                                                    <option value="152">Niger </option>
-                                                    <option value="153">Nigeria </option>
-                                                    <option value="155">Norway </option>
-                                                    <option value="156">Oman </option>
-                                                    <option value="157">Pakistan </option>
-                                                    <option value="158">Palau </option>
-                                                    <option value="159">Panama </option>
-                                                    <option value="160">Papua New Guinea </option>
-                                                    <option value="161">Paraguay </option>
-                                                    <option value="162">Peru </option>
-                                                    <option value="163">Philippines </option>
-                                                    <option value="164">Poland </option>
-                                                    <option value="165">Portugal </option>
-                                                    <option value="166">Puerto Rico </option>
-                                                    <option value="167">Qatar </option>
-                                                    <option value="168">Reunion </option>
-                                                    <option value="169">Romania </option>
-                                                    <option value="170">Russia </option>
-                                                    <option value="171">Rwanda </option>
-                                                    <option value="172">Saint Helena </option>
-                                                    <option value="173">Saint Kitts &amp; Nevis </option>
-                                                    <option value="174">Saint Lucia </option>
-                                                    <option value="176">Saint Vincent and the Grenadines </option>
-                                                    <option value="177">Samoa </option>
-                                                    <option value="178">San Marino </option>
-                                                    <option value="179">Sao Tome &amp; Principe </option>
-                                                    <option value="180">Saudi Arabia </option>
-                                                    <option value="181">Senegal </option>
-                                                    <option value="182">Serbia </option>
-                                                    <option value="183">Seychelles </option>
-                                                    <option value="184">Sierra Leone </option>
-                                                    <option value="185">Singapore </option>
-                                                    <option value="186">Slovakia </option>
-                                                    <option value="187">Slovenia </option>
-                                                    <option value="188">Solomon Islands </option>
-                                                    <option value="189">Somalia </option>
-                                                    <option value="190">South Africa </option>
-                                                    <option value="191">Spain </option>
-                                                    <option value="192">Sri Lanka </option>
-                                                    <option value="175">St Pierre &amp; Miquelon </option>
-                                                    <option value="193">Sudan </option>
-                                                    <option value="194">Suriname </option>
-                                                    <option value="195">Swaziland </option>
-                                                    <option value="196">Sweden </option>
-                                                    <option value="197">Switzerland </option>
-                                                    <option value="198">Syria </option>
-                                                    <option value="199">Taiwan </option>
-                                                    <option value="200">Tajikistan </option>
-                                                    <option value="201">Tanzania </option>
-                                                    <option value="202">Thailand </option>
-                                                    <option value="203">Togo </option>
-                                                    <option value="204">Tonga </option>
-                                                    <option value="205">Trinidad &amp; Tobago </option>
-                                                    <option value="206">Tunisia </option>
-                                                    <option value="207">Turkey </option>
-                                                    <option value="208">Turkmenistan </option>
-                                                    <option value="209">Turks &amp; Caicos Is </option>
-                                                    <option value="210">Tuvalu </option>
-                                                    <option value="211">Uganda </option>
-                                                    <option value="212">Ukraine </option>
-                                                    <option value="213">United Arab Emirates </option>
-                                                    <option value="214">United Kingdom </option>
-                                                    <option value="215">United States </option>
-                                                    <option value="216">Uruguay </option>
-                                                    <option value="217">Uzbekistan </option>
-                                                    <option value="218">Vanuatu </option>
-                                                    <option value="219">Venezuela </option>
-                                                    <option value="220">Vietnam </option>
-                                                    <option value="221">Virgin Islands </option>
-                                                    <option value="222">Wallis and Futuna </option>
-                                                    <option value="223">West Bank </option>
-                                                    <option value="224">Western Sahara </option>
-                                                    <option value="225">Yemen </option>
-                                                    <option value="226">Zambia </option>
-                                                    <option value="227">Zimbabwe </option>
-
-                                                </select>
-
-                                            </div>
-
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">State</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="up">
-
-                                                <select name="ddlState" onchange="javascript:setTimeout('__doPostBack(\'ddlState\',\'\')', 0)" id="ddlState" class="form-control m-b">
-                                                    <option value="0">Select</option>
-                                                    <option selected="selected" value="0">Select</option>
-                                                    <option value="30">Andaman and Nicobar Islands</option>
-                                                    <option value="1">Andra Pradesh</option>
-                                                    <option value="2">Arunachal Pradesh</option>
-                                                    <option value="3">Assam</option>
-                                                    <option value="4">Bihar</option>
-                                                    <option value="31">Chandigarh</option>
-                                                    <option value="5">Chhattisgarh</option>
-                                                    <option value="32">Dadar and Nagar Haveli</option>
-                                                    <option value="33">Daman and Diu</option>
-                                                    <option value="34">Delhi</option>
-                                                    <option value="6">Goa</option>
-                                                    <option value="7">Gujarat</option>
-                                                    <option value="8">Haryana</option>
-                                                    <option value="9">Himachal Pradesh</option>
-                                                    <option value="10">Jammu and Kashmir</option>
-                                                    <option value="11">Jharkhand</option>
-                                                    <option value="12">Karnataka</option>
-                                                    <option value="13">Kerala</option>
-                                                    <option value="35">Lakshadeep</option>
-                                                    <option value="15">Madya Pradesh</option>
-                                                    <option value="16">Maharashtra</option>
-                                                    <option value="17">Manipur</option>
-                                                    <option value="18">Meghalaya</option>
-                                                    <option value="19">Mizoram</option>
-                                                    <option value="20">Nagaland</option>
-                                                    <option value="21">Orissa</option>
-                                                    <option value="36">Pondicherry</option>
-                                                    <option value="22">Punjab</option>
-                                                    <option value="23">Rajasthan</option>
-                                                    <option value="24">Sikkim</option>
-                                                    <option value="25">Tamil Nadu</option>
-                                                    <option value="26">Tripura</option>
-                                                    <option value="28">Uttar Pradesh</option>
-                                                    <option value="27">Uttaranchal</option>
-                                                    <option value="29">West Bengal</option>
-
-                                                </select>
-
-                                            </div>
-
-
+                                            <select name="state" id="ddlState" class="form-control m-b" [(ngModel)]="student.state">
+                                                <option value="0">Select</option>
+                                                <option selected="selected" value="0">Select</option>
+                                                <option value="30">Andaman and Nicobar Islands</option>
+                                                <option value="1">Andra Pradesh</option>
+                                                <option value="2">Arunachal Pradesh</option>
+                                                <option value="3">Assam</option>
+                                                <option value="4">Bihar</option>
+                                                <option value="31">Chandigarh</option>
+                                                <option value="5">Chhattisgarh</option>
+                                                <option value="32">Dadar and Nagar Haveli</option>
+                                                <option value="33">Daman and Diu</option>
+                                                <option value="34">Delhi</option>
+                                                <option value="6">Goa</option>
+                                                <option value="7">Gujarat</option>
+                                                <option value="8">Haryana</option>
+                                                <option value="9">Himachal Pradesh</option>
+                                                <option value="10">Jammu and Kashmir</option>
+                                                <option value="11">Jharkhand</option>
+                                                <option value="12">Karnataka</option>
+                                                <option value="13">Kerala</option>
+                                                <option value="35">Lakshadeep</option>
+                                                <option value="15">Madya Pradesh</option>
+                                                <option value="16">Maharashtra</option>
+                                                <option value="17">Manipur</option>
+                                                <option value="18">Meghalaya</option>
+                                                <option value="19">Mizoram</option>
+                                                <option value="20">Nagaland</option>
+                                                <option value="21">Orissa</option>
+                                                <option value="36">Pondicherry</option>
+                                                <option value="22">Punjab</option>
+                                                <option value="23">Rajasthan</option>
+                                                <option value="24">Sikkim</option>
+                                                <option value="25">Tamil Nadu</option>
+                                                <option value="26">Tripura</option>
+                                                <option value="28">Uttar Pradesh</option>
+                                                <option value="27">Uttaranchal</option>
+                                                <option value="29">West Bengal</option>
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">City</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel2">
-
-
-                                                <select name="ddlCity" onchange="javascript:setTimeout('__doPostBack(\'ddlCity\',\'\')', 0)" id="ddlCity" class="form-control m-b"></select>
-
-                                            </div>
-
-
+                                            <select name="city" id="ddlCity" class="form-control m-b" [(ngModel)]="student.city"></select>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Pin Code</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel27">
-
-                                                <input name="txtPin" type="text" id="txtPin" class="form-control" onkeypress="return onlyNos(event,this)">
-
-                                            </div>
-
+                                            <input name="pincode" type="text" id="txtPin" class="form-control" [(ngModel)]="student.pincode">
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Religion</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel28">
-
-                                                <input name="txtReligion" type="text" id="txtReligion" class="form-control">
-
-                                            </div>
-
+                                            <input name="religion" type="text" id="txtReligion" class="form-control" [(ngModel)]="student.religion">
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Caste</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel29">
-
-                                                <input name="txtCaste" type="text" id="txtCaste" class="form-control">
-
-                                            </div>
-
-
+                                            <input name="caste" type="text" id="txtCaste" class="form-control" [(ngModel)]="student.caste">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-lg-2 control-label">Category</label>
                                         <div class="col-lg-10 col-lg-4-width">
-                                            <div id="UpdatePanel30">
-
-                                                <input name="txtCategory" type="text" id="txtCategory" class="form-control">
-
-                                            </div>
-
+                                            <input name="category" type="text" id="txtCategory" class="form-control" [(ngModel)]="student.category">
                                         </div>
                                     </div>
 
@@ -947,155 +745,134 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td>
-                                                            <div id="UpdatePanel31">
+                                                            <select name="ddlDayOfJoining" id="ddlDayOfJoining" class="form-control m-b">
+                                                                <option selected="selected" value="0">Day</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                                <option value="16">16</option>
+                                                                <option value="17">17</option>
+                                                                <option value="18">18</option>
+                                                                <option value="19">19</option>
+                                                                <option value="20">20</option>
+                                                                <option value="21">21</option>
+                                                                <option value="22">22</option>
+                                                                <option value="23">23</option>
+                                                                <option value="24">24</option>
+                                                                <option value="25">25</option>
+                                                                <option value="26">26</option>
+                                                                <option value="27">27</option>
+                                                                <option value="28">28</option>
+                                                                <option value="29">29</option>
+                                                                <option value="30">30</option>
+                                                                <option value="31">31</option>
 
-                                                                <select name="ddlDayOfJoining" id="ddlDayOfJoining" class="form-control m-b">
-                                                                    <option selected="selected" value="0">Day</option>
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="6">6</option>
-                                                                    <option value="7">7</option>
-                                                                    <option value="8">8</option>
-                                                                    <option value="9">9</option>
-                                                                    <option value="10">10</option>
-                                                                    <option value="11">11</option>
-                                                                    <option value="12">12</option>
-                                                                    <option value="13">13</option>
-                                                                    <option value="14">14</option>
-                                                                    <option value="15">15</option>
-                                                                    <option value="16">16</option>
-                                                                    <option value="17">17</option>
-                                                                    <option value="18">18</option>
-                                                                    <option value="19">19</option>
-                                                                    <option value="20">20</option>
-                                                                    <option value="21">21</option>
-                                                                    <option value="22">22</option>
-                                                                    <option value="23">23</option>
-                                                                    <option value="24">24</option>
-                                                                    <option value="25">25</option>
-                                                                    <option value="26">26</option>
-                                                                    <option value="27">27</option>
-                                                                    <option value="28">28</option>
-                                                                    <option value="29">29</option>
-                                                                    <option value="30">30</option>
-                                                                    <option value="31">31</option>
-
-                                                                </select>
-                                                            </div>
-
-
-
-
+                                                            </select>
                                                         </td>
                                                         <td>&nbsp;</td>
                                                         <td>
-                                                            <div id="UpdatePanel32">
-
-                                                                <select name="ddlMonthOfJoining" id="ddlMonthOfJoining" class="form-control m-b">
-                                                                    <option selected="selected" value="0">Month</option>
-                                                                    <option value="1">Jan</option>
-                                                                    <option value="2">Feb</option>
-                                                                    <option value="3">Mar</option>
-                                                                    <option value="4">Apr</option>
-                                                                    <option value="5">May</option>
-                                                                    <option value="6">Jun</option>
-                                                                    <option value="7">Jul</option>
-                                                                    <option value="8">Aug</option>
-                                                                    <option value="9">Sep</option>
-                                                                    <option value="10">Oct</option>
-                                                                    <option value="11">Nov</option>
-                                                                    <option value="12">Dec</option>
-
-                                                                </select>
-
-                                                            </div>
-
-
+                                                            <select name="ddlMonthOfJoining" id="ddlMonthOfJoining" class="form-control m-b">
+                                                                <option selected="selected" value="0">Month</option>
+                                                                <option value="1">Jan</option>
+                                                                <option value="2">Feb</option>
+                                                                <option value="3">Mar</option>
+                                                                <option value="4">Apr</option>
+                                                                <option value="5">May</option>
+                                                                <option value="6">Jun</option>
+                                                                <option value="7">Jul</option>
+                                                                <option value="8">Aug</option>
+                                                                <option value="9">Sep</option>
+                                                                <option value="10">Oct</option>
+                                                                <option value="11">Nov</option>
+                                                                <option value="12">Dec</option>
+                                                            </select>
                                                         </td>
                                                         <td>&nbsp;</td>
                                                         <td>
-                                                            <div id="UpdatePanel33">
-
-                                                                <select name="ddlYearOfJoining" id="ddlYearOfJoining" class="form-control m-b">
-                                                                    <option value="0">Year</option>
-                                                                    <option value="2017">2017</option>
-                                                                    <option value="2016">2016</option>
-                                                                    <option value="2015">2015</option>
-                                                                    <option value="2014">2014</option>
-                                                                    <option value="2013">2013</option>
-                                                                    <option value="2012">2012</option>
-                                                                    <option value="2011">2011</option>
-                                                                    <option value="2010">2010</option>
-                                                                    <option value="2009">2009</option>
-                                                                    <option value="2008">2008</option>
-                                                                    <option value="2007">2007</option>
-                                                                    <option value="2006">2006</option>
-                                                                    <option value="2005">2005</option>
-                                                                    <option value="2004">2004</option>
-                                                                    <option value="2003">2003</option>
-                                                                    <option value="2002">2002</option>
-                                                                    <option value="2001">2001</option>
-                                                                    <option value="2000">2000</option>
-                                                                    <option value="1999">1999</option>
-                                                                    <option value="1998">1998</option>
-                                                                    <option value="1997">1997</option>
-                                                                    <option value="1996">1996</option>
-                                                                    <option value="1995">1995</option>
-                                                                    <option value="1994">1994</option>
-                                                                    <option value="1993">1993</option>
-                                                                    <option value="1992">1992</option>
-                                                                    <option value="1991">1991</option>
-                                                                    <option value="1990">1990</option>
-                                                                    <option value="1989">1989</option>
-                                                                    <option value="1988">1988</option>
-                                                                    <option value="1987">1987</option>
-                                                                    <option value="1986">1986</option>
-                                                                    <option value="1985">1985</option>
-                                                                    <option value="1984">1984</option>
-                                                                    <option value="1983">1983</option>
-                                                                    <option value="1982">1982</option>
-                                                                    <option value="1981">1981</option>
-                                                                    <option value="1980">1980</option>
-                                                                    <option value="1979">1979</option>
-                                                                    <option value="1978">1978</option>
-                                                                    <option value="1977">1977</option>
-                                                                    <option value="1976">1976</option>
-                                                                    <option value="1975">1975</option>
-                                                                    <option value="1974">1974</option>
-                                                                    <option value="1973">1973</option>
-                                                                    <option value="1972">1972</option>
-                                                                    <option value="1971">1971</option>
-                                                                    <option value="1970">1970</option>
-                                                                    <option value="1969">1969</option>
-                                                                    <option value="1968">1968</option>
-                                                                    <option value="1967">1967</option>
-                                                                    <option value="1966">1966</option>
-                                                                    <option value="1965">1965</option>
-                                                                    <option value="1964">1964</option>
-                                                                    <option value="1963">1963</option>
-                                                                    <option value="1962">1962</option>
-                                                                    <option value="1961">1961</option>
-                                                                    <option value="1960">1960</option>
-                                                                    <option value="1959">1959</option>
-                                                                    <option value="1958">1958</option>
-                                                                    <option value="1957">1957</option>
-                                                                    <option value="1956">1956</option>
-                                                                    <option value="1955">1955</option>
-                                                                    <option value="1954">1954</option>
-                                                                    <option value="1953">1953</option>
-                                                                    <option value="1952">1952</option>
-                                                                    <option value="1951">1951</option>
-
-                                                                </select>
-                                                            </div>
-
+                                                            <select name="ddlYearOfJoining" id="ddlYearOfJoining" class="form-control m-b">
+                                                                <option value="0">Year</option>
+                                                                <option value="2017">2017</option>
+                                                                <option value="2016">2016</option>
+                                                                <option value="2015">2015</option>
+                                                                <option value="2014">2014</option>
+                                                                <option value="2013">2013</option>
+                                                                <option value="2012">2012</option>
+                                                                <option value="2011">2011</option>
+                                                                <option value="2010">2010</option>
+                                                                <option value="2009">2009</option>
+                                                                <option value="2008">2008</option>
+                                                                <option value="2007">2007</option>
+                                                                <option value="2006">2006</option>
+                                                                <option value="2005">2005</option>
+                                                                <option value="2004">2004</option>
+                                                                <option value="2003">2003</option>
+                                                                <option value="2002">2002</option>
+                                                                <option value="2001">2001</option>
+                                                                <option value="2000">2000</option>
+                                                                <option value="1999">1999</option>
+                                                                <option value="1998">1998</option>
+                                                                <option value="1997">1997</option>
+                                                                <option value="1996">1996</option>
+                                                                <option value="1995">1995</option>
+                                                                <option value="1994">1994</option>
+                                                                <option value="1993">1993</option>
+                                                                <option value="1992">1992</option>
+                                                                <option value="1991">1991</option>
+                                                                <option value="1990">1990</option>
+                                                                <option value="1989">1989</option>
+                                                                <option value="1988">1988</option>
+                                                                <option value="1987">1987</option>
+                                                                <option value="1986">1986</option>
+                                                                <option value="1985">1985</option>
+                                                                <option value="1984">1984</option>
+                                                                <option value="1983">1983</option>
+                                                                <option value="1982">1982</option>
+                                                                <option value="1981">1981</option>
+                                                                <option value="1980">1980</option>
+                                                                <option value="1979">1979</option>
+                                                                <option value="1978">1978</option>
+                                                                <option value="1977">1977</option>
+                                                                <option value="1976">1976</option>
+                                                                <option value="1975">1975</option>
+                                                                <option value="1974">1974</option>
+                                                                <option value="1973">1973</option>
+                                                                <option value="1972">1972</option>
+                                                                <option value="1971">1971</option>
+                                                                <option value="1970">1970</option>
+                                                                <option value="1969">1969</option>
+                                                                <option value="1968">1968</option>
+                                                                <option value="1967">1967</option>
+                                                                <option value="1966">1966</option>
+                                                                <option value="1965">1965</option>
+                                                                <option value="1964">1964</option>
+                                                                <option value="1963">1963</option>
+                                                                <option value="1962">1962</option>
+                                                                <option value="1961">1961</option>
+                                                                <option value="1960">1960</option>
+                                                                <option value="1959">1959</option>
+                                                                <option value="1958">1958</option>
+                                                                <option value="1957">1957</option>
+                                                                <option value="1956">1956</option>
+                                                                <option value="1955">1955</option>
+                                                                <option value="1954">1954</option>
+                                                                <option value="1953">1953</option>
+                                                                <option value="1952">1952</option>
+                                                                <option value="1951">1951</option>
+                                                            </select>
                                                         </td>
                                                     </tr>
-
-
                                                 </tbody>
                                             </table>
                                         </div>
@@ -1111,85 +888,35 @@
                                                         <td>
 
                                                             <div>
-                                                                <div id="UpdatePanel34">
-
-                                                                    <input id="chkPHYes" type="radio" name="ASP" value="chkPHYes"><label for="chkPHYes">Yes</label>
-
-
-                                                                </div>
+                                                                <input id="chkPHYes" type="radio" name="physicallyHandicapped" value="true" [(ngModel)]="student.physicallyHandicapped"><label for="chkPHYes">Yes</label>
                                                             </div>
 
                                                         </td>
                                                         <td>&nbsp;</td>
                                                         <td>
-
                                                             <div>
-                                                                <div id="UpdatePanel35">
-
-                                                                    <input id="chkPHNo" type="radio" name="ASP" value="chkPHNo"><label for="chkPHNo">No</label>
-
-                                                                </div>
-
+                                                                <input id="chkPHNo" type="radio" name="physicallyHandicapped" value="false" [(ngModel)]="student.physicallyHandicapped"><label for="chkPHNo">No</label>
                                                             </div>
-
-
-
                                                         </td>
-                                                        <td>&nbsp;</td>
-
                                                     </tr>
-
-
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
-                                    <br>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                         <div id="Student02" class="feed-element">
-
-
-                            <br>
-
+                            <br />
                             <div>
                             </div>
                             <div class="btn-bg-box-01">
-                                <input type="submit" name="btn_SaveEducationDetails" value="Save Changes" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btn_SaveEducationDetails&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btn_SaveEducationDetails" class="btn btn-sm btn-primary pull-right m-t-n-xs">
-                                <input type="hidden" name="hddId" id="hddId">
+                                <input type="submit" name="btn_SaveEducationDetails" (click)="save(student)" value="Save Changes" id="btn_SaveEducationDetails" class="btn btn-sm btn-primary pull-right">
                             </div>
                         </div>
-
-                        <input type="hidden" name="hhdStudentId" id="hhdStudentId">
-                        <input type="hidden" name="hddPhoto" id="hddPhoto">
-                        <input type="hidden" name="HiddenField3" id="HiddenField3">
                     </div>
                 </div>
-
             </div>
         </div>
-
-    </div>
-</div>
-<div id="divMessage" class="wrapper wrapper-content divhide">
-    <div class="middle-box text-center animated fadeInRightBig">
-        <h3 class="font-bold"></h3><h2>
-            <b class="text-color1">
-                <span id="lblSubject"></span>
-            </b>
-            <span id="lblMsg"></span>
-        </h2>
-
-        <div class="error-desc">
-            <h3 class="font-bold">Do you want to add a new Subject.</h3>
-            <br>
-            <a href="StudnetForm.aspx" id="ancsub" class="btn btn-primary m-t">YES</a>
-            <a href="Student_List.aspx" id="ancsubject" class="btn btn-primary m-t">NO, Go TO List</a>
-        </div>
-    </div>
-</div>
+    </fieldset>
+</form>

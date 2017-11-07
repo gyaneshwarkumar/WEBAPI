@@ -11,7 +11,7 @@ import { UserProfile } from '../user/user.profile'
 export class StudentService {
 
     private _getCoursesUrl = "/Student/GetStudents";
-    public url = this.commonService.getBaseMasterUrl() + '/Student';
+    public url = this.commonService.getBaseFunctionalUrl() + '/Student';
     public _saveUrl: string = '/Student/SaveStudent/';
     //public _updateUrl: string = '/Course/UpdateContact/';
     //  public _deleteByIdUrl: string = this.commonService.getBaseUrl() + '/Course/';

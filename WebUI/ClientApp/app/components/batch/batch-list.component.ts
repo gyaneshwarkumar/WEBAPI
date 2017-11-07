@@ -42,9 +42,7 @@ export class BatchComponent implements OnInit {
     }
  
     loadData() {
-        this.templateUrl1 = "./batch";
-        this.authService.checkathentication(this.templateUrl1)
-        this.batchService.getBatchs()
+         this.batchService.getBatchs()
             .subscribe(batchs => this.rowData = batchs,
             error => console.log(error));
 

@@ -89,8 +89,7 @@ export class AddStudentComponent implements OnInit {
     private rowData: any[];
     displayDialog: boolean;
     displayDeleteDialog: boolean;
-    newBatch: boolean;
-    academic_Year: string;
+    newStudent: boolean;
     studentCourse: boolean;
 
 
@@ -109,7 +108,7 @@ export class AddStudentComponent implements OnInit {
             .subscribe(data => this.students = data,
             error => console.log(error));
     }
-  
+
     onRowSelect(event) {
     }
 

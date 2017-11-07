@@ -24,8 +24,7 @@ export class CourseComponent implements OnInit {
     displayDialog: boolean;
     displayDeleteDialog: boolean;
     newCourse: boolean;
-    templateUrl: string;
-
+   
     public editCourseId: any;
     public fullname: string;
 
@@ -35,24 +34,19 @@ export class CourseComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.getProfile();
         this.editContactId = 0;
         this.loadData();
         this.newCourse = true;
     }
 
-    getProfile() {
-        this.templateUrl = "./course";
-        this.authService.checkathentication(this.templateUrl)
-    }
 
     loadData() {
-         this.courseService.getCourses()
+        this.courseService.getCourses()
             .subscribe(courses => this.rowData = courses,
             error => console.log(error));
     }
 
-    
+
 
     showDialogToAdd() {
         this.newCourse = true;

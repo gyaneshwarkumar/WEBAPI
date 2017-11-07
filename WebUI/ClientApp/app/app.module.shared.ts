@@ -1,4 +1,3 @@
-/// <reference path="components/registration/equal-validator.directive.ts" />
 import { NgModule, forwardRef } from '@angular/core';
 import { CommonModule, Location, LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ReactiveFormsModule, FormsModule, FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
@@ -32,7 +31,8 @@ import { AddStudentComponent } from './components/student/student.component';
 
 import { UserModule } from './user/user.module';
 
-import { EqualValidator } from './components/registration/equal-validator.directive'; 
+import { EqualValidator } from './components/registration/equal-validator.directive';
+import { AuthGuard } from '../common/auth.guard';
 
 class AppBaseRequestOptions extends BaseRequestOptions {
     headers: Headers = new Headers();
@@ -68,12 +68,12 @@ class AppBaseRequestOptions extends BaseRequestOptions {
         ToastrModule.forRoot(),
         RouterModule.forRoot([
             { path: '', redirectTo: 'login', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
+            { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
-            { path: 'course', component: CourseComponent },
-            { path: 'student', component: AddStudentComponent },
-            { path: 'batch', component: BatchComponent },
+            { path: 'course', component: CourseComponent, canActivate: [AuthGuard] },
+            { path: 'student', component: AddStudentComponent, canActivate: [AuthGuard] },
+            { path: 'batch', component: BatchComponent, canActivate: [AuthGuard] },
             //{ path: 'addbatch', component: AddBatchComponent },
             //{ path: 'signup', component: SignupComponent },
             //{ path: 'login', component: LoginComponent },
@@ -96,7 +96,7 @@ class AppBaseRequestOptions extends BaseRequestOptions {
     //providers: [
     //    CommonService, CourseService
     //]
-    providers: [CommonService, CourseService, BatchService, UserService, SubcourseService, StudentService,
+    providers: [CommonService, CourseService, BatchService, UserService, SubcourseService, StudentService, AuthGuard,
         { provide: LocationStrategy, useClass: HashLocationStrategy },
         { provide: RequestOptions, useClass: AppBaseRequestOptions }
     ],
